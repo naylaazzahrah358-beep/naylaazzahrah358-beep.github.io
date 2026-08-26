@@ -1,0 +1,394 @@
+/* ==========================================================================
+   CSS Portofolio - Tema Pink (Sesuai Modul Praktikum Pemrograman Web)
+   Mengimplementasikan teknik dari Modul 3, 4, 5, dan 6
+   ========================================================================== */
+
+/* --- Modul 3: Reset, Font, & Body Styling --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Century Gothic', 'Verdana', Arial, sans-serif;
+    background-color: #fdf0f4;
+    color: #4a3b42;
+    line-height: 1.6;
+}
+
+/* Container Wrapper (Modul 5: Layout Struktur) */
+#wrapper {
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(233, 30, 99, 0.15);
+    overflow: hidden;
+    border: 1px solid #ffd1dc;
+}
+
+/* --- Header & Banner --- */
+#header {
+    background: #e91e63;
+    background: -webkit-linear-gradient(top, #c2185b 0%, #e91e63 50%, #f48fb1 100%);
+    background: -moz-linear-gradient(top, #c2185b 0%, #e91e63 50%, #f48fb1 100%);
+    background: -o-linear-gradient(top, #c2185b 0%, #e91e63 50%, #f48fb1 100%);
+    background: -ms-linear-gradient(top, #c2185b 0%, #e91e63 50%, #f48fb1 100%);
+    background: linear-gradient(135deg, #c2185b 0%, #e91e63 50%, #f48fb1 100%);
+    color: #ffffff;
+    padding: 35px 25px;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 8px;
+}
+
+#header p {
+    font-size: 15px;
+    color: #ffe4ec;
+    font-weight: 300;
+}
+
+/* --- Modul 5 & 6: Navigasi Dropdown & Horisontal (Tema Pink) --- */
+#nav-container {
+    background: #d81b60;
+    position: relative;
+    z-index: 100;
+}
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #ad1457;
+    background: -webkit-linear-gradient(top, #880e4f 0%, #ad1457 100%);
+    background: linear-gradient(to bottom, #880e4f 0%, #ad1457 100%);
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ff80ab;
+    border-bottom: 2px solid #ff4081;
+}
+
+#menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+}
+
+#menu li a {
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-left: 1px solid #c2185b;
+    border-right: 1px solid #880e4f;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu li:first-child a {
+    border-left: none;
+}
+
+#menu li:last-child a {
+    border-right: none;
+}
+
+#menu li a:hover,
+#menu li.active a {
+    background-color: #ff4081;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Dropdown Menu (Modul 6) */
+#menu ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: #c2185b;
+    min-width: 170px;
+    list-style: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+}
+
+#menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu ul li {
+    float: none;
+    display: block;
+    width: 100%;
+}
+
+#menu ul li a {
+    padding: 10px 18px;
+    font-size: 13px;
+    text-transform: none;
+    border: none;
+    border-bottom: 1px solid #e91e63;
+    text-align: left;
+    color: #fff0f5;
+}
+
+#menu ul li a:hover {
+    background: #ffe4ec;
+    color: #ad1457;
+    text-indent: 6px;
+}
+
+/* --- Modul 5: Layout Kolom (2 Kolom / 3 Kolom) --- */
+.main-content {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+/* Kolom Kiri (Profil & Info) */
+#leftcolumn {
+    flex: 0 0 320px;
+    background-color: #fff5f8;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #ffd1dc;
+    text-align: center;
+}
+
+/* Kolom Kanan (Konten Utama) */
+#rightcolumn {
+    flex: 1;
+    background-color: #ffffff;
+}
+
+/* --- Modul 4: Pengaturan Gambar (Border, Width, Opacity, Hover) --- */
+.profile-photo-container {
+    margin: 0 auto 20px auto;
+    position: relative;
+    display: inline-block;
+}
+
+.profile-photo {
+    width: 190px;
+    height: 250px;
+    object-fit: cover;
+    border: 4px solid #ff4081;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(233, 30, 99, 0.4);
+    opacity: 0.95;
+}
+
+/* --- Modul 3: Selector Class & Pengelompokan Style --- */
+.headlines, .sublines, .infotext {
+    font-family: 'Century Gothic', Arial, sans-serif;
+    color: #ad1457;
+}
+
+.headlines {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid #ff80ab;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sublines {
+    font-size: 15px;
+    font-weight: bold;
+    color: #c2185b;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.infotext {
+    font-size: 13.5px;
+    color: #555555;
+}
+
+/* Kotak Info & Kartu */
+.card-box {
+    background-color: #fff9fb;
+    border-left: 4px solid #e91e63;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* Tabel Biodata (Modul 3: Table Styling) */
+.table-biodata {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.table-biodata td {
+    padding: 8px 10px;
+    border-bottom: 1px dashed #ffd1dc;
+    text-align: left;
+}
+
+.table-biodata td.label {
+    font-weight: bold;
+    color: #ad1457;
+    width: 38%;
+}
+
+/* Grid Skill / Kartu 3 Kolom (Modul 5: Float / Multi-column) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.skill-item {
+    background: #fff0f5;
+    border: 1px solid #ffb6c1;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    background: #ff4081;
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(255, 64, 129, 0.3);
+}
+
+.skill-item:hover .sublines {
+    color: #ffffff;
+}
+
+.skill-item:hover .infotext {
+    color: #ffe4ec;
+}
+
+/* Tombol Aksi */
+.btn-pink {
+    display: inline-block;
+    background-color: #e91e63;
+    color: #ffffff !important;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13.5px;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(233, 30, 99, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+    background-color: #ad1457;
+    box-shadow: 0 6px 15px rgba(173, 20, 87, 0.4);
+    transform: translateY(-2px);
+}
+
+/* --- Form Kontak (Modul 3 & 4 Styling) --- */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #ad1457;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ffb6c1;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #e91e63;
+    box-shadow: 0 0 6px rgba(233, 30, 99, 0.3);
+}
+
+/* --- Footer (Modul 5 Layout) --- */
+#footer {
+    background: #ad1457;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+    border-top: 3px solid #ff4081;
+}
+
+#footer a {
+    color: #ff80ab;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Support */
+@media (max-width: 850px) {
+    .main-content {
+        flex-direction: column;
+    }
+    #leftcolumn {
+        flex: 1 1 auto;
+    }
+    #menu {
+        flex-direction: column;
+    }
+    #menu li {
+        float: none;
+    }
+    #menu ul {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+    }
+    #menu li:hover > ul {
+        display: block;
+    }
+}

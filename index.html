@@ -1,14 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio - Nayla Azzahra R</title>
+    <!-- Menghubungkan CSS Eksternal (Modul 3 & 4) -->
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    Menu: <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
-    <h1>Halo kelas tekom c 2025</h1>
-    <h2>Selamat datang di mata kuliah pemograman WEB</h2>
-    <p>Halo nama saya Nayla azzahra r</p>
+
+    <!-- Wrapper Layout Utama (Modul 5 Layout) -->
+    <div id="wrapper">
+        
+        <!-- Header / Banner -->
+        <div id="header">
+            <h1>NAYLA AZZAHRA R</h1>
+            <p>Mahasiswi Teknik Komputer | Web Design & Development Enthusiast</p>
+        </div>
+
+        <!-- Navigasi Dropdown Horisontal (Modul 5 & 6) -->
+        <div id="nav-container">
+            <ul id="menu">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li>
+                    <a href="#">Praktikum &#9662;</a>
+                    <ul>
+                        <li><a href="modul3/1_css_sederhana.html" target="_blank">Modul 3 (CSS)</a></li>
+                        <li><a href="modul4/1_background.html" target="_blank">Modul 4 (Image)</a></li>
+                        <li><a href="modul5/1_navigasi_sederhana.html" target="_blank">Modul 5 (Layout)</a></li>
+                        <li><a href="modul6/menu-dropdown.html" target="_blank">Modul 6 (Dropdown)</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Layout 2 Kolom (Modul 5 Layout) -->
+        <div class="main-content">
+            
+            <!-- Kolom Kiri: Foto Profil & Biodata Singkat -->
+            <div id="leftcolumn">
+                <div class="profile-photo-container">
+                    <!-- Foto Profil Pengguna (Modul 4: Pengaturan Gambar) -->
+                    <img src="foto-profil.jpg" alt="Foto Nayla Azzahra R" class="profile-photo">
+                </div>
+                
+                <h3 class="headlines" style="justify-content: center; font-size: 18px;">Nayla Azzahra R</h3>
+                <p class="infotext" style="margin-bottom: 15px;">Teknik Komputer - Kelas C 2025</p>
+
+                <!-- Tabel Biodata Sederhana (Modul 3) -->
+                <table class="table-biodata">
+                    <tr>
+                        <td class="label">Status:</td>
+                        <td>Mahasiswi Aktif</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Jurusan:</td>
+                        <td>Teknik Komputer</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Lokasi:</td>
+                        <td>Indonesia</td>
+                    </tr>
+                </table>
+
+                <a href="contact.html" class="btn-pink">Hubungi Saya</a>
+            </div>
+
+            <!-- Kolom Kanan: Pengenalan, Keahlian & Ringkasan -->
+            <div id="rightcolumn">
+                
+                <!-- Bagian Sambutan -->
+                <div class="card-box">
+                    <h2 class="headlines">&#128075; Selamat Datang!</h2>
+                    <p class="infotext">
+                        Halo! Selamat datang di website portofolio resmi saya. Halaman ini dirancang menggunakan 
+                        penerapan styling <strong>CSS (Cascading Style Sheet)</strong> dengan palet warna bernuansa 
+                        <em>pink aesthetic</em> sesuai dengan kaidah praktikum Pemrograman Web.
+                    </p>
+                </div>
+
+                <!-- Bagian Tentang Saya Singkat -->
+                <div class="card-box">
+                    <h2 class="headlines">&#127800; Tentang Saya</h2>
+                    <p class="infotext">
+                        Saya adalah mahasiswi Teknik Komputer yang memiliki minat besar di bidang pengembangan web, desain antarmuka, 
+                        serta teknologi informasi. Senang mempelajari hal-hal baru dan mengasah keterampilan logika serta estetika visual web.
+                    </p>
+                </div>
+
+                <!-- Bagian Keahlian & Pembelajaran (Modul 5: Multi-column Card) -->
+                <h2 class="headlines">&#9881;&#65039; Keahlian & Materi Pemrograman Web</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="sublines">HTML5 Dasar & Lanjut</div>
+                        <div class="infotext">Struktur halaman web, semantic tags, list, tabel, dan formulir.</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="sublines">CSS3 Styling</div>
+                        <div class="infotext">Selector, class & ID, pewarnaan, gradient, font, dan box-model.</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="sublines">CSS Layout & Navigation</div>
+                        <div class="infotext">Multi-column layout, horizontal navbar, dan multi-level dropdown menu.</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer (Modul 5 Layout) -->
+        <div id="footer">
+            <p>&copy; 2025 Nayla Azzahra R | Praktikum Pemrograman Web Teknik Komputer</p>
+        </div>
+
+    </div>
+
 </body>
 </html>

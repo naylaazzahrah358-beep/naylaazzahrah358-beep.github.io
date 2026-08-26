@@ -1,12 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang saya</title>
+    <title>Tentang Saya - Nayla Azzahra R</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    Menu :<a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
-    <p>Ini adalah website sederhana</p>
+
+    <div id="wrapper">
+        
+        <!-- Header -->
+        <div id="header">
+            <h1>TENTANG SAYA</h1>
+            <p>Profil Lengkap, Latar Belakang Pendidikan & Minat</p>
+        </div>
+
+        <!-- Navigasi -->
+        <div id="nav-container">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="about.html">About Me</a></li>
+                <li>
+                    <a href="#">Praktikum &#9662;</a>
+                    <ul>
+                        <li><a href="modul3/1_css_sederhana.html" target="_blank">Modul 3 (CSS)</a></li>
+                        <li><a href="modul4/1_background.html" target="_blank">Modul 4 (Image)</a></li>
+                        <li><a href="modul5/1_navigasi_sederhana.html" target="_blank">Modul 5 (Layout)</a></li>
+                        <li><a href="modul6/menu-dropdown.html" target="_blank">Modul 6 (Dropdown)</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Konten 2 Kolom -->
+        <div class="main-content">
+            
+            <div id="leftcolumn">
+                <div class="profile-photo-container">
+                    <img src="foto-profil.jpg" alt="Foto Nayla Azzahra R" class="profile-photo">
+                </div>
+                <h3 class="headlines" style="justify-content: center; font-size: 18px;">Nayla Azzahra R</h3>
+                <p class="infotext">Kelas Tekom C 2025</p>
+            </div>
+
+            <div id="rightcolumn">
+                
+                <div class="card-box">
+                    <h2 class="headlines">&#128214; Biodata Lengkap</h2>
+                    <table class="table-biodata">
+                        <tr>
+                            <td class="label">Nama Lengkap:</td>
+                            <td>Nayla Azzahra R</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Program Studi:</td>
+                            <td>Teknik Komputer</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Mata Kuliah:</td>
+                            <td>Praktikum Pemrograman Web</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Minat / Fokus:</td>
+                            <td>Frontend Development, UI/UX Design & Network</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="card-box">
+                    <h2 class="headlines">&#127891; Latar Belakang & Pendidikan</h2>
+                    <p class="infotext">
+                        Saat ini sedang menempuh pendidikan di bidang Teknik Komputer dengan fokus pada pemahaman dasar perangkat keras,
+                        jaringan komputer, serta rekayasa perangkat lunak dan pemrograman berbasis web.
+                    </p>
+                </div>
+
+                <div class="card-box">
+                    <h2 class="headlines">&#127912; Hobi & Aktivitas</h2>
+                    <p class="infotext">
+                        Gemar mengeksplorasi desain visual, belajar koding antarmuka pengguna (frontend), membaca artikel teknologi, 
+                        serta berkolaborasi dalam proyek-proyek praktikum komputer.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <p>&copy; 2025 Nayla Azzahra R | Praktikum Pemrograman Web Teknik Komputer</p>
+        </div>
+
+    </div>
+
 </body>
 </html>

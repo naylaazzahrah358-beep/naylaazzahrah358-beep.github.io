@@ -1,15 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Nayla Azzahra R</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    Menu: <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
-    <h1>Halo kelas tekom c 2025</h1>
-    <h1>Contact me</h1>
-    <p>Email: naylaazzahrah358@gmail.com</p>
-    <p>Nomor Telepon: 085705952172</p>
+
+    <div id="wrapper">
+        
+        <!-- Header -->
+        <div id="header">
+            <h1>HUBUNGI SAYA</h1>
+            <p>Kirim Pesan atau Hubungi Melalui Saluran Resmi</p>
+        </div>
+
+        <!-- Navigasi -->
+        <div id="nav-container">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li>
+                    <a href="#">Praktikum &#9662;</a>
+                    <ul>
+                        <li><a href="modul3/1_css_sederhana.html" target="_blank">Modul 3 (CSS)</a></li>
+                        <li><a href="modul4/1_background.html" target="_blank">Modul 4 (Image)</a></li>
+                        <li><a href="modul5/1_navigasi_sederhana.html" target="_blank">Modul 5 (Layout)</a></li>
+                        <li><a href="modul6/menu-dropdown.html" target="_blank">Modul 6 (Dropdown)</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Konten 2 Kolom -->
+        <div class="main-content">
+            
+            <!-- Kolom Kiri: Info Kontak -->
+            <div id="leftcolumn">
+                <div class="profile-photo-container">
+                    <img src="foto-profil.jpg" alt="Foto Nayla Azzahra R" class="profile-photo">
+                </div>
+                <h3 class="headlines" style="justify-content: center; font-size: 18px;">Informasi Kontak</h3>
+                
+                <table class="table-biodata">
+                    <tr>
+                        <td class="label">Email:</td>
+                        <td>naylaazzahrah358@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Telepon:</td>
+                        <td>085705952172</td>
+                    </tr>
+                    <tr>
+                        <td class="label">GitHub:</td>
+                        <td>naylaazzahrah358-beep</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Kolom Kanan: Formulir Kontak -->
+            <div id="rightcolumn">
+                
+                <div class="card-box">
+                    <h2 class="headlines">&#9993;&#65039; Kirim Pesan</h2>
+                    <p class="infotext" style="margin-bottom: 20px;">
+                        Silakan isi formulir di bawah ini jika ingin berdiskusi, bertanya seputar perkuliahan, atau berkolaborasi.
+                    </p>
+
+                    <form action="#" method="POST" onsubmit="alert('Terima kasih! Pesan Anda telah terkirim.'); return false;">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap:</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Alamat Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Masukkan email Anda..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subjek">Subjek Pesan:</label>
+                            <input type="text" id="subjek" name="subjek" placeholder="Topik atau subjek pesan..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pesan">Isi Pesan:</label>
+                            <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-pink" style="cursor: pointer; border: none;">Kirim Pesan Sekarang</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <p>&copy; 2025 Nayla Azzahra R | Praktikum Pemrograman Web Teknik Komputer</p>
+        </div>
+
+    </div>
+
 </body>
 </html>
