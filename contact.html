@@ -4,105 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak - Nayla Azzahra R</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CSS Eksternal -->
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 
     <div id="wrapper">
-        
+        <div class="decor-blob blob-top-right"></div>
+        <div class="decor-blob blob-bottom-left"></div>
+
         <!-- Header -->
-        <div id="header">
-            <h1>HUBUNGI SAYA</h1>
-            <p>Kirim Pesan atau Hubungi Melalui Saluran Resmi</p>
-        </div>
+        <header id="header">
+            <div class="header-inner">
+                <a href="index.html" class="brand-logo">
+                    <div class="brand-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div class="brand-text">
+                        <h1>HUBUNGI SAYA</h1>
+                        <p>Kirim Pesan, Kolaborasi, atau Terhubung Secara Profesional</p>
+                    </div>
+                </a>
+            </div>
+        </header>
 
         <!-- Navigasi -->
-        <div id="nav-container">
+        <nav id="nav-container">
             <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-user"></i> Tentang Saya</a></li>
+                <li><a href="index.html#skills"><i class="fa-solid fa-code"></i> Keahlian</a></li>
+                <li><a href="index.html#projects"><i class="fa-solid fa-diagram-project"></i> Praktikum</a></li>
                 <li>
-                    <a href="#">Praktikum &#9662;</a>
+                    <a href="#"><i class="fa-solid fa-book-open"></i> Modul Web &#9662;</a>
                     <ul>
-                        <li><a href="modul3/1_css_sederhana.html" target="_blank">Modul 3 (CSS)</a></li>
-                        <li><a href="modul4/1_background.html" target="_blank">Modul 4 (Image)</a></li>
-                        <li><a href="modul5/1_navigasi_sederhana.html" target="_blank">Modul 5 (Layout)</a></li>
-                        <li><a href="modul6/menu-dropdown.html" target="_blank">Modul 6 (Dropdown)</a></li>
+                        <li><a href="modul3/1_css_sederhana.html" target="_blank"><i class="fa-solid fa-file-code"></i> Modul 3 (Dasar CSS)</a></li>
+                        <li><a href="modul4/1_background.html" target="_blank"><i class="fa-solid fa-image"></i> Modul 4 (CSS Image)</a></li>
+                        <li><a href="modul5/1_navigasi_sederhana.html" target="_blank"><i class="fa-solid fa-layer-group"></i> Modul 5 (CSS Layout)</a></li>
+                        <li><a href="modul6/menu-dropdown.html" target="_blank"><i class="fa-solid fa-bars-staggered"></i> Modul 6 (Dropdown)</a></li>
                     </ul>
                 </li>
-                <li class="active"><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="contact.html"><i class="fa-solid fa-envelope"></i> Kontak</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <!-- Konten 2 Kolom -->
-        <div class="main-content">
-            
-            <!-- Kolom Kiri: Info Kontak -->
-            <div id="leftcolumn">
-                <div class="profile-photo-container">
-                    <img src="foto-profil.jpg" alt="Foto Nayla Azzahra R" class="profile-photo">
+        <!-- Layout Utama -->
+        <main class="main-container">
+            <!-- Sidebar Kiri -->
+            <aside id="leftcolumn">
+                <div class="sidebar-card" style="text-align: center;">
+                    <div class="photo-frame" style="margin-bottom: 20px;">
+                        <img src="foto-profil.jpg" alt="Foto Nayla Azzahra R" class="hero-photo" style="width: 200px; height: 260px;">
+                    </div>
+                    <h3 class="section-tag" style="justify-content: center; border-bottom: none; margin-bottom: 0;">Nayla Azzahra R</h3>
+                    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 15px;">Teknik Komputer - Kelas C 2025</p>
                 </div>
-                <h3 class="headlines" style="justify-content: center; font-size: 18px;">Informasi Kontak</h3>
-                
-                <table class="table-biodata">
-                    <tr>
-                        <td class="label">Email:</td>
-                        <td>naylaazzahrah358@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Telepon:</td>
-                        <td>085705952172</td>
-                    </tr>
-                    <tr>
-                        <td class="label">GitHub:</td>
-                        <td>naylaazzahrah358-beep</td>
-                    </tr>
-                </table>
-            </div>
 
-            <!-- Kolom Kanan: Formulir Kontak -->
-            <div id="rightcolumn">
-                
-                <div class="card-box">
-                    <h2 class="headlines">&#9993;&#65039; Kirim Pesan</h2>
-                    <p class="infotext" style="margin-bottom: 20px;">
-                        Silakan isi formulir di bawah ini jika ingin berdiskusi, bertanya seputar perkuliahan, atau berkolaborasi.
-                    </p>
+                <div class="sidebar-card">
+                    <h3 class="section-tag"><i class="fa-solid fa-address-book"></i> Saluran Kontak</h3>
+                    <div class="social-group">
+                        <a href="mailto:naylaazzahrah358@gmail.com" class="social-pill">
+                            <i class="fa-solid fa-envelope" style="color: #ff2d75;"></i>
+                            <span>naylaazzahrah358@gmail.com</span>
+                        </a>
+                        <a href="https://wa.me/6285705952172" target="_blank" class="social-pill">
+                            <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
+                            <span>085705952172</span>
+                        </a>
+                        <a href="https://github.com/naylaazzahrah358-beep" target="_blank" class="social-pill">
+                            <i class="fa-brands fa-github" style="color: #333;"></i>
+                            <span>GitHub: naylaazzahrah358-beep</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
 
-                    <form action="#" method="POST" onsubmit="alert('Terima kasih! Pesan Anda telah terkirim.'); return false;">
-                        <div class="form-group">
-                            <label for="nama">Nama Lengkap:</label>
-                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
+            <!-- Konten Kanan: Formulir -->
+            <section id="rightcolumn">
+                <div class="content-box">
+                    <div class="box-header">
+                        <h3 class="box-title"><i class="fa-solid fa-paper-plane" style="color: #ff2d75;"></i> Formulir Pesan</h3>
+                        <span class="tag">Direct Message</span>
+                    </div>
+                    <p class="box-subtitle">Silakan isi data dan pesan Anda di bawah ini</p>
+
+                    <form class="contact-form" action="#" method="POST" onsubmit="alert('Terima kasih! Pesan Anda telah berhasil dikirimkan.'); return false;">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nama"><i class="fa-solid fa-user" style="color:#ff2d75;"></i> Nama Lengkap</label>
+                                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fa-solid fa-envelope" style="color:#ff2d75;"></i> Alamat Email</label>
+                                <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Alamat Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Masukkan email Anda..." required>
+                            <label for="subjek"><i class="fa-solid fa-tag" style="color:#ff2d75;"></i> Subjek Pesan</label>
+                            <input type="text" id="subjek" name="subjek" placeholder="Topik pembicaraan..." required>
                         </div>
 
                         <div class="form-group">
-                            <label for="subjek">Subjek Pesan:</label>
-                            <input type="text" id="subjek" name="subjek" placeholder="Topik atau subjek pesan..." required>
+                            <label for="pesan"><i class="fa-solid fa-comment-dots" style="color:#ff2d75;"></i> Isi Pesan</label>
+                            <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan Anda secara lengkap di sini..." required></textarea>
                         </div>
 
-                        <div class="form-group">
-                            <label for="pesan">Isi Pesan:</label>
-                            <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn-pink" style="cursor: pointer; border: none;">Kirim Pesan Sekarang</button>
+                        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+                            <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Sekarang
+                        </button>
                     </form>
                 </div>
-
-            </div>
-
-        </div>
+            </section>
+        </main>
 
         <!-- Footer -->
-        <div id="footer">
-            <p>&copy; 2025 Nayla Azzahra R | Praktikum Pemrograman Web Teknik Komputer</p>
-        </div>
-
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="footer-brand"><i class="fa-solid fa-heart" style="color: #ff80ab;"></i> NAYLA AZZAHRA R</div>
+                <p class="footer-text">Portofolio Praktikum Pemrograman Web &copy; 2025 | Teknik Komputer</p>
+            </div>
+        </footer>
     </div>
 
 </body>

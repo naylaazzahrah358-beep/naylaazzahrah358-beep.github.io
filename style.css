@@ -1,116 +1,194 @@
 /* ==========================================================================
-   CSS Portofolio - Tema Pink (Sesuai Modul Praktikum Pemrograman Web)
-   Mengimplementasikan teknik dari Modul 3, 4, 5, dan 6
+   ✨ PORTOFOLIO NAYLA AZZAHRA R - THE ULTIMATE PINK AESTHETIC EDITION ✨
+   Praktikum Pemrograman Web - Teknik Komputer (Modul 3, 4, 5, 6)
    ========================================================================== */
 
-/* --- Modul 3: Reset, Font, & Body Styling --- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #ff2d75;
+    --primary-dark: #c2185b;
+    --primary-hover: #e91e63;
+    --primary-light: #ff6584;
+    --accent-pink: #fb7185;
+    --pastel-pink: #fbcfe8;
+    --soft-pink: #fdf2f8;
+    --ultra-light-pink: #fff5f7;
+    --bg-page: #fff0f5;
+    
+    --text-dark: #2d1822;
+    --text-muted: #6b5560;
+    --text-light: #ffffff;
+    
+    --card-bg: #ffffff;
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(255, 182, 193, 0.4);
+    
+    --shadow-sm: 0 4px 12px rgba(255, 45, 117, 0.08);
+    --shadow-md: 0 10px 25px -5px rgba(255, 45, 117, 0.15), 0 8px 10px -6px rgba(255, 45, 117, 0.05);
+    --shadow-lg: 0 20px 35px -10px rgba(255, 45, 117, 0.28);
+    --glow-pink: 0 0 25px rgba(255, 45, 117, 0.35);
+
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-full: 9999px;
+    
+    --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- Global Reset (Modul 3 Dasar) --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Century Gothic', 'Verdana', Arial, sans-serif;
-    background-color: #fdf0f4;
-    color: #4a3b42;
-    line-height: 1.6;
+    font-family: 'Plus Jakarta Sans', 'Poppins', 'Century Gothic', sans-serif;
+    background-color: var(--bg-page);
+    background-image: 
+        radial-gradient(at 10% 10%, rgba(255, 182, 193, 0.3) 0px, transparent 50%),
+        radial-gradient(at 90% 90%, rgba(251, 113, 133, 0.2) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(253, 242, 248, 0.5) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: var(--text-dark);
+    line-height: 1.7;
+    overflow-x: hidden;
 }
 
-/* Container Wrapper (Modul 5: Layout Struktur) */
+/* --- Modul 5: Layout Wrapper Utama --- */
 #wrapper {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 30px auto;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(233, 30, 99, 0.15);
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--glass-border);
     overflow: hidden;
-    border: 1px solid #ffd1dc;
-}
-
-/* --- Header & Banner --- */
-#header {
-    background: #e91e63;
-    background: -webkit-linear-gradient(top, #c2185b 0%, #e91e63 50%, #f48fb1 100%);
-    background: -moz-linear-gradient(top, #c2185b 0%, #e91e63 50%, #f48fb1 100%);
-    background: -o-linear-gradient(top, #c2185b 0%, #e91e63 50%, #f48fb1 100%);
-    background: -ms-linear-gradient(top, #c2185b 0%, #e91e63 50%, #f48fb1 100%);
-    background: linear-gradient(135deg, #c2185b 0%, #e91e63 50%, #f48fb1 100%);
-    color: #ffffff;
-    padding: 35px 25px;
-    text-align: center;
-}
-
-#header h1 {
-    font-size: 32px;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin-bottom: 8px;
-}
-
-#header p {
-    font-size: 15px;
-    color: #ffe4ec;
-    font-weight: 300;
-}
-
-/* --- Modul 5 & 6: Navigasi Dropdown & Horisontal (Tema Pink) --- */
-#nav-container {
-    background: #d81b60;
     position: relative;
-    z-index: 100;
+}
+
+/* Background Decoration Blur */
+.decor-blob {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 105, 180, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
+    filter: blur(40px);
+    pointer-events: none;
+    z-index: 0;
+}
+.blob-top-right { top: -100px; right: -100px; }
+.blob-bottom-left { bottom: 100px; left: -100px; }
+
+/* ==========================================================================
+   HEADER & HERO SECTION (Modul 3, 4, 5)
+   ========================================================================== */
+#header {
+    background: linear-gradient(135deg, #c2185b 0%, #ff2d75 50%, #ff7597 100%);
+    color: var(--text-light);
+    padding: 30px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.brand-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand-text h1 {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.brand-text p {
+    font-size: 12.5px;
+    color: #ffe4ec;
+    font-weight: 400;
+}
+
+/* ==========================================================================
+   NAVIGASI & DROPDOWN (Modul 5 & 6)
+   ========================================================================== */
+#nav-container {
+    background: #a21248;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(162, 18, 72, 0.2);
 }
 
 #menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background: #ad1457;
-    background: -webkit-linear-gradient(top, #880e4f 0%, #ad1457 100%);
-    background: linear-gradient(to bottom, #880e4f 0%, #ad1457 100%);
-    overflow: visible;
     display: flex;
     justify-content: center;
-    border-top: 1px solid #ff80ab;
-    border-bottom: 2px solid #ff4081;
+    background: linear-gradient(to right, #880e4f, #ad1457, #880e4f);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 2px solid var(--primary);
 }
 
 #menu li {
     position: relative;
     list-style: none;
-    float: left;
-    display: block;
 }
 
 #menu li a {
-    display: block;
-    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 13.5px;
+    font-weight: 600;
     color: #ffffff;
-    text-transform: uppercase;
-    border-left: 1px solid #c2185b;
-    border-right: 1px solid #880e4f;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.3px;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    transition: var(--transition);
 }
 
-#menu li:first-child a {
-    border-left: none;
-}
-
-#menu li:last-child a {
-    border-right: none;
-}
+#menu li:first-child a { border-left: none; }
+#menu li:last-child a { border-right: none; }
 
 #menu li a:hover,
 #menu li.active a {
-    background-color: #ff4081;
+    background: var(--primary);
     color: #ffffff;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0 -3px 0 #ffffff;
 }
 
 /* Dropdown Menu (Modul 6) */
@@ -120,275 +198,779 @@ body {
     left: 0;
     opacity: 0;
     visibility: hidden;
-    background: #c2185b;
-    min-width: 170px;
+    background: #9d1145;
+    min-width: 200px;
     list-style: none;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 8px 8px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
     overflow: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 999;
+    transform: translateY(10px);
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #menu li:hover > ul {
     opacity: 1;
     visibility: visible;
+    transform: translateY(0);
 }
 
 #menu ul li {
-    float: none;
     display: block;
     width: 100%;
 }
 
 #menu ul li a {
-    padding: 10px 18px;
+    padding: 12px 20px;
     font-size: 13px;
-    text-transform: none;
     border: none;
-    border-bottom: 1px solid #e91e63;
-    text-align: left;
-    color: #fff0f5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: #ffe4ec;
+    justify-content: flex-start;
 }
 
 #menu ul li a:hover {
-    background: #ffe4ec;
-    color: #ad1457;
-    text-indent: 6px;
+    background: #ff4081;
+    color: #ffffff;
+    padding-left: 26px;
 }
 
-/* --- Modul 5: Layout Kolom (2 Kolom / 3 Kolom) --- */
-.main-content {
+/* ==========================================================================
+   HERO / BANNER PROFILE (Modul 4 & 5 Layout)
+   ========================================================================== */
+.hero-section {
+    padding: 50px 40px;
+    background: linear-gradient(180deg, #fff5f8 0%, #ffffff 100%);
     display: flex;
-    padding: 30px;
-    gap: 30px;
+    align-items: center;
+    gap: 45px;
+    border-bottom: 1px solid var(--pastel-pink);
+    position: relative;
+    z-index: 1;
 }
 
-/* Kolom Kiri (Profil & Info) */
-#leftcolumn {
-    flex: 0 0 320px;
-    background-color: #fff5f8;
-    border-radius: 12px;
-    padding: 25px;
-    border: 1px solid #ffd1dc;
+.hero-photo-wrapper {
+    flex: 0 0 280px;
+    position: relative;
     text-align: center;
+}
+
+.photo-frame {
+    position: relative;
+    display: inline-block;
+    border-radius: var(--radius-lg);
+    padding: 8px;
+    background: linear-gradient(135deg, #ff2d75, #ff80ab, #f43f5e);
+    box-shadow: var(--glow-pink);
+    animation: floatAnimation 4s ease-in-out infinite;
+}
+
+.hero-photo {
+    width: 250px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: calc(var(--radius-lg) - 6px);
+    display: block;
+    transition: var(--transition);
+}
+
+.hero-photo:hover {
+    filter: brightness(1.05);
+    transform: scale(1.02);
+}
+
+/* Floating Badges */
+.floating-badge {
+    position: absolute;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    animation: pulseGlow 3s infinite;
+}
+
+.badge-top { top: -15px; right: -20px; }
+.badge-bottom { bottom: -15px; left: -15px; }
+
+.hero-info {
+    flex: 1;
+}
+
+.badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffe4ec;
+    color: var(--primary-dark);
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: var(--radius-full);
+    border: 1px solid #fbcfe8;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--text-dark);
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.hero-title span {
+    background: linear-gradient(135deg, #ff2d75, #c2185b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin-bottom: 16px;
+}
+
+.hero-desc {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 25px;
+    max-width: 650px;
+}
+
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+}
+
+/* ==========================================================================
+   BUTTONS & BADGES (Pink Theme)
+   ========================================================================== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 26px;
+    border-radius: var(--radius-full);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    font-family: inherit;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #ff2d75 0%, #e91e63 100%);
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(255, 45, 117, 0.35);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #d81b60 0%, #c2185b 100%);
+    box-shadow: 0 10px 25px rgba(216, 27, 96, 0.45);
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: #ffffff;
+    color: var(--primary-dark) !important;
+    border: 2px solid var(--primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-outline:hover {
+    background: #ffe4ec;
+    color: var(--primary) !important;
+    transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   STATS COUNTER BAR
+   ========================================================================== */
+.stats-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 25px 40px;
+    background: #fff9fb;
+    border-bottom: 1px solid var(--pastel-pink);
+}
+
+.stat-card {
+    text-align: center;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: var(--radius-md);
+    border: 1px solid #ffd1dc;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+}
+
+.stat-number {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.stat-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   MAIN CONTENT LAYOUT (Modul 5: 2 Kolom / 3 Kolom)
+   ========================================================================== */
+.main-container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 35px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Kolom Kiri (Sidebar Info & Kontak) */
+#leftcolumn {
+    background: var(--ultra-light-pink);
+    border-radius: var(--radius-md);
+    padding: 30px 25px;
+    border: 1px solid #ffd1dc;
+    height: fit-content;
+    box-shadow: var(--shadow-sm);
+}
+
+.sidebar-card {
+    margin-bottom: 25px;
+}
+
+.sidebar-card:last-child {
+    margin-bottom: 0;
+}
+
+.section-tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--primary-dark);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--pastel-pink);
+}
+
+.biodata-list {
+    list-style: none;
+}
+
+.biodata-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ffd1dc;
+    font-size: 13.5px;
+}
+
+.biodata-item:last-child {
+    border-bottom: none;
+}
+
+.bio-icon {
+    width: 32px;
+    height: 32px;
+    background: #ffe4ec;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.bio-content {
+    flex: 1;
+}
+
+.bio-label {
+    font-size: 11.5px;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.bio-value {
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* Social Link Pill Buttons */
+.social-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-pill {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    background: #ffffff;
+    border: 1px solid #ffd1dc;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 13.5px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.social-pill:hover {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+    transform: translateX(5px);
 }
 
 /* Kolom Kanan (Konten Utama) */
 #rightcolumn {
-    flex: 1;
-    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
-/* --- Modul 4: Pengaturan Gambar (Border, Width, Opacity, Hover) --- */
-.profile-photo-container {
-    margin: 0 auto 20px auto;
-    position: relative;
-    display: inline-block;
+/* --- Section Card Box --- */
+.content-box {
+    background: #ffffff;
+    border-radius: var(--radius-md);
+    padding: 30px;
+    border: 1px solid #ffd1dc;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
 }
 
-.profile-photo {
-    width: 190px;
-    height: 250px;
-    object-fit: cover;
-    border: 4px solid #ff4081;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.25);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+.content-box:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--pastel-pink);
 }
 
-.profile-photo:hover {
-    transform: scale(1.03);
-    box-shadow: 0 12px 25px rgba(233, 30, 99, 0.4);
-    opacity: 0.95;
-}
-
-/* --- Modul 3: Selector Class & Pengelompokan Style --- */
-.headlines, .sublines, .infotext {
-    font-family: 'Century Gothic', Arial, sans-serif;
-    color: #ad1457;
-}
-
-.headlines {
-    font-size: 22px;
-    font-weight: bold;
-    border-bottom: 2px solid #ff80ab;
-    padding-bottom: 6px;
-    margin-bottom: 15px;
+.box-header {
     display: flex;
     align-items: center;
-    gap: 8px;
-}
-
-.sublines {
-    font-size: 15px;
-    font-weight: bold;
-    color: #c2185b;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.infotext {
-    font-size: 13.5px;
-    color: #555555;
-}
-
-/* Kotak Info & Kartu */
-.card-box {
-    background-color: #fff9fb;
-    border-left: 4px solid #e91e63;
-    padding: 16px;
+    justify-content: space-between;
     margin-bottom: 20px;
-    border-radius: 0 8px 8px 0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
-/* Tabel Biodata (Modul 3: Table Styling) */
-.table-biodata {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 15px 0;
+.box-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primary-dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-subtitle {
     font-size: 14px;
+    color: var(--text-muted);
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 
-.table-biodata td {
-    padding: 8px 10px;
-    border-bottom: 1px dashed #ffd1dc;
-    text-align: left;
-}
-
-.table-biodata td.label {
-    font-weight: bold;
-    color: #ad1457;
-    width: 38%;
-}
-
-/* Grid Skill / Kartu 3 Kolom (Modul 5: Float / Multi-column) */
+/* ==========================================================================
+   SKILLS & PROGRESS BARS (Modul 3 & 4)
+   ========================================================================== */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
 }
 
-.skill-item {
-    background: #fff0f5;
-    border: 1px solid #ffb6c1;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    transition: all 0.3s ease;
+.skill-card {
+    background: var(--ultra-light-pink);
+    border: 1px solid #ffd1dc;
+    border-radius: var(--radius-md);
+    padding: 20px;
+    transition: var(--transition);
 }
 
-.skill-item:hover {
-    background: #ff4081;
-    color: #ffffff;
+.skill-card:hover {
+    background: #ffffff;
+    border-color: var(--primary);
     transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(255, 64, 129, 0.3);
+    box-shadow: var(--shadow-md);
 }
 
-.skill-item:hover .sublines {
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.skill-icon-box {
+    width: 40px;
+    height: 40px;
+    background: #ffe4ec;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.skill-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.skill-desc {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.progress-container {
+    background: #ffd1dc;
+    height: 8px;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #ff2d75, #f43f5e);
+    height: 100%;
+    border-radius: var(--radius-full);
+    transition: width 1s ease-in-out;
+}
+
+/* ==========================================================================
+   PROJECTS / PRAKTIKUM SHOWCASE (Modul 5 Layout & Modul 4 Image)
+   ========================================================================== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #ffffff;
+    border: 1px solid #ffd1dc;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+}
+
+.project-badge-top {
+    background: linear-gradient(135deg, #c2185b, #ff2d75);
     color: #ffffff;
+    padding: 16px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.skill-item:hover .infotext {
-    color: #ffe4ec;
+.project-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* Tombol Aksi */
-.btn-pink {
-    display: inline-block;
-    background-color: #e91e63;
-    color: #ffffff !important;
-    padding: 10px 22px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
+.project-desc {
     font-size: 13.5px;
-    margin-top: 10px;
-    box-shadow: 0 4px 10px rgba(233, 30, 99, 0.3);
-    transition: all 0.3s ease;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    line-height: 1.6;
 }
 
-.btn-pink:hover {
-    background-color: #ad1457;
-    box-shadow: 0 6px 15px rgba(173, 20, 87, 0.4);
-    transform: translateY(-2px);
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 18px;
 }
 
-/* --- Form Kontak (Modul 3 & 4 Styling) --- */
+.tag {
+    background: #ffe4ec;
+    color: var(--primary-dark);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+}
+
+/* ==========================================================================
+   TIMELINE / EDUCATION (Modul 3 & 5)
+   ========================================================================== */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background: var(--pastel-pink);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -30px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background: var(--primary);
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--pastel-pink);
+}
+
+.timeline-date {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.timeline-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.timeline-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* ==========================================================================
+   CONTACT FORM (Modul 3 Styling)
+   ========================================================================== */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
 .form-group {
-    margin-bottom: 15px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .form-group label {
-    display: block;
-    font-weight: bold;
-    color: #ad1457;
-    margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--primary-dark);
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #ffb6c1;
-    border-radius: 6px;
+    padding: 12px 16px;
+    background: var(--ultra-light-pink);
+    border: 1.5px solid #ffd1dc;
+    border-radius: var(--radius-sm);
     font-family: inherit;
     font-size: 14px;
+    color: var(--text-dark);
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: var(--transition);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #e91e63;
-    box-shadow: 0 0 6px rgba(233, 30, 99, 0.3);
+    background: #ffffff;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(255, 45, 117, 0.15);
 }
 
-/* --- Footer (Modul 5 Layout) --- */
+/* ==========================================================================
+   FOOTER (Modul 5 Layout)
+   ========================================================================== */
 #footer {
-    background: #ad1457;
+    background: linear-gradient(135deg, #880e4f 0%, #ad1457 100%);
     color: #ffffff;
+    padding: 35px 40px;
+    border-top: 3px solid var(--primary);
     text-align: center;
-    padding: 18px;
-    font-size: 13px;
-    border-top: 3px solid #ff4081;
+    position: relative;
 }
 
-#footer a {
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-brand {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.footer-text {
+    font-size: 13px;
+    color: #ffe4ec;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.footer-links a {
     color: #ff80ab;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 600;
+    transition: var(--transition);
 }
 
-#footer a:hover {
+.footer-links a:hover {
+    color: #ffffff;
     text-decoration: underline;
 }
 
-/* Responsive Support */
-@media (max-width: 850px) {
-    .main-content {
-        flex-direction: column;
+/* ==========================================================================
+   KEYFRAME ANIMATIONS
+   ========================================================================== */
+@keyframes floatAnimation {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 15px rgba(255, 45, 117, 0.25); }
+    50% { box-shadow: 0 0 25px rgba(255, 45, 117, 0.5); }
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (Media Queries)
+   ========================================================================== */
+@media (max-width: 992px) {
+    .main-container {
+        grid-template-columns: 1fr;
     }
-    #leftcolumn {
-        flex: 1 1 auto;
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+    .hero-cta {
+        justify-content: center;
+    }
+    .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    #header {
+        padding: 20px;
+    }
+    .hero-section {
+        padding: 30px 20px;
+    }
+    .hero-title {
+        font-size: 28px;
+    }
+    .hero-photo {
+        width: 200px;
+        height: 270px;
+    }
+    .main-container {
+        padding: 20px;
     }
     #menu {
         flex-direction: column;
     }
-    #menu li {
-        float: none;
+    #menu li a {
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     #menu ul {
         position: static;
         opacity: 1;
         visibility: visible;
         display: none;
+        transform: none;
     }
     #menu li:hover > ul {
         display: block;
+    }
+    .stats-bar {
+        grid-template-columns: 1fr;
+        padding: 20px;
     }
 }

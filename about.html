@@ -4,96 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Saya - Nayla Azzahra R</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CSS Eksternal -->
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 
     <div id="wrapper">
-        
+        <div class="decor-blob blob-top-right"></div>
+        <div class="decor-blob blob-bottom-left"></div>
+
         <!-- Header -->
-        <div id="header">
-            <h1>TENTANG SAYA</h1>
-            <p>Profil Lengkap, Latar Belakang Pendidikan & Minat</p>
-        </div>
+        <header id="header">
+            <div class="header-inner">
+                <a href="index.html" class="brand-logo">
+                    <div class="brand-icon">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <div class="brand-text">
+                        <h1>TENTANG SAYA</h1>
+                        <p>Biodata, Latar Belakang & Perjalanan Akademik</p>
+                    </div>
+                </a>
+            </div>
+        </header>
 
         <!-- Navigasi -->
-        <div id="nav-container">
+        <nav id="nav-container">
             <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="about.html">About Me</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="active"><a href="about.html"><i class="fa-solid fa-user"></i> Tentang Saya</a></li>
+                <li><a href="index.html#skills"><i class="fa-solid fa-code"></i> Keahlian</a></li>
+                <li><a href="index.html#projects"><i class="fa-solid fa-diagram-project"></i> Praktikum</a></li>
                 <li>
-                    <a href="#">Praktikum &#9662;</a>
+                    <a href="#"><i class="fa-solid fa-book-open"></i> Modul Web &#9662;</a>
                     <ul>
-                        <li><a href="modul3/1_css_sederhana.html" target="_blank">Modul 3 (CSS)</a></li>
-                        <li><a href="modul4/1_background.html" target="_blank">Modul 4 (Image)</a></li>
-                        <li><a href="modul5/1_navigasi_sederhana.html" target="_blank">Modul 5 (Layout)</a></li>
-                        <li><a href="modul6/menu-dropdown.html" target="_blank">Modul 6 (Dropdown)</a></li>
+                        <li><a href="modul3/1_css_sederhana.html" target="_blank"><i class="fa-solid fa-file-code"></i> Modul 3 (Dasar CSS)</a></li>
+                        <li><a href="modul4/1_background.html" target="_blank"><i class="fa-solid fa-image"></i> Modul 4 (CSS Image)</a></li>
+                        <li><a href="modul5/1_navigasi_sederhana.html" target="_blank"><i class="fa-solid fa-layer-group"></i> Modul 5 (CSS Layout)</a></li>
+                        <li><a href="modul6/menu-dropdown.html" target="_blank"><i class="fa-solid fa-bars-staggered"></i> Modul 6 (Dropdown)</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Kontak</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <!-- Konten 2 Kolom -->
-        <div class="main-content">
-            
-            <div id="leftcolumn">
-                <div class="profile-photo-container">
-                    <img src="foto-profil.jpg" alt="Foto Nayla Azzahra R" class="profile-photo">
+        <!-- Layout Utama -->
+        <main class="main-container">
+            <!-- Sidebar Kiri -->
+            <aside id="leftcolumn">
+                <div class="sidebar-card" style="text-align: center;">
+                    <div class="photo-frame" style="margin-bottom: 20px;">
+                        <img src="foto-profil.jpg" alt="Foto Nayla Azzahra R" class="hero-photo" style="width: 200px; height: 260px;">
+                    </div>
+                    <h3 class="section-tag" style="justify-content: center; border-bottom: none; margin-bottom: 0;">Nayla Azzahra R</h3>
+                    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 15px;">Teknik Komputer - Kelas C 2025</p>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                        <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+                    </a>
                 </div>
-                <h3 class="headlines" style="justify-content: center; font-size: 18px;">Nayla Azzahra R</h3>
-                <p class="infotext">Kelas Tekom C 2025</p>
-            </div>
+            </aside>
 
-            <div id="rightcolumn">
-                
-                <div class="card-box">
-                    <h2 class="headlines">&#128214; Biodata Lengkap</h2>
-                    <table class="table-biodata">
-                        <tr>
-                            <td class="label">Nama Lengkap:</td>
-                            <td>Nayla Azzahra R</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Program Studi:</td>
-                            <td>Teknik Komputer</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Mata Kuliah:</td>
-                            <td>Praktikum Pemrograman Web</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Minat / Fokus:</td>
-                            <td>Frontend Development, UI/UX Design & Network</td>
-                        </tr>
-                    </table>
+            <!-- Konten Kanan -->
+            <section id="rightcolumn">
+                <div class="content-box">
+                    <div class="box-header">
+                        <h3 class="box-title"><i class="fa-solid fa-address-card" style="color: #ff2d75;"></i> Profil Lengkap</h3>
+                        <span class="tag">Detail Biodata</span>
+                    </div>
+
+                    <ul class="biodata-list" style="margin-bottom: 20px;">
+                        <li class="biodata-item">
+                            <div class="bio-icon"><i class="fa-solid fa-signature"></i></div>
+                            <div class="bio-content">
+                                <div class="bio-label">Nama Lengkap</div>
+                                <div class="bio-value">Nayla Azzahra R</div>
+                            </div>
+                        </li>
+                        <li class="biodata-item">
+                            <div class="bio-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="bio-content">
+                                <div class="bio-label">Program Studi</div>
+                                <div class="bio-value">Teknik Komputer</div>
+                            </div>
+                        </li>
+                        <li class="biodata-item">
+                            <div class="bio-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                            <div class="bio-content">
+                                <div class="bio-label">Mata Kuliah</div>
+                                <div class="bio-value">Praktikum Pemrograman Web</div>
+                            </div>
+                        </li>
+                        <li class="biodata-item">
+                            <div class="bio-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div class="bio-content">
+                                <div class="bio-label">Fokus Pembelajaran</div>
+                                <div class="bio-value">Web Design, Frontend CSS3, Computer Network & System</div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="card-box">
-                    <h2 class="headlines">&#127891; Latar Belakang & Pendidikan</h2>
-                    <p class="infotext">
-                        Saat ini sedang menempuh pendidikan di bidang Teknik Komputer dengan fokus pada pemahaman dasar perangkat keras,
-                        jaringan komputer, serta rekayasa perangkat lunak dan pemrograman berbasis web.
+                <div class="content-box">
+                    <div class="box-header">
+                        <h3 class="box-title"><i class="fa-solid fa-bullseye" style="color: #ff2d75;"></i> Visi & Minat Belajar</h3>
+                        <span class="tag">Aspirasi</span>
+                    </div>
+                    <p style="font-size: 14.5px; color: var(--text-dark); margin-bottom: 12px;">
+                        Sebagai mahasiswi Teknik Komputer, saya bertekad untuk menggabungkan keterampilan logika rekayasa komputer dengan kepekaan desain antarmuka yang menarik, fungsional, dan ramah pengguna.
+                    </p>
+                    <p style="font-size: 14.5px; color: var(--text-muted);">
+                        Saya aktif mempraktikkan konsep-konsep CSS murni dari modul praktikum, mulai dari selector hierarkis, tata letak multi-kolom, styling gambar responsif, hingga implementasi menu dropdown interaktif.
                     </p>
                 </div>
-
-                <div class="card-box">
-                    <h2 class="headlines">&#127912; Hobi & Aktivitas</h2>
-                    <p class="infotext">
-                        Gemar mengeksplorasi desain visual, belajar koding antarmuka pengguna (frontend), membaca artikel teknologi, 
-                        serta berkolaborasi dalam proyek-proyek praktikum komputer.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
+            </section>
+        </main>
 
         <!-- Footer -->
-        <div id="footer">
-            <p>&copy; 2025 Nayla Azzahra R | Praktikum Pemrograman Web Teknik Komputer</p>
-        </div>
-
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="footer-brand"><i class="fa-solid fa-heart" style="color: #ff80ab;"></i> NAYLA AZZAHRA R</div>
+                <p class="footer-text">Portofolio Praktikum Pemrograman Web &copy; 2025 | Teknik Komputer</p>
+            </div>
+        </footer>
     </div>
 
 </body>
