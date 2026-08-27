@@ -4,476 +4,310 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio - Nayla Azzahra R | Teknik Komputer</title>
-    <!-- Google Fonts & Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- CSS Eksternal (Modul 3, 4, 5, 6) -->
+    
+    <!-- Modul 3: Pemanggilan CSS Eksternal -->
     <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <!-- Icons via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Modul 3: CSS Internal untuk Kostumisasi Khusus Halaman -->
+    <style type="text/css">
+        .highlight-badge {
+            background-color: #ffe4ec;
+            color: #c2185b;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Wrapper Layout Utama (Modul 5 Layout) -->
+    <!-- ============================================================
+         MODUL 5: STRUKTUR LAYOUT UTAMA (#wrapper)
+         ============================================================ -->
     <div id="wrapper">
 
-        <!-- Background Glow Blobs -->
-        <div class="decor-blob blob-top-right"></div>
-        <div class="decor-blob blob-bottom-left"></div>
-
         <!-- ============================================================
-             HEADER & BRANDING
+             HEADER & BANNER PORTOFOLIO (Modul 3 & Modul 4 Background)
              ============================================================ -->
         <header id="header">
-            <div class="header-inner">
-                <a href="index.html" class="brand-logo">
-                    <div class="brand-icon">
-                        <i class="fa-solid fa-laptop-code"></i>
-                    </div>
-                    <div class="brand-text">
-                        <h1>NAYLA AZZAHRA R</h1>
-                        <p>Teknik Komputer | Web Design & Development</p>
-                    </div>
-                </a>
-                <div class="brand-tag d-none-mobile">
-                    <span class="badge-pill" style="margin-bottom: 0; background: rgba(255,255,255,0.25); color:#fff; border-color: rgba(255,255,255,0.4);">
-                        <i class="fa-solid fa-sparkles"></i> Tekom C 2025
-                    </span>
-                </div>
-            </div>
+            <h1>NAYLA AZZAHRA R</h1>
+            <p>Portofolio Digital | Mahasiswi Teknik Komputer - Kelas C 2025</p>
         </header>
 
         <!-- ============================================================
-             NAVIGASI HORISONTAL & DROPDOWN (Modul 5 & 6)
+             MODUL 5 & MODUL 6: NAVIGASI HORISONTAL & DROPDOWN MULTI-LEVEL
              ============================================================ -->
         <nav id="nav-container">
             <ul id="menu">
                 <li class="active"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="#about"><i class="fa-solid fa-user"></i> Tentang Saya</a></li>
-                <li><a href="#skills"><i class="fa-solid fa-code"></i> Keahlian</a></li>
-                <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i> Praktikum</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-user"></i> Biodata</a></li>
                 <li>
-                    <a href="#"><i class="fa-solid fa-book-open"></i> Modul Web &#9662;</a>
+                    <a href="#focus-area"><i class="fa-solid fa-layer-group"></i> Fokus Bidang &#9662;</a>
+                    <!-- Modul 6: Submenu Dropdown -->
                     <ul>
-                        <li><a href="modul3/1_css_sederhana.html" target="_blank"><i class="fa-solid fa-file-code"></i> Modul 3 (Dasar CSS)</a></li>
-                        <li><a href="modul4/index.html" target="_blank"><i class="fa-solid fa-image"></i> Modul 4 (CSS Image)</a></li>
-                        <li><a href="modul5/1_navigasi_sederhana.html" target="_blank"><i class="fa-solid fa-layer-group"></i> Modul 5 (CSS Layout)</a></li>
-                        <li><a href="modul6/menu-dropdown.html" target="_blank"><i class="fa-solid fa-bars-staggered"></i> Modul 6 (Dropdown)</a></li>
+                        <li><a href="#web-dev"><i class="fa-solid fa-code"></i> Web Development</a></li>
+                        <li><a href="#ui-ux"><i class="fa-solid fa-palette"></i> UI/UX Design</a></li>
+                        <li><a href="#networking"><i class="fa-solid fa-network-wired"></i> Jaringan Komputer</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Kontak</a></li>
+                <li><a href="#skills-section"><i class="fa-solid fa-gears"></i> Keahlian</a></li>
+                <li><a href="#gallery-section"><i class="fa-solid fa-images"></i> Galeri Foto</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Kontak</a></li>
             </ul>
         </nav>
 
         <!-- ============================================================
-             HERO SECTION (Modul 4 Image & Modul 5 Multi-Column)
+             HERO BANNER & PROFIL (Modul 4: Pengaturan Gambar & Hover)
              ============================================================ -->
-        <section class="hero-section">
-            <div class="hero-photo-wrapper">
-                <div class="photo-frame">
-                    <!-- Foto Profil Pengguna (Modul 4 CSS Image) -->
-                    <img src="foto-profil.jpg" alt="Foto Profil Nayla Azzahra R" class="hero-photo">
-                    
-                    <!-- Floating Badges -->
-                    <div class="floating-badge badge-top">
-                        <i class="fa-solid fa-code" style="color: #ff2d75;"></i> Web Developer
-                    </div>
-                    <div class="floating-badge badge-bottom">
-                        <i class="fa-solid fa-graduation-cap" style="color: #ff2d75;"></i> Tekom 2025
-                    </div>
-                </div>
+        <section class="hero-banner">
+            <div class="hero-photo-box">
+                <!-- Modul 4: Pengaturan Gambar (Border, Dimensi, Hover Transparansi) -->
+                <img src="foto-profil.jpg" alt="Foto Nayla Azzahra R" class="profile-photo">
             </div>
 
-            <div class="hero-info">
-                <span class="badge-pill">
-                    <i class="fa-solid fa-heart" style="color: #ff2d75;"></i> Welcome to My Official Portfolio
-                </span>
+            <div class="hero-text">
+                <span class="badge-tag"><i class="fa-solid fa-sparkles"></i> Welcome to My Official Portfolio</span>
                 <h2 class="hero-title">
                     Halo, Saya <span>Nayla Azzahra R</span>
                 </h2>
-                <p class="hero-subtitle">
-                    <i class="fa-solid fa-terminal"></i> Mahasiswi Teknik Komputer & Web Enthusiast
-                </p>
                 <p class="hero-desc">
-                    Selamat datang di portofolio digital saya! Website ini dirancang dengan perpaduan warna 
-                    <strong>Pink Aesthetic</strong> dan mengimplementasikan seluruh kaidah styling <strong>CSS3</strong> 
-                    dari modul praktikum Pemrograman Web (Modul 3, 4, 5, dan 6).
+                    Saya adalah mahasiswi <strong>Teknik Komputer</strong> yang antusias dalam bidang rekayasa web, desain antarmuka, dan teknologi informasi. Website ini dirancang dengan tema <em>Pink Aesthetic</em> yang menerapkan seluruh kaidah CSS dari Modul Praktikum Pemrograman Web.
                 </p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fa-solid fa-rocket"></i> Lihat Praktikum
+                <div class="hero-actions">
+                    <a href="#about-overview" class="btn-pink">
+                        <i class="fa-solid fa-arrow-down"></i> Eksplorasi Profil
                     </a>
-                    <a href="#contact" class="btn btn-outline">
+                    <a href="contact.html" class="btn-outline-pink">
                         <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
                     </a>
+
+                    <!-- Modul 6: Aligned Dropdown Content (Right-aligned quick menu) -->
+                    <div class="dropdown" style="float: right;">
+                        <button class="dropbtn">
+                            <i class="fa-solid fa-bars"></i> Menu Cepat &#9662;
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="about.html"><i class="fa-solid fa-id-card"></i> Profil Lengkap</a>
+                            <a href="#skills-section"><i class="fa-solid fa-chart-simple"></i> Tingkat Keahlian</a>
+                            <a href="#gallery-section"><i class="fa-solid fa-camera"></i> Galeri Foto</a>
+                            <a href="contact.html"><i class="fa-solid fa-comment-dots"></i> Kirim Pesan</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- ============================================================
-             STATS COUNTER BAR
+             MODUL 5: STRUKTUR LAYOUT 2 KOLOM (#leftcolumn & #rightcolumn)
              ============================================================ -->
-        <div class="stats-bar">
-            <div class="stat-card">
-                <div class="stat-number">4+</div>
-                <div class="stat-label">Modul CSS Selesai</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Semangat Belajar</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">2025</div>
-                <div class="stat-label">Angkatan Tekom</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">10+</div>
-                <div class="stat-label">Komponen CSS Desain</div>
-            </div>
-        </div>
-
-        <!-- ============================================================
-             MAIN CONTENT LAYOUT (Modul 5: 2 Kolom)
-             ============================================================ -->
-        <main class="main-container">
-
-            <!-- ==========================================
-                 KOLOM KIRI (SIDEBAR PROFIL & BIODATA)
-                 ========================================== -->
+        <section class="main-content-layout" id="about-overview">
+            
+            <!-- KOLOM KIRI: BIODATA SINGKAT & NAVIGASI VERTIKAL -->
             <aside id="leftcolumn">
+                <h3 class="headlines"><i class="fa-solid fa-address-card"></i> Biodata Singkat</h3>
                 
-                <!-- Card Biodata Singkat -->
-                <div class="sidebar-card">
-                    <h3 class="section-tag"><i class="fa-solid fa-id-card"></i> Biodata Pribadi</h3>
-                    <ul class="biodata-list">
-                        <li class="biodata-item">
-                            <div class="bio-icon"><i class="fa-solid fa-user"></i></div>
-                            <div class="bio-content">
-                                <div class="bio-label">Nama Lengkap</div>
-                                <div class="bio-value">Nayla Azzahra R</div>
-                            </div>
-                        </li>
-                        <li class="biodata-item">
-                            <div class="bio-icon"><i class="fa-solid fa-building-columns"></i></div>
-                            <div class="bio-content">
-                                <div class="bio-label">Program Studi</div>
-                                <div class="bio-value">Teknik Komputer</div>
-                            </div>
-                        </li>
-                        <li class="biodata-item">
-                            <div class="bio-icon"><i class="fa-solid fa-users"></i></div>
-                            <div class="bio-content">
-                                <div class="bio-label">Kelas / Angkatan</div>
-                                <div class="bio-value">Kelas C (2025)</div>
-                            </div>
-                        </li>
-                        <li class="biodata-item">
-                            <div class="bio-icon"><i class="fa-solid fa-laptop-file"></i></div>
-                            <div class="bio-content">
-                                <div class="bio-label">Mata Kuliah</div>
-                                <div class="bio-value">Pemrograman Web</div>
-                            </div>
-                        </li>
-                        <li class="biodata-item">
-                            <div class="bio-icon"><i class="fa-solid fa-location-dot"></i></div>
-                            <div class="bio-content">
-                                <div class="bio-label">Lokasi</div>
-                                <div class="bio-value">Indonesia</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <!-- Modul 3: Selector Tag Table -->
+                <table class="table-biodata">
+                    <tr>
+                        <td class="label">Nama:</td>
+                        <td><strong>Nayla Azzahra R</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Prodi:</td>
+                        <td>Teknik Komputer</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Kelas:</td>
+                        <td>Tekom C 2025</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Fokus:</td>
+                        <td>Web & Networking</td>
+                    </tr>
+                </table>
 
-                <!-- Card Kontak & Sosial Media -->
-                <div class="sidebar-card">
-                    <h3 class="section-tag"><i class="fa-solid fa-share-nodes"></i> Hubungi Saya</h3>
-                    <div class="social-group">
-                        <a href="mailto:naylaazzahrah358@gmail.com" class="social-pill">
-                            <i class="fa-solid fa-envelope" style="color: #ff2d75;"></i>
-                            <span>Email Saya</span>
-                        </a>
-                        <a href="https://wa.me/6285705952172" target="_blank" class="social-pill">
-                            <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
-                            <span>085705952172</span>
-                        </a>
-                        <a href="https://github.com/naylaazzahrah358-beep" target="_blank" class="social-pill">
-                            <i class="fa-brands fa-github" style="color: #333;"></i>
-                            <span>GitHub Profile</span>
-                        </a>
-                    </div>
-                </div>
+                <hr>
 
+                <!-- Modul 5: Navigasi Vertikal -->
+                <h4 class="sublines" style="text-transform: uppercase; margin-bottom: 8px;">
+                    <i class="fa-solid fa-compass"></i> Navigasi Pintas
+                </h4>
+                <ul class="vertical-nav">
+                    <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> Profil & Visi</a></li>
+                    <li><a href="#skills-section"><i class="fa-solid fa-angle-right"></i> Keterampilan</a></li>
+                    <li><a href="#focus-area"><i class="fa-solid fa-angle-right"></i> 3 Pilar Fokus</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Formulir Kontak</a></li>
+                </ul>
+
+                <!-- Modul 3: Inline CSS Demonstration -->
+                <div style="background-color: #ffe4ec; border-left: 4px solid #ff2d75; padding: 12px; border-radius: 6px; font-size: 12.5px;">
+                    <i class="fa-solid fa-circle-info" style="color: #ff2d75;"></i>
+                    <span class="infotext" style="font-weight: bold; color: #880e4f;"> Status Akademik:</span>
+                    <p style="margin: 4px 0 0 0; font-size: 12px; color: #4a3b42;">
+                        Mahasiswi Aktif Angkatan 2025 - Mata Kuliah Pemrograman Web.
+                    </p>
+                </div>
             </aside>
 
-            <!-- ==========================================
-                 KOLOM KANAN (KONTEN UTAMA)
-                 ========================================== -->
-            <section id="rightcolumn">
-
-                <!-- 1. TENTANG SAYA -->
-                <div class="content-box" id="about">
-                    <div class="box-header">
-                        <h3 class="box-title"><i class="fa-solid fa-sparkles" style="color: #ff2d75;"></i> Tentang Saya</h3>
-                        <span class="tag">Profile Overview</span>
-                    </div>
-                    <p class="box-subtitle">Mengenal lebih dekat latar belakang dan minat studi saya</p>
-                    
-                    <p style="margin-bottom: 16px; font-size: 14.5px; color: var(--text-dark);">
-                        Saya adalah mahasiswi aktif di program studi <strong>Teknik Komputer</strong>. Saya memiliki ketertarikan mendalam dalam dunia rekayasa web, perancangan antarmuka pengguna (UI/UX), serta pengelolaan sistem perangkat lunak dan jaringan komputer.
+            <!-- KOLOM KANAN: PENGENALAN & KEAHLIAN UTAMA -->
+            <div id="rightcolumn">
+                
+                <div class="card-box">
+                    <h3 class="headlines"><i class="fa-solid fa-graduation-cap"></i> Mengenai Diri Saya</h3>
+                    <p class="infotext">
+                        Selamat datang di portofolio resmi saya. Sebagai mahasiswi <strong>Teknik Komputer</strong>, saya berfokus mendalami integrasi teknologi komputasi, mulai dari perancangan antarmuka web yang estetis, penataan layout yang terstruktur, hingga konfigurasi sistem dan jaringan komputer.
                     </p>
-                    <p style="font-size: 14.5px; color: var(--text-muted);">
-                        Melalui mata kuliah Praktikum Pemrograman Web, saya terus mengasah kemampuan teknis mulai dari penguasaan struktur semantik HTML5, eksplorasi styling canggih dengan CSS3, hingga pemahaman tata letak responsif dan desain visual yang ergonomis.
+                    <p class="infotext">
+                        Dengan pemahaman fondasi yang kuat pada <em>HTML5 semantik</em> dan fleksibilitas <em>CSS3 modern</em>, saya berkomitmen menciptakan solusi digital yang tidak hanya fungsional namun juga memanjakan mata pengguna.
                     </p>
                 </div>
 
-                <!-- 2. KEAHLIAN & TEKNOLOGI -->
-                <div class="content-box" id="skills">
-                    <div class="box-header">
-                        <h3 class="box-title"><i class="fa-solid fa-gear" style="color: #ff2d75;"></i> Keahlian & Keterampilan</h3>
-                        <span class="tag">Technical Stack</span>
-                    </div>
-                    <p class="box-subtitle">Penguasaan materi pemrograman dan alat pengembangan web</p>
+                <!-- Modul 3 & 4: Keahlian & Progress Bar -->
+                <div class="card-box" id="skills-section">
+                    <h3 class="headlines"><i class="fa-solid fa-laptop-code"></i> Keahlian Teknis & Pemrograman</h3>
+                    <p class="infotext" style="margin-bottom: 15px;">
+                        Keterampilan yang dipelajari dan diimplementasikan dalam perkuliahan Pemrograman Web:
+                    </p>
 
                     <div class="skills-grid">
-                        <!-- Skill 1 -->
                         <div class="skill-card">
-                            <div class="skill-header">
-                                <div class="skill-icon-box"><i class="fa-brands fa-html5"></i></div>
-                                <div>
-                                    <div class="skill-title">HTML5 Semantic</div>
-                                    <span style="font-size: 11px; color: #ff2d75; font-weight: bold;">Tingkat Mahir</span>
-                                </div>
+                            <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 13.5px; color: #ad1457;">
+                                <span><i class="fa-brands fa-html5" style="color: #e34c26;"></i> HTML5 Semantic</span>
+                                <span>92%</span>
                             </div>
-                            <p class="skill-desc">Penyusunan struktur halaman web, formulir, list, dan tabel.</p>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 92%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 13.5px; color: #ad1457;">
+                                <span><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i> CSS3 & Layouting</span>
+                                <span>90%</span>
+                            </div>
                             <div class="progress-container">
                                 <div class="progress-bar" style="width: 90%;"></div>
                             </div>
                         </div>
 
-                        <!-- Skill 2 -->
                         <div class="skill-card">
-                            <div class="skill-header">
-                                <div class="skill-icon-box"><i class="fa-brands fa-css3-alt"></i></div>
-                                <div>
-                                    <div class="skill-title">CSS3 & Styling</div>
-                                    <span style="font-size: 11px; color: #ff2d75; font-weight: bold;">Tingkat Mahir</span>
-                                </div>
+                            <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 13.5px; color: #ad1457;">
+                                <span><i class="fa-solid fa-layer-group" style="color: #ff2d75;"></i> Multi-Column & Dropdown</span>
+                                <span>88%</span>
                             </div>
-                            <p class="skill-desc">Selector, Box-Model, Color Gradient, Image styling & Effects.</p>
                             <div class="progress-container">
                                 <div class="progress-bar" style="width: 88%;"></div>
                             </div>
                         </div>
 
-                        <!-- Skill 3 -->
                         <div class="skill-card">
-                            <div class="skill-header">
-                                <div class="skill-icon-box"><i class="fa-solid fa-layer-group"></i></div>
-                                <div>
-                                    <div class="skill-title">Layout & Dropdown</div>
-                                    <span style="font-size: 11px; color: #ff2d75; font-weight: bold;">Tingkat Menengah</span>
-                                </div>
+                            <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 13.5px; color: #ad1457;">
+                                <span><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git & GitHub Pages</span>
+                                <span>85%</span>
                             </div>
-                            <p class="skill-desc">Multi-column layout (2/3 kolom), Navbar horisontal & multi-level dropdown.</p>
                             <div class="progress-container">
                                 <div class="progress-bar" style="width: 85%;"></div>
                             </div>
                         </div>
-
-                        <!-- Skill 4 -->
-                        <div class="skill-card">
-                            <div class="skill-header">
-                                <div class="skill-icon-box"><i class="fa-brands fa-git-alt"></i></div>
-                                <div>
-                                    <div class="skill-title">Git & GitHub Pages</div>
-                                    <span style="font-size: 11px; color: #ff2d75; font-weight: bold;">Tingkat Menengah</span>
-                                </div>
-                            </div>
-                            <p class="skill-desc">Version control, repository management, dan automated web deployment.</p>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 82%;"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
-                <!-- 3. PRAKTIKUM & PROYEK MODUL -->
-                <div class="content-box" id="projects">
-                    <div class="box-header">
-                        <h3 class="box-title"><i class="fa-solid fa-diagram-project" style="color: #ff2d75;"></i> Showcase Modul Praktikum</h3>
-                        <span class="tag">Lab Modules</span>
-                    </div>
-                    <p class="box-subtitle">Hasil pengerjaan dan implementasi kode CSS modul praktikum</p>
+            </div>
 
-                    <div class="projects-grid">
-                        <!-- Card Modul 3 -->
-                        <div class="project-card">
-                            <div class="project-badge-top">
-                                <span><i class="fa-solid fa-code"></i> Modul 3</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </div>
-                            <div class="project-body">
-                                <div>
-                                    <h4 style="font-size: 16px; margin-bottom: 8px; color: var(--text-dark);">CSS Dasar & Selector</h4>
-                                    <p class="project-desc">Mempelajari selector HTML, selector class, selector ID, inline/internal CSS, dan CSS eksternal.</p>
-                                    <div class="project-tags">
-                                        <span class="tag">Selector</span>
-                                        <span class="tag">Eksternal CSS</span>
-                                    </div>
-                                </div>
-                                <a href="modul3/1_css_sederhana.html" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center; font-size: 13px;">
-                                    Buka Modul 3
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Card Modul 4 -->
-                        <div class="project-card">
-                            <div class="project-badge-top">
-                                <span><i class="fa-solid fa-image"></i> Modul 4</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </div>
-                            <div class="project-body">
-                                <div>
-                                    <h4 style="font-size: 16px; margin-bottom: 8px; color: var(--text-dark);">CSS Image & Background</h4>
-                                    <p class="project-desc">Mengatur properti gambar seperti border, width, height, background-image, dan efek transparansi hover.</p>
-                                    <div class="project-tags">
-                                        <span class="tag">Border</span>
-                                        <span class="tag">Opacity</span>
-                                        <span class="tag">Hover</span>
-                                    </div>
-                                </div>
-                                <a href="modul4/index.html" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center; font-size: 13px;">
-                                    Buka Modul 4
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Card Modul 5 -->
-                        <div class="project-card">
-                            <div class="project-badge-top">
-                                <span><i class="fa-solid fa-layer-group"></i> Modul 5</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </div>
-                            <div class="project-body">
-                                <div>
-                                    <h4 style="font-size: 16px; margin-bottom: 8px; color: var(--text-dark);">CSS Navigasi & Layout</h4>
-                                    <p class="project-desc">Membuat navigasi vertikal & horisontal serta merancang tata letak float 2 kolom dan 3 kolom.</p>
-                                    <div class="project-tags">
-                                        <span class="tag">Navbar</span>
-                                        <span class="tag">Layout 2 Kolom</span>
-                                        <span class="tag">3 Kolom</span>
-                                    </div>
-                                </div>
-                                <a href="modul5/1_navigasi_sederhana.html" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center; font-size: 13px;">
-                                    Buka Modul 5
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Card Modul 6 -->
-                        <div class="project-card">
-                            <div class="project-badge-top">
-                                <span><i class="fa-solid fa-bars-staggered"></i> Modul 6</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </div>
-                            <div class="project-body">
-                                <div>
-                                    <h4 style="font-size: 16px; margin-bottom: 8px; color: var(--text-dark);">Dropdown Menu & Animasi</h4>
-                                    <p class="project-desc">Implementasi multi-level dropdown menu dengan linear gradient, border-radius, dan transisi CSS.</p>
-                                    <div class="project-tags">
-                                        <span class="tag">Dropdown</span>
-                                        <span class="tag">Gradient</span>
-                                        <span class="tag">Transition</span>
-                                    </div>
-                                </div>
-                                <a href="modul6/menu-dropdown.html" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center; font-size: 13px;">
-                                    Buka Modul 6
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. TIMELINE PENDIDIKAN -->
-                <div class="content-box">
-                    <div class="box-header">
-                        <h3 class="box-title"><i class="fa-solid fa-graduation-cap" style="color: #ff2d75;"></i> Pendidikan & Pengalaman</h3>
-                        <span class="tag">Milestones</span>
-                    </div>
-                    <p class="box-subtitle">Jejak pembelajaran dan perjalanan akademik</p>
-
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-date">2025 - Sekarang</div>
-                            <div class="timeline-title">Mahasiswi Teknik Komputer</div>
-                            <p class="timeline-desc">Menempuh perkuliahan aktif di Program Studi Teknik Komputer (Kelas C), fokus pada teknologi komputasi, perangkat keras, sistem jaringan, dan rekayasa perangkat lunak web.</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-date">Praktikum Berjalan</div>
-                            <div class="timeline-title">Praktikum Pemrograman Web</div>
-                            <p class="timeline-desc">Menyelesaikan materi praktikum HTML5, CSS Dasar, CSS Image Styling, Multi-column Layouts, serta Interactive Dropdown Navigation.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 5. FORMULIR KONTAK -->
-                <div class="content-box" id="contact">
-                    <div class="box-header">
-                        <h3 class="box-title"><i class="fa-solid fa-paper-plane" style="color: #ff2d75;"></i> Hubungi Saya</h3>
-                        <span class="tag">Get In Touch</span>
-                    </div>
-                    <p class="box-subtitle">Kirimkan pesan, pertanyaan, atau saran melalui formulir di bawah ini</p>
-
-                    <form class="contact-form" action="#" method="POST" onsubmit="alert('Terima kasih! Pesan Anda telah berhasil dikirimkan.'); return false;">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="nama"><i class="fa-solid fa-user" style="color:#ff2d75;"></i> Nama Lengkap</label>
-                                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><i class="fa-solid fa-envelope" style="color:#ff2d75;"></i> Alamat Email</label>
-                                <input type="email" id="email" name="email" placeholder="nama@email.com" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subjek"><i class="fa-solid fa-tag" style="color:#ff2d75;"></i> Subjek Pesan</label>
-                            <input type="text" id="subjek" name="subjek" placeholder="Topik pembicaraan..." required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="pesan"><i class="fa-solid fa-comment-dots" style="color:#ff2d75;"></i> Isi Pesan</label>
-                            <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan Anda secara lengkap di sini..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
-                            <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Sekarang
-                        </button>
-                    </form>
-                </div>
-
-            </section>
-
-        </main>
+        </section>
 
         <!-- ============================================================
-             FOOTER (Modul 5 Layout)
+             MODUL 5: STRUKTUR LAYOUT 3 KOLOM (#sidebar-kiri, #sidebar-tengah-atau-badan, #sidebar-kanan)
+             ============================================================ -->
+        <section class="three-column-section" id="focus-area">
+            <h3 class="headlines" style="justify-content: center; border-bottom: none; font-size: 24px;">
+                <i class="fa-solid fa-shapes"></i> 3 Pilar Fokus Pembelajaran
+            </h3>
+            <p class="infotext" style="text-align: center; max-width: 650px; margin: 0 auto 20px auto;">
+                Penerapan tata letak 3 kolom sejajar sesuai kaidah Modul 5 Layouting CSS:
+            </p>
+
+            <div class="three-column-container">
+                <!-- Kolom 1 -->
+                <div id="sidebar-kiri">
+                    <div class="col-icon"><i class="fa-solid fa-code"></i></div>
+                    <h4 class="sublines" id="web-dev" style="font-size: 16px;">1. Web Development</h4>
+                    <p class="infotext">
+                        Menguasai pembuatan struktur web, styling CSS modular, manipulasi visual, serta pembuatan form interaktif yang responsif.
+                    </p>
+                </div>
+
+                <!-- Kolom 2 -->
+                <div id="sidebar-tengah-atau-badan">
+                    <div class="col-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h4 class="sublines" id="ui-ux" style="font-size: 16px;">2. Desain UI/UX</h4>
+                    <p class="infotext">
+                        Menerapkan harmoni warna <em>pink palette</em>, tipografi yang nyaman dibaca, serta tata letak tombol dan navigasi yang intuitif.
+                    </p>
+                </div>
+
+                <!-- Kolom 3 -->
+                <div id="sidebar-kanan">
+                    <div class="col-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h4 class="sublines" id="networking" style="font-size: 16px;">3. Jaringan Komputer</h4>
+                    <p class="infotext">
+                        Mempelajari arsitektur jaringan, protokol komunikasi data, hosting server web, dan pengelolaan repositori online di GitHub.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             MODUL 4: GALERI FOTO (Pengaturan Border, Lebar, Tinggi, Opacity & Hover)
+             ============================================================ -->
+        <section class="gallery-section" id="gallery-section">
+            <h3 class="headlines"><i class="fa-solid fa-images"></i> Galeri & Eksplorasi Visual Gambar (CSS Image)</h3>
+            <p class="infotext">
+                Demonstrasi penerapan properti gambar dari Modul 4 (Border warna, pengaturan lebar & tinggi proporsional, serta transparansi <code>opacity</code> dengan efek <code>:hover</code>):
+            </p>
+
+            <div class="gallery-grid">
+                <!-- Item 1: Border Styling -->
+                <div class="gallery-item">
+                    <img src="foto-profil.jpg" alt="Foto Nayla Style 1" class="img-style-border">
+                    <div class="sublines">Border Pink Solid</div>
+                    <div class="infotext"><code>border: 3px solid #ff4081;</code></div>
+                </div>
+
+                <!-- Item 2: Opacity & Hover Styling -->
+                <div class="gallery-item">
+                    <img src="foto-profil.jpg" alt="Foto Nayla Style 2" class="img-style-opacity">
+                    <div class="sublines">Transparansi Hover</div>
+                    <div class="infotext"><code>opacity: 0.7; (hover: 1.0)</code></div>
+                </div>
+
+                <!-- Item 3: Rounded Dimension Styling -->
+                <div class="gallery-item">
+                    <img src="foto-profil.jpg" alt="Foto Nayla Style 3" class="profile-photo" style="width: 100%; height: 200px;">
+                    <div class="sublines">Shadow & Glow Frame</div>
+                    <div class="infotext"><code>box-shadow + border-radius</code></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             FOOTER (Modul 5 Layout dengan clear: both)
              ============================================================ -->
         <footer id="footer">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <i class="fa-solid fa-heart" style="color: #ff80ab;"></i> NAYLA AZZAHRA R
-                </div>
-                <p class="footer-text">
-                    Portofolio Praktikum Pemrograman Web &copy; 2025 | Program Studi Teknik Komputer
-                </p>
-                <div class="footer-links">
-                    <a href="#header">Kembali ke Atas</a>
-                    <span>&bull;</span>
-                    <a href="https://github.com/naylaazzahrah358-beep" target="_blank">GitHub</a>
-                    <span>&bull;</span>
-                    <a href="mailto:naylaazzahrah358@gmail.com">Email</a>
-                </div>
+            <p>&copy; 2025 Nayla Azzahra R | Mahasiswi Teknik Komputer (Kelas C)</p>
+            <p style="font-size: 12px; color: #fbcfe8;">
+                Praktikum Pemrograman Web - Menerapkan Konsep Modul 3, Modul 4, Modul 5, dan Modul 6.
+            </p>
+            <div style="margin-top: 10px;">
+                <a href="#header"><i class="fa-solid fa-arrow-up"></i> Kembali ke Atas</a> &bull;
+                <a href="about.html">Biodata Lengkap</a> &bull;
+                <a href="contact.html">Kontak</a> &bull;
+                <a href="https://github.com/naylaazzahrah358-beep" target="_blank">GitHub</a>
             </div>
         </footer>
 

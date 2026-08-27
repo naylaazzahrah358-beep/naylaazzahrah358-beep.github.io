@@ -3,131 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Saya - Nayla Azzahra R</title>
-    <!-- Google Fonts & Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- CSS Eksternal -->
+    <title>Biodata & Profil - Nayla Azzahra R</title>
+    
+    <!-- Modul 3: CSS Eksternal -->
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
+    <!-- Modul 5: Layout Wrapper -->
     <div id="wrapper">
-        <div class="decor-blob blob-top-right"></div>
-        <div class="decor-blob blob-bottom-left"></div>
 
         <!-- Header -->
         <header id="header">
-            <div class="header-inner">
-                <a href="index.html" class="brand-logo">
-                    <div class="brand-icon">
-                        <i class="fa-solid fa-user-graduate"></i>
-                    </div>
-                    <div class="brand-text">
-                        <h1>TENTANG SAYA</h1>
-                        <p>Biodata, Latar Belakang & Perjalanan Akademik</p>
-                    </div>
-                </a>
-            </div>
+            <h1>BIODATA & PROFIL</h1>
+            <p>Mengenal Lebih Dekat Nayla Azzahra R | Teknik Komputer 2025</p>
         </header>
 
-        <!-- Navigasi -->
+        <!-- Modul 5 & 6: Navigasi Horisontal & Dropdown -->
         <nav id="nav-container">
             <ul id="menu">
                 <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li class="active"><a href="about.html"><i class="fa-solid fa-user"></i> Tentang Saya</a></li>
-                <li><a href="index.html#skills"><i class="fa-solid fa-code"></i> Keahlian</a></li>
-                <li><a href="index.html#projects"><i class="fa-solid fa-diagram-project"></i> Praktikum</a></li>
+                <li class="active"><a href="about.html"><i class="fa-solid fa-user"></i> Biodata</a></li>
                 <li>
-                    <a href="#"><i class="fa-solid fa-book-open"></i> Modul Web &#9662;</a>
+                    <a href="index.html#focus-area"><i class="fa-solid fa-layer-group"></i> Fokus Bidang &#9662;</a>
                     <ul>
-                        <li><a href="modul3/1_css_sederhana.html" target="_blank"><i class="fa-solid fa-file-code"></i> Modul 3 (Dasar CSS)</a></li>
-                        <li><a href="modul4/index.html" target="_blank"><i class="fa-solid fa-image"></i> Modul 4 (CSS Image)</a></li>
-                        <li><a href="modul5/1_navigasi_sederhana.html" target="_blank"><i class="fa-solid fa-layer-group"></i> Modul 5 (CSS Layout)</a></li>
-                        <li><a href="modul6/menu-dropdown.html" target="_blank"><i class="fa-solid fa-bars-staggered"></i> Modul 6 (Dropdown)</a></li>
+                        <li><a href="index.html#web-dev"><i class="fa-solid fa-code"></i> Web Development</a></li>
+                        <li><a href="index.html#ui-ux"><i class="fa-solid fa-palette"></i> UI/UX Design</a></li>
+                        <li><a href="index.html#networking"><i class="fa-solid fa-network-wired"></i> Jaringan Komputer</a></li>
                     </ul>
                 </li>
+                <li><a href="index.html#skills-section"><i class="fa-solid fa-gears"></i> Keahlian</a></li>
+                <li><a href="index.html#gallery-section"><i class="fa-solid fa-images"></i> Galeri Foto</a></li>
                 <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Kontak</a></li>
             </ul>
         </nav>
 
-        <!-- Layout Utama -->
-        <main class="main-container">
-            <!-- Sidebar Kiri -->
+        <!-- Modul 5: Layout 2 Kolom -->
+        <main class="main-content-layout">
+            
+            <!-- Kolom Kiri: Foto Profil & Info -->
             <aside id="leftcolumn">
-                <div class="sidebar-card" style="text-align: center;">
-                    <div class="photo-frame" style="margin-bottom: 20px;">
-                        <img src="foto-profil.jpg" alt="Foto Nayla Azzahra R" class="hero-photo" style="width: 200px; height: 260px;">
-                    </div>
-                    <h3 class="section-tag" style="justify-content: center; border-bottom: none; margin-bottom: 0;">Nayla Azzahra R</h3>
-                    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 15px;">Teknik Komputer - Kelas C 2025</p>
-                    <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">
-                        <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
-                    </a>
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <img src="foto-profil.jpg" alt="Foto Profil Nayla" class="profile-photo" style="width: 200px; height: 260px;">
                 </div>
+                <h3 class="headlines" style="justify-content: center; font-size: 18px;">Nayla Azzahra R</h3>
+                <p class="infotext" style="text-align: center; margin-bottom: 15px;">
+                    Mahasiswi Teknik Komputer - Kelas C 2025
+                </p>
+
+                <h4 class="sublines"><i class="fa-solid fa-link"></i> Menu Pintas</h4>
+                <ul class="vertical-nav">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Halaman Utama</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> Hubungi Langsung</a></li>
+                </ul>
             </aside>
 
-            <!-- Konten Kanan -->
+            <!-- Kolom Kanan: Detail Biodata & Latar Belakang -->
             <section id="rightcolumn">
-                <div class="content-box">
-                    <div class="box-header">
-                        <h3 class="box-title"><i class="fa-solid fa-address-card" style="color: #ff2d75;"></i> Profil Lengkap</h3>
-                        <span class="tag">Detail Biodata</span>
-                    </div>
+                
+                <div class="card-box">
+                    <h3 class="headlines"><i class="fa-solid fa-id-card-clip"></i> Informasi Biodata Lengkap</h3>
+                    
+                    <!-- Modul 3: Tabel Data -->
+                    <table class="table-biodata">
+                        <tr>
+                            <td class="label">Nama Lengkap:</td>
+                            <td>Nayla Azzahra R</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Program Studi:</td>
+                            <td>Teknik Komputer</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Kelas / Angkatan:</td>
+                            <td>Kelas C / 2025</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Mata Kuliah:</td>
+                            <td>Praktikum Pemrograman Web</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Minat Utama:</td>
+                            <td>Frontend Development, Web Styling (CSS3), UI/UX, & Computer Network</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Platform Koding:</td>
+                            <td>HTML5, CSS3, Visual Studio Code, Git, GitHub Pages</td>
+                        </tr>
+                    </table>
+                </div>
 
-                    <ul class="biodata-list" style="margin-bottom: 20px;">
-                        <li class="biodata-item">
-                            <div class="bio-icon"><i class="fa-solid fa-signature"></i></div>
-                            <div class="bio-content">
-                                <div class="bio-label">Nama Lengkap</div>
-                                <div class="bio-value">Nayla Azzahra R</div>
-                            </div>
-                        </li>
-                        <li class="biodata-item">
-                            <div class="bio-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                            <div class="bio-content">
-                                <div class="bio-label">Program Studi</div>
-                                <div class="bio-value">Teknik Komputer</div>
-                            </div>
-                        </li>
-                        <li class="biodata-item">
-                            <div class="bio-icon"><i class="fa-solid fa-book-bookmark"></i></div>
-                            <div class="bio-content">
-                                <div class="bio-label">Mata Kuliah</div>
-                                <div class="bio-value">Praktikum Pemrograman Web</div>
-                            </div>
-                        </li>
-                        <li class="biodata-item">
-                            <div class="bio-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                            <div class="bio-content">
-                                <div class="bio-label">Fokus Pembelajaran</div>
-                                <div class="bio-value">Web Design, Frontend CSS3, Computer Network & System</div>
-                            </div>
-                        </li>
+                <div class="card-box">
+                    <h3 class="headlines"><i class="fa-solid fa-bullseye"></i> Visi & Minat Akademik</h3>
+                    <p class="infotext">
+                        Dunia teknologi dan rekayasa komputer terus berkembang pesat. Saya memiliki antusiasme tinggi untuk terus mengasah keterampilan teknis, memahami arsitektur sistem komputasi, serta mengeksplorasi pembuatan website yang interaktif dan responsif.
+                    </p>
+                    <p class="infotext">
+                        Dengan memadukan logika pemrograman web dan estetika desain visual, saya berusaha menghasilkan antarmuka pengguna yang bersih, modern, dan nyaman diakses di berbagai ukuran layar perangkat.
+                    </p>
+                </div>
+
+                <div class="card-box">
+                    <h3 class="headlines"><i class="fa-solid fa-book-open-reader"></i> Pembelajaran Praktikum Web</h3>
+                    <p class="infotext">
+                        Penerapan materi praktikum yang telah saya kuasai dan implementasikan ke dalam portofolio ini mencakup:
+                    </p>
+                    <ul style="margin-left: 20px; font-size: 13.5px; color: #4a3b42;">
+                        <li><strong>Modul 3</strong>: Struktur dasar CSS, Selector HTML (redefinisi tag), Selector Class, Selector ID, serta mekanisme CSS Inline, Internal, dan Eksternal.</li>
+                        <li><strong>Modul 4</strong>: Pengaturan gambar (border warna, dimensi width & height, background repeat & attachment, serta transparansi opacity dan hover).</li>
+                        <li><strong>Modul 5</strong>: Perancangan navigasi horisontal, navigasi vertikal, dan struktur tata letak 2 kolom serta 3 kolom sejajar.</li>
+                        <li><strong>Modul 6</strong>: Implementasi navigasi dropdown bertingkat dengan linear-gradient pink, border-radius melengkung, serta efek transisi yang halus.</li>
                     </ul>
                 </div>
 
-                <div class="content-box">
-                    <div class="box-header">
-                        <h3 class="box-title"><i class="fa-solid fa-bullseye" style="color: #ff2d75;"></i> Visi & Minat Belajar</h3>
-                        <span class="tag">Aspirasi</span>
-                    </div>
-                    <p style="font-size: 14.5px; color: var(--text-dark); margin-bottom: 12px;">
-                        Sebagai mahasiswi Teknik Komputer, saya bertekad untuk menggabungkan keterampilan logika rekayasa komputer dengan kepekaan desain antarmuka yang menarik, fungsional, dan ramah pengguna.
-                    </p>
-                    <p style="font-size: 14.5px; color: var(--text-muted);">
-                        Saya aktif mempraktikkan konsep-konsep CSS murni dari modul praktikum, mulai dari selector hierarkis, tata letak multi-kolom, styling gambar responsif, hingga implementasi menu dropdown interaktif.
-                    </p>
-                </div>
             </section>
+
         </main>
 
         <!-- Footer -->
         <footer id="footer">
-            <div class="footer-content">
-                <div class="footer-brand"><i class="fa-solid fa-heart" style="color: #ff80ab;"></i> NAYLA AZZAHRA R</div>
-                <p class="footer-text">Portofolio Praktikum Pemrograman Web &copy; 2025 | Teknik Komputer</p>
+            <p>&copy; 2025 Nayla Azzahra R | Mahasiswi Teknik Komputer (Kelas C)</p>
+            <p style="font-size: 12px; color: #fbcfe8;">
+                Praktikum Pemrograman Web - Menerapkan Seluruh Konsep CSS.
+            </p>
+            <div style="margin-top: 8px;">
+                <a href="index.html">Home</a> &bull;
+                <a href="about.html">Biodata</a> &bull;
+                <a href="contact.html">Kontak</a> &bull;
+                <a href="https://github.com/naylaazzahrah358-beep" target="_blank">GitHub</a>
             </div>
         </footer>
+
     </div>
 
 </body>
