@@ -9,12 +9,12 @@ Selamat datang di repositori portofolio resmi **Nayla Azzahra R**, mahasiswi **T
 ## 📌 Profil Singkat
 - **Nama Lengkap**: Nayla Azzahra R
 - **Program Studi**: Teknik Komputer (Kelas C 2025)
-- **Fokus Keilmuan**: Web Development (HTML5 & CSS3), UI/UX Design, Jaringan Komputer
-- **Hobi & Minat Bakat**: Seni Tari Tradisional Nusantara (Tari Kipas, Busana Adat, Tari Kelompok & Solo)
+- **Fokus Minat**: Web Design, Jaringan Komputer & IoT
+- **Hobi**: Seni Tari Tradisional Nusantara (Tari Kipas, Busana Adat, Tari Kelompok & Solo)
 
 ---
 
-## 🎭 Minat, Bakat & Hobi: Seni Tari Tradisional
+## 🎭 Hobi: Seni Tari Tradisional
 Seni tari merupakan wadah ekspresi seni, pelestarian warisan budaya bangsa, serta pembentukan kedisiplinan dan keanggunan. Portofolio ini menampilkan dokumentasi pementasan seni tari:
 1. **Tari Busana Emas & Oranye** – Tarian tradisional bermahkota adat khas Nusantara.
 2. **Tari Kebaya Putih & Batik** – Perpaduan anggun busana kebaya modern dan kain batik emas.
