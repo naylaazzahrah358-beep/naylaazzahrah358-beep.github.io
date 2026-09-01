@@ -130,7 +130,8 @@ naylaazzahrah358-beep.github.io/
 
 ## 📬 Kontak & Komunikasi
 
-- **GitHub**: [@naylaazzahrah358-beep](https://github.com/naylaazzahrah358-beep)
-- **Email**: [naylaazzahrah358@gmail.com](mailto:naylaazzahrah358@gmail.com)
+- **Instagram**: [@nylazhrh9_](https://instagram.com/nylazhrh9_)
 - **WhatsApp**: 085705952172
+- **Email**: [naylaazzahrah358@gmail.com](mailto:naylaazzahrah358@gmail.com)
+- **GitHub**: [@naylaazzahrah358-beep](https://github.com/naylaazzahrah358-beep)
 - **Website Live**: [https://naylaazzahrah358-beep.github.io](https://naylaazzahrah358-beep.github.io)
