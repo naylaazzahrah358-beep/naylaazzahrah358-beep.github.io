@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id" class="opening-active">
+<html lang="id" class="scroll-locked opening-active">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
         }
     </style>
 </head>
-<body class="opening-active">
+<body class="scroll-locked opening-active">
 
     <!-- ============================================================
          OPENING / WELCOME SPLASH SCREEN (Interaktif Pink Aesthetic)
@@ -194,6 +194,14 @@
                     </div>
                     <div class="card-link-text">Buka Slide 4 <i class="fa-solid fa-arrow-right"></i></div>
                 </a>
+            </div>
+
+            <!-- Petunjuk Interaktif: Klik Slide atau Pilihan Menu untuk Membuka Portofolio -->
+            <div style="text-align: center; margin-top: 15px;">
+                <div class="scroll-lock-indicator">
+                    <i class="fa-solid fa-hand-pointer fa-bounce"></i>
+                    <span>Silakan <strong>klik salah satu Slide atau Menu Pilihan di atas</strong> untuk membuka isi portofolio</span>
+                </div>
             </div>
         </section>
 
@@ -617,52 +625,85 @@
     </div>
 
     <!-- ============================================================
-         JAVASCRIPT CONTROLLER: OPENING SCREEN & INTERACTIVE ANIMATIONS
+         JAVASCRIPT CONTROLLER: OPENING SCREEN & SLIDE SCROLL LOCK
          ============================================================ -->
     <script>
+        let isScrollLocked = true;
+
         function enterPortfolio() {
             const opening = document.getElementById('welcome-opening-screen');
             if (opening) {
                 opening.classList.add('hidden');
-                document.documentElement.classList.remove('opening-active');
-                document.body.classList.remove('opening-active');
-                document.documentElement.style.overflow = '';
-                document.body.style.overflow = '';
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function unlockScrollAndNavigate(targetSelector) {
+            isScrollLocked = false;
+            document.documentElement.classList.remove('scroll-locked', 'opening-active');
+            document.body.classList.remove('scroll-locked', 'opening-active');
+            document.documentElement.style.overflow = '';
+            document.body.style.overflow = '';
+
+            const opening = document.getElementById('welcome-opening-screen');
+            if (opening) opening.classList.add('hidden');
+
+            const indicator = document.querySelector('.scroll-lock-indicator');
+            if (indicator) indicator.style.display = 'none';
+
+            if (targetSelector && targetSelector !== '#beranda' && targetSelector !== '#') {
+                const targetElem = document.querySelector(targetSelector);
+                if (targetElem) {
+                    setTimeout(() => {
+                        targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        targetElem.style.animation = 'none';
+                        targetElem.offsetHeight; // trigger reflow
+                        targetElem.style.animation = 'sectionOpenPulse 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+                    }, 50);
+                }
             }
         }
 
-        // Lock scroll & touch drag while opening screen is visible
+        // Lock scroll until user clicks a choice or slide
         window.addEventListener('DOMContentLoaded', function() {
-            const opening = document.getElementById('welcome-opening-screen');
-            if (opening) {
-                const preventScroll = function(e) {
-                    if (!opening.classList.contains('hidden')) {
-                        e.preventDefault();
+            const preventLockedScroll = function(e) {
+                if (isScrollLocked) {
+                    e.preventDefault();
+                    // Gently shake indicator to remind user to click
+                    const indicator = document.querySelector('.scroll-lock-indicator');
+                    if (indicator) {
+                        indicator.style.animation = 'none';
+                        indicator.offsetHeight;
+                        indicator.style.animation = 'pulseLockNotice 0.6s ease-in-out 2';
                     }
-                };
-                window.addEventListener('wheel', preventScroll, { passive: false });
-                window.addEventListener('touchmove', preventScroll, { passive: false });
-            }
-        });
-
-        // Allow pressing Enter key to enter
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter') {
-                const opening = document.getElementById('welcome-opening-screen');
-                if (opening && !opening.classList.contains('hidden')) {
-                    enterPortfolio();
                 }
-            }
-        });
+            };
 
-        // Interactive Click Ripple & Section Highlight Animation
-        document.addEventListener('DOMContentLoaded', function() {
-            // Ripple effect on buttons and slide cards
-            const clickableItems = document.querySelectorAll('.btn-enter-portfolio, .beranda-slide-card, .btn-card-action, #menu a');
+            window.addEventListener('wheel', preventLockedScroll, { passive: false });
+            window.addEventListener('touchmove', preventLockedScroll, { passive: false });
             
-            clickableItems.forEach(item => {
+            window.addEventListener('keydown', function(e) {
+                if (isScrollLocked && ['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Space'].includes(e.code)) {
+                    e.preventDefault();
+                }
+                if (e.key === 'Enter') {
+                    const opening = document.getElementById('welcome-opening-screen');
+                    if (opening && !opening.classList.contains('hidden')) {
+                        enterPortfolio();
+                    }
+                }
+            });
+
+            // Handle clicking ANY slide card, navigation link, or action button
+            const interactiveChoices = document.querySelectorAll(
+                '.beranda-intro-card, #menu a, .hero-actions a, .vertical-nav a, .hero-pills-container a, .btn-pink, .btn-outline-pink'
+            );
+            
+            interactiveChoices.forEach(item => {
                 item.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    
+                    // Ripple effect
                     const rect = this.getBoundingClientRect();
                     const ripple = document.createElement('span');
                     ripple.className = 'ripple-circle';
@@ -673,15 +714,14 @@
                     this.appendChild(ripple);
                     setTimeout(() => ripple.remove(), 600);
 
-                    // If it's an internal link (#...), trigger section highlight animation
-                    const href = this.getAttribute('href');
-                    if (href && href.startsWith('#') && href.length > 1) {
-                        const targetElem = document.querySelector(href);
-                        if (targetElem) {
-                            targetElem.style.animation = 'none';
-                            targetElem.offsetHeight; // trigger reflow
-                            targetElem.style.animation = 'sectionOpenPulse 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards';
-                        }
+                    // Unlock scroll and navigate
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        unlockScrollAndNavigate(href);
+                    } else if (href) {
+                        isScrollLocked = false;
+                        document.documentElement.classList.remove('scroll-locked');
+                        document.body.classList.remove('scroll-locked');
                     }
                 });
             });

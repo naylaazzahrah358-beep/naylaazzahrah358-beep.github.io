@@ -1531,14 +1531,37 @@ hr {
 }
 
 /* --------------------------------------------------------------------------
-   OPENING / WELCOME SPLASH SCREEN (Interaktif Pink Aesthetic)
+   OPENING & SLIDE SCROLL LOCK (Terkunci Sebelum Pengguna Memilih Slide)
    -------------------------------------------------------------------------- */
 html.opening-active,
-body.opening-active {
+body.opening-active,
+html.scroll-locked,
+body.scroll-locked {
     overflow: hidden !important;
     height: 100vh !important;
     max-height: 100vh !important;
     touch-action: none !important;
+}
+
+.scroll-lock-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #fff0f6, #ffd1dc);
+    color: #ad1457;
+    border: 1.5px dashed #ff2d75;
+    padding: 8px 22px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 16px auto 0 auto;
+    box-shadow: 0 4px 15px rgba(255, 45, 117, 0.12);
+    animation: pulseLockNotice 2s infinite ease-in-out;
+}
+
+@keyframes pulseLockNotice {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); border-color: #c2185b; box-shadow: 0 6px 20px rgba(255, 45, 117, 0.25); }
 }
 
 .opening-overlay {
