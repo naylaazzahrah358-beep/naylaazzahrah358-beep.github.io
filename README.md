@@ -34,6 +34,22 @@
 
 ---
 
+## 💻 Proyek Aplikasi: mencraft.id
+
+<div align="center">
+    <img src="mencraft-logo.jpg" alt="Logo MenCraft.id" width="320" style="border-radius: 12px; border: 2px solid #3f3f46; box-shadow: 0 8px 24px rgba(0,0,0,0.5);">
+</div>
+
+> **mencraft.id** adalah aplikasi sederhana untuk mempermudah pemesanan bucket. Saya membuatnya menggunakan **Python** sebagai salah satu proyek untuk belajar membuat aplikasi.
+
+### ✨ Fitur Utama mencraft.id:
+1. **Pilih Bucket**: Memilih jenis bucket yang tersedia beserta harga melalui menu pilihan.
+2. **Tambah Pesanan**: Menambahkan bucket ke daftar pesanan dan menentukan jumlah yang ingin dipesan.
+3. **Kelola Pesanan**: Mengubah atau menghapus pesanan yang sudah dimasukkan ke dalam daftar.
+4. **Checkout**: Menyelesaikan transaksi dan menyimpan riwayat pesanan ke dalam file JSON.
+
+---
+
 ## 👥 Pengalaman Organisasi Mahasiswa
 
 Aktif mengembangkan kapasitas diri, kepemimpinan, daya nalar ilmiah, serta memperluas relasi melalui keikutsertaan dalam organisasi kemahasiswaan:
@@ -106,6 +122,7 @@ naylaazzahrah358-beep.github.io/
 ├── foto-tari-2.jpg       # Dokumentasi Tari Kebaya Putih & Batik
 ├── foto-tari-3.jpg       # Dokumentasi Pementasan Tari Kipas Kelompok
 ├── foto-tari-4.jpg       # Dokumentasi Tari Kipas Merah Emas
+├── mencraft-logo.jpg     # Logo Proyek Aplikasi MenCraft.id
 └── README.md             # Dokumentasi visual resmi repositori
 ```
 
