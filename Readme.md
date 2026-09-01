@@ -47,7 +47,6 @@ Website ini mengimplementasikan konsep praktikum secara lengkap:
 ├── contact.html          # Halaman formulir kontak & saluran komunikasi
 ├── style.css             # Stylesheet utama (Pink Aesthetic & CSS Modul 3-6)
 ├── foto-profil.jpg       # Foto profil utama
-├── foto-kelas-2025.jpg   # Foto dokumentasi angkatan Teknik Komputer C 2025
 ├── foto-tari-1.jpg       # Dokumentasi Tari Tradisional Busana Emas
 ├── foto-tari-2.jpg       # Dokumentasi Tari Kebaya Putih & Batik
 ├── foto-tari-3.jpg       # Dokumentasi Pementasan Tari Kipas Kelompok

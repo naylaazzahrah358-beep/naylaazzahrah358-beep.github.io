@@ -63,53 +63,110 @@
         </nav>
 
         <!-- ============================================================
-             HERO BANNER & PROFIL (Modul 4: Pengaturan Gambar & Hover)
+             BERANDA UTAMA (Welcome Cover & Navigasi Slide Portofolio)
              ============================================================ -->
-        <section class="hero-banner">
-            <div class="hero-photo-box">
-                <!-- Modul 4: Pengaturan Gambar (Border, Dimensi, Hover Transparansi) -->
-                <img src="foto-profil.jpg" alt="Foto Nayla Azzahra R" class="profile-photo">
-            </div>
+        <section class="beranda-hero-section" id="beranda">
+            <div class="beranda-hero-top">
+                <div class="hero-photo-box">
+                    <!-- Modul 4: Pengaturan Gambar Profil -->
+                    <img src="foto-profil.jpg" alt="Foto Nayla Azzahra R" class="profile-photo">
+                </div>
 
-            <div class="hero-text">
-                <span class="badge-tag"><i class="fa-solid fa-sparkles"></i> Welcome to My Official Portfolio</span>
-                <h2 class="hero-title">
-                    Halo, Saya <span>Nayla Azzahra R</span>
-                </h2>
-                <p class="hero-desc">
-                    Saya adalah mahasiswi <strong>Teknik Komputer</strong> dengan fokus minat pada <strong>Web Design, Jaringan Komputer & IoT</strong>, serta memiliki kegemaran pada <strong>Seni Tari Tradisional Nusantara</strong>. Website ini dirancang dengan tema <em>Pink Aesthetic</em> yang menerapkan seluruh kaidah CSS dari Modul Praktikum Pemrograman Web.
-                </p>
-                <div class="hero-actions">
-                    <a href="#about-overview" class="btn-pink">
-                        <i class="fa-solid fa-arrow-down"></i> Eksplorasi Profil
-                    </a>
-                    <a href="#focus-area" class="btn-outline-pink">
-                        <i class="fa-solid fa-layer-group"></i> Fokus Minat
-                    </a>
-                    <a href="#hobby-section" class="btn-outline-pink">
-                        <i class="fa-solid fa-masks-theater"></i> Hobi Menari
-                    </a>
-                    <a href="contact.html" class="btn-outline-pink">
-                        <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
-                    </a>
+                <div class="hero-text">
+                    <span class="badge-tag"><i class="fa-solid fa-sparkles"></i> Welcome to My Official Portfolio</span>
+                    <h2 class="hero-title">
+                        Halo, Saya <span>Nayla Azzahra R</span>
+                    </h2>
+                    <p class="hero-desc">
+                        Selamat datang di Beranda Portofolio Digital saya. Saya adalah mahasiswi <strong>Teknik Komputer</strong> dengan fokus minat pada <strong>Web Design, Jaringan Komputer & IoT</strong>, serta aktif melestarikan <strong>Seni Tari Tradisional Nusantara</strong>. Silakan jelajahi slide-slide portofolio di bawah untuk melihat rincian profil, pencapaian, dan karya saya.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#about-overview" class="btn-pink">
+                            <i class="fa-solid fa-circle-arrow-down"></i> Masuk ke Slide Portofolio
+                        </a>
+                        <a href="#focus-area" class="btn-outline-pink">
+                            <i class="fa-solid fa-layer-group"></i> Fokus Minat
+                        </a>
+                        <a href="#roadmap-section" class="btn-outline-pink">
+                            <i class="fa-solid fa-chart-line"></i> Target 2-3 Tahun
+                        </a>
+                        <a href="#hobby-section" class="btn-outline-pink">
+                            <i class="fa-solid fa-masks-theater"></i> Hobi Menari
+                        </a>
+                        <a href="contact.html" class="btn-outline-pink">
+                            <i class="fa-solid fa-paper-plane"></i> Kontak
+                        </a>
 
-                    <!-- Modul 6: Aligned Dropdown Content (Right-aligned quick menu) -->
-                    <div class="dropdown" style="float: right;">
-                        <button class="dropbtn">
-                            <i class="fa-solid fa-bars"></i> Menu Cepat &#9662;
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="about.html"><i class="fa-solid fa-id-card"></i> Profil Lengkap</a>
-                            <a href="#skills-section"><i class="fa-solid fa-chart-simple"></i> Tingkat Keahlian</a>
-                            <a href="#focus-area"><i class="fa-solid fa-layer-group"></i> Fokus Minat</a>
-                            <a href="#hobby-section"><i class="fa-solid fa-masks-theater"></i> Hobi Seni Tari</a>
-                            <a href="#gallery-section"><i class="fa-solid fa-camera"></i> Galeri Foto</a>
-                            <a href="contact.html"><i class="fa-solid fa-comment-dots"></i> Kirim Pesan</a>
+                        <!-- Modul 6: Aligned Dropdown Content (Right-aligned quick menu) -->
+                        <div class="dropdown" style="float: right;">
+                            <button class="dropbtn">
+                                <i class="fa-solid fa-bars"></i> Menu Cepat &#9662;
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#beranda"><i class="fa-solid fa-house"></i> Beranda Utama</a>
+                                <a href="about.html"><i class="fa-solid fa-id-card"></i> Profil Lengkap</a>
+                                <a href="#roadmap-section"><i class="fa-solid fa-chart-line"></i> Target 2-3 Tahun</a>
+                                <a href="#focus-area"><i class="fa-solid fa-layer-group"></i> Fokus Minat</a>
+                                <a href="#skills-section"><i class="fa-solid fa-chart-simple"></i> Tingkat Keahlian</a>
+                                <a href="#hobby-section"><i class="fa-solid fa-masks-theater"></i> Hobi Seni Tari</a>
+                                <a href="#gallery-section"><i class="fa-solid fa-camera"></i> Galeri Foto</a>
+                                <a href="contact.html"><i class="fa-solid fa-comment-dots"></i> Kirim Pesan</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- 4 Kartu Pengantar Slide Portofolio di Beranda -->
+            <div class="beranda-intro-grid">
+                <!-- Slide 1 Card -->
+                <a href="#about-overview" class="beranda-intro-card">
+                    <div>
+                        <div class="card-icon"><i class="fa-solid fa-address-card"></i></div>
+                        <h4>Slide 1: Profil & Biodata</h4>
+                        <p>Biodata singkat, latar belakang mahasiswi Teknik Komputer C 2025, dan komitmen akademik.</p>
+                    </div>
+                    <div class="card-link-text">Buka Slide 1 <i class="fa-solid fa-arrow-right"></i></div>
+                </a>
+
+                <!-- Slide 2 Card -->
+                <a href="#roadmap-section" class="beranda-intro-card">
+                    <div>
+                        <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4>Slide 2: Target 2–3 Tahun</h4>
+                        <p>Peta rencana strategis: Fase 1 Skill Building, Fase 2 Proyek & Kompetisi, Fase 3 Magang & Tugas Akhir.</p>
+                    </div>
+                    <div class="card-link-text">Buka Slide 2 <i class="fa-solid fa-arrow-right"></i></div>
+                </a>
+
+                <!-- Slide 3 Card -->
+                <a href="#focus-area" class="beranda-intro-card">
+                    <div>
+                        <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h4>Slide 3: 3 Fokus Minat</h4>
+                        <p>Eksplorasi keilmuan pada Web Design, Jaringan Komputer, dan Internet of Things (IoT).</p>
+                    </div>
+                    <div class="card-link-text">Buka Slide 3 <i class="fa-solid fa-arrow-right"></i></div>
+                </a>
+
+                <!-- Slide 4 Card -->
+                <a href="#hobby-section" class="beranda-intro-card">
+                    <div>
+                        <div class="card-icon"><i class="fa-solid fa-masks-theater"></i></div>
+                        <h4>Slide 4: Hobi Seni Tari</h4>
+                        <p>Galeri dokumentasi pementasan seni tari adat nusantara, tari kipas, dan keanggunan gerak.</p>
+                    </div>
+                    <div class="card-link-text">Buka Slide 4 <i class="fa-solid fa-arrow-right"></i></div>
+                </a>
+            </div>
         </section>
+
+        <!-- BANNER TRANSISI MENUJU SLIDE DETAIL -->
+        <div class="slide-transition-banner">
+            <i class="fa-solid fa-angles-down fa-bounce"></i>
+            <span><strong>SLIDE PORTOFOLIO LENGKAP DIMULAI DI BAWAH INI</strong></span>
+            <i class="fa-solid fa-angles-down fa-bounce"></i>
+        </div>
 
         <!-- ============================================================
              MODUL 5: STRUKTUR LAYOUT 2 KOLOM (#leftcolumn & #rightcolumn)
@@ -539,18 +596,7 @@
                 </div>
             </div>
 
-            <!-- Showcase Foto Dokumentasi Kelas Ukuran Sedang -->
-            <div class="featured-image-box">
-                <h4 class="sublines" style="font-size: 16px; margin-bottom: 8px;">
-                    <i class="fa-solid fa-users-viewfinder"></i> Foto Dokumentasi Angkatan (Teknik Komputer C 2025)
-                </h4>
-                <p class="infotext" style="margin-bottom: 15px;">
-                    Penerapan CSS Image ukuran sedang: <code>max-width: 520px; border: 4px solid #ff4081; box-shadow & hover opacity;</code>
-                </p>
-                <img src="foto-kelas-2025.jpg?v=1" alt="Foto Angkatan Teknik Komputer C 2025" class="img-medium-showcase">
-            </div>
-
-            <!-- Grid 4 Konsep Gambar Modul 4 -->
+            <!-- Grid 4 Konsep Gambar Modul 4 (Menggunakan Dokumentasi Seni Tari) -->
             <h4 class="sublines" style="margin-top: 25px; margin-bottom: 10px; font-size: 16px;">
                 <i class="fa-solid fa-sliders"></i> Penerapan 4 Properti Gambar Modul 4:
             </h4>
