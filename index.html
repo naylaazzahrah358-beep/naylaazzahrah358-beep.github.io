@@ -27,6 +27,41 @@
 <body>
 
     <!-- ============================================================
+         OPENING / WELCOME SPLASH SCREEN (Interaktif Pink Aesthetic)
+         ============================================================ -->
+    <div id="welcome-opening-screen" class="opening-overlay">
+        <div class="opening-card-container">
+            <div class="opening-welcome-badge">
+                <i class="fa-solid fa-sparkles"></i> Welcome to Official Portfolio
+            </div>
+
+            <div class="opening-avatar-wrapper">
+                <div class="opening-avatar-ring"></div>
+                <img src="foto-profil.jpg" alt="Foto Profil Nayla Azzahra R" class="opening-avatar-img">
+            </div>
+
+            <h1 class="opening-title">Nayla Azzahra R</h1>
+            <p class="opening-subtitle">Mahasiswi Teknik Komputer &bull; Kelas C Angkatan 2025</p>
+
+            <p class="opening-tagline">
+                "Eksplorasi Rekayasa Teknologi Web, Pengalaman Organisasi Mahasiswa, dan Pelestarian Seni Tari Tradisional Nusantara."
+            </p>
+
+            <div class="opening-pills-row">
+                <span class="opening-pill-item"><i class="fa-solid fa-code"></i> Web Design</span>
+                <span class="opening-pill-item"><i class="fa-solid fa-network-wired"></i> Jaringan Komputer</span>
+                <span class="opening-pill-item"><i class="fa-solid fa-microchip"></i> IoT</span>
+                <span class="opening-pill-item"><i class="fa-solid fa-masks-theater"></i> Seni Tari</span>
+            </div>
+
+            <button type="button" class="btn-enter-portfolio" onclick="enterPortfolio()">
+                <span>Masuk ke Portofolio</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ============================================================
          MODUL 5: STRUKTUR LAYOUT UTAMA (#wrapper)
          ============================================================ -->
     <div id="wrapper">
@@ -762,6 +797,29 @@
         </footer>
 
     </div>
+
+    <!-- ============================================================
+         JAVASCRIPT CONTROLLER: OPENING SCREEN
+         ============================================================ -->
+    <script>
+        function enterPortfolio() {
+            const opening = document.getElementById('welcome-opening-screen');
+            if (opening) {
+                opening.classList.add('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // Allow pressing Enter key to enter
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                const opening = document.getElementById('welcome-opening-screen');
+                if (opening && !opening.classList.contains('hidden')) {
+                    enterPortfolio();
+                }
+            }
+        });
+    </script>
 
 </body>
 </html>
