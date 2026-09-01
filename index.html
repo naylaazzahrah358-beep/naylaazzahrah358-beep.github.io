@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="opening-active">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
         }
     </style>
 </head>
-<body>
+<body class="opening-active">
 
     <!-- ============================================================
          OPENING / WELCOME SPLASH SCREEN (Interaktif Pink Aesthetic)
@@ -624,9 +624,27 @@
             const opening = document.getElementById('welcome-opening-screen');
             if (opening) {
                 opening.classList.add('hidden');
+                document.documentElement.classList.remove('opening-active');
+                document.body.classList.remove('opening-active');
+                document.documentElement.style.overflow = '';
+                document.body.style.overflow = '';
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         }
+
+        // Lock scroll & touch drag while opening screen is visible
+        window.addEventListener('DOMContentLoaded', function() {
+            const opening = document.getElementById('welcome-opening-screen');
+            if (opening) {
+                const preventScroll = function(e) {
+                    if (!opening.classList.contains('hidden')) {
+                        e.preventDefault();
+                    }
+                };
+                window.addEventListener('wheel', preventScroll, { passive: false });
+                window.addEventListener('touchmove', preventScroll, { passive: false });
+            }
+        });
 
         // Allow pressing Enter key to enter
         document.addEventListener('keydown', function(e) {

@@ -1533,6 +1533,14 @@ hr {
 /* --------------------------------------------------------------------------
    OPENING / WELCOME SPLASH SCREEN (Interaktif Pink Aesthetic)
    -------------------------------------------------------------------------- */
+html.opening-active,
+body.opening-active {
+    overflow: hidden !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    touch-action: none !important;
+}
+
 .opening-overlay {
     position: fixed;
     top: 0;
