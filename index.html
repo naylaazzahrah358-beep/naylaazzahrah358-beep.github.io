@@ -213,86 +213,72 @@
         </div>
 
         <!-- ============================================================
-             MODUL 5: STRUKTUR LAYOUT 2 KOLOM (#leftcolumn & #rightcolumn)
+             SLIDE DETAIL: KONTEN LENGKAP BERSATU KE BAWAH
              ============================================================ -->
-        <section class="main-content-layout" id="about-overview">
+        <main class="main-content-layout" id="slide-content-container">
             
-            <!-- KOLOM KIRI: BIODATA SINGKAT & NAVIGASI VERTIKAL -->
-            <aside id="leftcolumn">
-                <h3 class="headlines"><i class="fa-solid fa-address-card"></i> Biodata Singkat</h3>
+            <!-- KARTU 1: SLIDE 1 - BIODATA LENGKAP & MENGENAI DIRI SAYA -->
+            <div class="card-box" id="about-overview">
+                <h3 class="headlines"><i class="fa-solid fa-address-card"></i> Slide 1: Biodata & Profil Lengkap</h3>
                 
-                <!-- Modul 3: Selector Tag Table -->
-                <table class="table-biodata">
-                    <tr>
-                        <td class="label">Nama:</td>
-                        <td><strong>Nayla Azzahra R</strong></td>
-                    </tr>
-                    <tr>
-                        <td class="label">Prodi:</td>
-                        <td>Teknik Komputer</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Kelas:</td>
-                        <td>Tekom C 2025</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Fokus Minat:</td>
-                        <td><strong>Web Design, Jaringan & IoT</strong></td>
-                    </tr>
-                    <tr>
-                        <td class="label">Hobi:</td>
-                        <td><strong>Seni Tari Tradisional</strong></td>
-                    </tr>
-                    <tr>
-                        <td class="label">Organisasi:</td>
-                        <td>LPM Penalaran UNM & JTIK (Nexus 2025)</td>
-                    </tr>
-                </table>
+                <div class="biodata-unified-grid">
+                    <!-- Sisi Kiri: Tabel Data Singkat & Status -->
+                    <div class="biodata-unified-left">
+                        <table class="table-biodata">
+                            <tr>
+                                <td class="label">Nama:</td>
+                                <td><strong>Nayla Azzahra R</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="label">Prodi:</td>
+                                <td>Teknik Komputer</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Kelas:</td>
+                                <td>Tekom C 2025 (FT-UNM)</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Fokus Minat:</td>
+                                <td><strong>Web Design, Jaringan & IoT</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="label">Hobi:</td>
+                                <td><strong>Seni Tari Tradisional Nusantara</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="label">Organisasi:</td>
+                                <td>LPM Penalaran UNM & JTIK (Nexus 2025)</td>
+                            </tr>
+                        </table>
 
-                <hr>
+                        <div style="background-color: #ffe4ec; border-left: 4px solid #ff2d75; padding: 10px 14px; border-radius: 6px; font-size: 12.5px; margin-top: 14px;">
+                            <i class="fa-solid fa-circle-check" style="color: #ff2d75;"></i>
+                            <span class="infotext" style="font-weight: bold; color: #880e4f;"> Status Mahasiswi:</span>
+                            <span style="font-size: 12px; color: #4a3b42;"> Mahasiswi Aktif Angkatan 2025 &bull; FT Universitas Negeri Makassar</span>
+                        </div>
+                    </div>
 
-                <!-- Modul 5: Navigasi Vertikal -->
-                <h4 class="sublines" style="text-transform: uppercase; margin-bottom: 8px;">
-                    <i class="fa-solid fa-compass"></i> Navigasi Pintas
-                </h4>
-                <ul class="vertical-nav">
-                    <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> Profil & Visi</a></li>
-                    <li><a href="#roadmap-section"><i class="fa-solid fa-angle-right"></i> Target 2-3 Tahun</a></li>
-                    <li><a href="#hobby-section"><i class="fa-solid fa-angle-right"></i> Hobi Seni Tari</a></li>
-                    <li><a href="#org-section"><i class="fa-solid fa-angle-right"></i> Pengalaman Organisasi</a></li>
-                    <li><a href="#focus-area"><i class="fa-solid fa-angle-right"></i> 3 Fokus Minat</a></li>
-                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Formulir Kontak</a></li>
-                </ul>
-
-                <!-- Modul 3: Inline CSS Demonstration -->
-                <div style="background-color: #ffe4ec; border-left: 4px solid #ff2d75; padding: 12px; border-radius: 6px; font-size: 12.5px;">
-                    <i class="fa-solid fa-circle-info" style="color: #ff2d75;"></i>
-                    <span class="infotext" style="font-weight: bold; color: #880e4f;"> Status Mahasiswi:</span>
-                    <p style="margin: 4px 0 0 0; font-size: 12px; color: #4a3b42;">
-                        Mahasiswi Aktif Angkatan 2025 - Aktif Organisasi & Minat pada Web, Jaringan, IoT & Seni.
-                    </p>
+                    <!-- Sisi Kanan: Narasi Mengenai Diri Saya -->
+                    <div class="biodata-unified-right">
+                        <h4 class="sublines" style="margin-top: 0; font-size: 15px;">
+                            <i class="fa-solid fa-graduation-cap"></i> Mengenai Diri Saya
+                        </h4>
+                        <p class="infotext">
+                            Selamat datang di portofolio resmi saya. Sebagai mahasiswi <strong>Teknik Komputer</strong> di Fakultas Teknik Universitas Negeri Makassar, saya berfokus mendalami integrasi teknologi komputasi, mulai dari perancangan antarmuka web yang estetis, penataan layout yang terstruktur, hingga konfigurasi sistem dan jaringan komputer.
+                        </p>
+                        <p class="infotext" style="margin-bottom: 0;">
+                            Dengan perpaduan pemikiran logis dalam rekayasa teknologi dan jiwa artistik yang terasah melalui seni tari tradisional, saya senantiasa bersemangat menciptakan karya digital yang rapi, bermakna, dan berkarakter.
+                        </p>
+                    </div>
                 </div>
-            </aside>
+            </div>
 
-            <!-- KOLOM KANAN: PENGENALAN & KEAHLIAN UTAMA -->
-            <div id="rightcolumn">
-                
-                <div class="card-box">
-                    <h3 class="headlines"><i class="fa-solid fa-graduation-cap"></i> Mengenai Diri Saya</h3>
-                    <p class="infotext">
-                        Selamat datang di portofolio resmi saya. Sebagai mahasiswi <strong>Teknik Komputer</strong>, saya berfokus mendalami integrasi teknologi komputasi, mulai dari perancangan antarmuka web yang estetis, penataan layout yang terstruktur, hingga konfigurasi sistem dan jaringan komputer.
-                    </p>
-                    <p class="infotext">
-                        Dengan perpaduan pemikiran logis dalam rekayasa teknologi dan jiwa artistik yang terasah melalui seni tari tradisional, saya senantiasa bersemangat menciptakan karya digital yang rapi, bermakna, dan berkarakter.
-                    </p>
-                </div>
-
-                <!-- SECTION: TARGET 2-3 TAHUN KEDEPAN -->
-                <div class="card-box" id="roadmap-section">
-                    <h3 class="headlines"><i class="fa-solid fa-chart-line"></i> Target & Peta Rencana 2-3 Tahun Kedepan</h3>
-                    <p class="infotext">
-                        Target strategis pengembangan keilmuan, karya nyata, dan kesiapan karier profesional di bidang Teknik Komputer:
-                    </p>
+            <!-- SECTION: TARGET 2-3 TAHUN KEDEPAN -->
+            <div class="card-box" id="roadmap-section">
+                <h3 class="headlines"><i class="fa-solid fa-chart-line"></i> Target & Peta Rencana 2-3 Tahun Kedepan</h3>
+                <p class="infotext">
+                    Target strategis pengembangan keilmuan, karya nyata, dan kesiapan karier profesional di bidang Teknik Komputer:
+                </p>
 
                     <div class="roadmap-container">
                         <!-- Fase 1 -->
@@ -561,9 +547,7 @@
                     </div>
                 </div>
 
-            </div>
-
-        </section>
+        </main>
 
         <!-- ============================================================
              MODUL 5: STRUKTUR LAYOUT 3 KOLOM (#sidebar-kiri, #sidebar-tengah-atau-badan, #sidebar-kanan)
