@@ -1133,6 +1133,126 @@ hr {
 }
 
 /* --------------------------------------------------------------------------
+   PENGALAMAN ORGANISASI MAHASISWA
+   -------------------------------------------------------------------------- */
+.org-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.org-card {
+    background: #ffffff;
+    border: 1.5px solid #ffd1dc;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(255, 45, 117, 0.06);
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.org-card:hover {
+    transform: translateY(-4px);
+    border-color: #ff2d75;
+    box-shadow: 0 10px 25px rgba(255, 45, 117, 0.16);
+}
+
+.org-card-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .org-card-row {
+        flex-direction: column;
+    }
+}
+
+.org-img-box {
+    flex: 0 0 280px;
+    position: relative;
+    overflow: hidden;
+    background: #2b1d24;
+    min-height: 200px;
+}
+
+.org-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    opacity: 0.95;
+}
+
+.org-card:hover .org-img {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.org-badge-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(135deg, #ff2d75, #c2185b);
+    color: #ffffff;
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+}
+
+.org-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.org-content h4 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #ad1457;
+    margin-bottom: 4px;
+}
+
+.org-content .org-role {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #ff2d75;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.org-content p {
+    font-size: 13px;
+    color: #4a3b42;
+    margin-bottom: 12px;
+    line-height: 1.55;
+}
+
+.org-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.org-tag {
+    background: #ffe4ec;
+    color: #880e4f;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    border: 1px solid #ffd1dc;
+}
+
+/* --------------------------------------------------------------------------
    FORMULIR KONTAK
    -------------------------------------------------------------------------- */
 .form-group {

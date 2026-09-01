@@ -10,7 +10,16 @@ Selamat datang di repositori portofolio resmi **Nayla Azzahra R**, mahasiswi **T
 - **Nama Lengkap**: Nayla Azzahra R
 - **Program Studi**: Teknik Komputer (Kelas C 2025)
 - **Fokus Minat**: Web Design, Jaringan Komputer & IoT
+- **Organisasi**: LPM Penalaran UNM & Anggota Formal JTIK (Nexus 2025)
 - **Hobi**: Seni Tari Tradisional Nusantara (Tari Kipas, Busana Adat, Tari Kelompok & Solo)
+
+---
+
+## 👥 Pengalaman Organisasi Mahasiswa
+Aktif mengembangkan kapasitas diri, kepemimpinan, daya nalar ilmiah, serta memperluas relasi melalui:
+1. **LPM Penalaran UNM** – Lembaga penalaran dan riset ilmiah mahasiswa tingkat Universitas Negeri Makassar.
+2. **Anggota Formal JTIK (Nexus 2025)** – Lembaga kemahasiswaan jurusan Teknik Informatika dan Komputer FT-UNM.
+3. **Pengembangan Karakter & Kepemimpinan** – Pelatihan kepemimpinan dan kebersamaan organisasi luar ruang.
 
 ---
 
@@ -32,6 +41,7 @@ Seni tari merupakan wadah ekspresi seni, pelestarian warisan budaya bangsa, sert
   - *Magang Industri & Penyelesaian Tugas Akhir*: Mengikuti program magang industri bersertifikat di perusahaan dan menyelesaikan tugas akhir Teknik Komputer yang inovatif serta berdampak nyata bagi masyarakat luas.
 
 ---
+
 Website ini mengimplementasikan konsep praktikum secara lengkap:
 - **Modul 3 (CSS Dasar)**: Selector HTML, Selector Class, Selector ID, Grouping Selector, serta CSS Inline, Internal, & Eksternal.
 - **Modul 4 (CSS Image & Background)**: Border gambar, manipulasi lebar & tinggi (Width & Height), background gradient, serta transparansi gambar (Opacity & Hover effect).
@@ -42,11 +52,14 @@ Website ini mengimplementasikan konsep praktikum secara lengkap:
 
 ## 📂 Struktur File Repositori
 ```text
-├── index.html            # Halaman utama (Profil, Keahlian, Minat Tari & Galeri)
-├── about.html            # Halaman biodata lengkap, latar belakang & galeri tari
+├── index.html            # Halaman utama (Beranda, Profil, Keahlian, Minat, Hobi, Organisasi & Galeri)
+├── about.html            # Halaman biodata lengkap, latar belakang, hobi & organisasi
 ├── contact.html          # Halaman formulir kontak & saluran komunikasi
 ├── style.css             # Stylesheet utama (Pink Aesthetic & CSS Modul 3-6)
 ├── foto-profil.jpg       # Foto profil utama
+├── foto-organisasi-1.jpg # Dokumentasi Kegiatan Kepemimpinan Luar Ruang
+├── foto-organisasi-2.jpg # Dokumentasi Pelantikan Riset LPM Penalaran UNM
+├── foto-organisasi-3.jpg # Dokumentasi Temu NEXUS 2025 JTIK FT-UNM
 ├── foto-tari-1.jpg       # Dokumentasi Tari Tradisional Busana Emas
 ├── foto-tari-2.jpg       # Dokumentasi Tari Kebaya Putih & Batik
 ├── foto-tari-3.jpg       # Dokumentasi Pementasan Tari Kipas Kelompok
