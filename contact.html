@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak - Nayla Azzahra R</title>
-    
-    <!-- Modul 3: CSS Eksternal (dengan cache-buster) -->
+    <!-- Modul 3: CSS Eksternal & Icon FontAwesome -->
     <link rel="stylesheet" href="style.css?v=20260901_final" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -20,7 +19,7 @@
             <p>Saluran Komunikasi, Kolaborasi & Informasi Kontak</p>
         </header>
 
-        <!-- Modul 5 & 6: Navigasi Horisontal & Dropdown -->
+        <!-- Modul 5 & 6: Navigasi & Dropdown -->
         <nav id="nav-container">
             <ul id="menu">
                 <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
@@ -40,15 +39,14 @@
         </nav>
 
         <!-- Modul 5: Layout 2 Kolom -->
-        <main class="main-content-layout">
+        <main class="main-content-layout" style="display: flex; flex-direction: row; gap: 24px;">
             
-            <!-- Kolom Kiri: Informasi Kontak Langsung -->
+            <!-- Kolom Kiri: Info Kontak Langsung -->
             <aside id="leftcolumn">
-                <div style="text-align: center; margin-bottom: 20px;">
-                    <img src="foto-profil.jpg" alt="Foto Profil Nayla" class="profile-photo" style="width: 190px; height: 250px;">
+                <div style="text-align: center; margin-bottom: 15px;">
+                    <img src="foto-profil.jpg" alt="Foto Profil Nayla" class="profile-photo" style="width: 170px; height: 230px;">
                 </div>
                 <h3 class="headlines" style="justify-content: center; font-size: 18px;">Informasi Kontak</h3>
-                
                 <table class="table-biodata">
                     <tr>
                         <td class="label"><i class="fa-solid fa-envelope" style="color:#dc2626;"></i> Email:</td>
@@ -63,62 +61,46 @@
                         <td><a href="https://github.com/naylaazzahrah358-beep" target="_blank">naylaazzahrah358-beep</a></td>
                     </tr>
                 </table>
-
                 <hr>
-
                 <h4 class="sublines"><i class="fa-solid fa-clock"></i> Respon Cepat</h4>
-                <p class="infotext">
-                    Silakan hubungi saya melalui email atau pesan WhatsApp untuk pertanyaan seputar perkuliahan dan diskusi praktikum.
-                </p>
+                <p class="infotext">Silakan hubungi saya melalui email atau WhatsApp untuk diskusi akademik dan praktikum.</p>
             </aside>
 
             <!-- Kolom Kanan: Formulir Pesan Interaktif -->
             <section id="rightcolumn">
-                
                 <div class="card-box">
                     <h3 class="headlines"><i class="fa-solid fa-paper-plane"></i> Kirimkan Pesan</h3>
-                    <p class="infotext" style="margin-bottom: 20px;">
-                        Silakan lengkapi formulir di bawah ini untuk mengirimkan pesan atau pertanyaan kepada saya:
-                    </p>
+                    <p class="infotext" style="margin-bottom: 16px;">Silakan lengkapi formulir di bawah ini untuk mengirimkan pesan kepada saya:</p>
 
                     <form action="#" method="POST" onsubmit="alert('Terima kasih! Pesan Anda telah berhasil dikirimkan.'); return false;">
-                        
                         <div class="form-group">
                             <label for="nama"><i class="fa-solid fa-user" style="color:#dc2626;"></i> Nama Lengkap:</label>
                             <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda..." required>
                         </div>
-
                         <div class="form-group">
                             <label for="email"><i class="fa-solid fa-envelope" style="color:#dc2626;"></i> Alamat Email:</label>
                             <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
                         </div>
-
                         <div class="form-group">
                             <label for="subjek"><i class="fa-solid fa-tag" style="color:#dc2626;"></i> Topik / Subjek:</label>
                             <input type="text" id="subjek" name="subjek" placeholder="Masukkan topik pesan..." required>
                         </div>
-
                         <div class="form-group">
                             <label for="pesan"><i class="fa-solid fa-comment-dots" style="color:#dc2626;"></i> Isi Pesan:</label>
-                            <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan Anda secara jelas di sini..." required></textarea>
+                            <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
                         </div>
-
-                        <button type="submit" class="btn-pink" style="border: none; cursor: pointer;">
+                        <button type="submit" class="btn-pink" style="cursor: pointer;">
                             <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Sekarang
                         </button>
                     </form>
                 </div>
-
             </section>
-
         </main>
 
         <!-- Footer -->
         <footer id="footer">
             <p>&copy; 2025 Nayla Azzahra R | Mahasiswi Teknik Komputer (Kelas C)</p>
-            <p style="font-size: 12px; color: #fbcfe8;">
-                Praktikum Pemrograman Web - Implementasi Seluruh Modul CSS.
-            </p>
+            <p style="font-size: 12px; color: #9ca3af;">Praktikum Pemrograman Web - Implementasi Seluruh Modul CSS.</p>
             <div style="margin-top: 8px;">
                 <a href="index.html">Home</a> &bull;
                 <a href="about.html">Biodata</a> &bull;
@@ -128,6 +110,5 @@
         </footer>
 
     </div>
-
 </body>
 </html>

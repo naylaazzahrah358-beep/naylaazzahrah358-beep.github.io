@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata & Profil - Nayla Azzahra R</title>
-    
-    <!-- Modul 3: CSS Eksternal (dengan cache-buster) -->
+    <!-- Modul 3: CSS Eksternal & Icon FontAwesome -->
     <link rel="stylesheet" href="style.css?v=20260901_final" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -20,7 +19,7 @@
             <p>Mengenal Lebih Dekat Nayla Azzahra R | Teknik Komputer 2025</p>
         </header>
 
-        <!-- Modul 5 & 6: Navigasi Horisontal & Dropdown -->
+        <!-- Modul 5 & 6: Navigasi & Dropdown -->
         <nav id="nav-container">
             <ul id="menu">
                 <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
@@ -39,18 +38,16 @@
             </ul>
         </nav>
 
-        <!-- Modul 5: Layout 2 Kolom -->
-        <main class="main-content-layout">
+        <!-- Modul 5: Layout 2 Kolom (Sidebar Kiri & Konten Kanan) -->
+        <main class="main-content-layout" style="display: flex; flex-direction: row; gap: 24px;">
             
-            <!-- Kolom Kiri: Foto Profil & Info -->
+            <!-- Kolom Kiri: Foto Profil & Info Sticky -->
             <aside id="leftcolumn">
-                <div style="text-align: center; margin-bottom: 20px;">
-                    <img src="foto-profil.jpg" alt="Foto Profil Nayla" class="profile-photo" style="width: 200px; height: 260px;">
+                <div style="text-align: center; margin-bottom: 15px;">
+                    <img src="foto-profil.jpg" alt="Foto Profil Nayla" class="profile-photo" style="width: 180px; height: 240px;">
                 </div>
                 <h3 class="headlines" style="justify-content: center; font-size: 18px;">Nayla Azzahra R</h3>
-                <p class="infotext" style="text-align: center; margin-bottom: 15px;">
-                    Mahasiswi Teknik Komputer - Kelas C 2025
-                </p>
+                <p class="infotext" style="text-align: center; margin-bottom: 15px;">Mahasiswi Teknik Komputer - Kelas C 2025</p>
 
                 <h4 class="sublines"><i class="fa-solid fa-link"></i> Menu Pintas</h4>
                 <ul class="vertical-nav">
@@ -63,89 +60,48 @@
                 </ul>
 
                 <hr>
-
                 <div style="background-color: #fee2e2; border-left: 4px solid #dc2626; padding: 12px; border-radius: 6px; font-size: 12.5px;">
                     <i class="fa-solid fa-heart" style="color: #dc2626;"></i>
-                    <span class="infotext" style="font-weight: bold; color: #991b1b;"> Passion & Hobi:</span>
-                    <p style="margin: 4px 0 0 0; font-size: 12px; color: #374151;">
-                        Fokus pada Web Design, Jaringan Komputer, IoT, Organisasi Mahasiswa & Seni Budaya.
-                    </p>
+                    <strong style="color: #991b1b;"> Passion & Hobi:</strong>
+                    <p style="margin: 4px 0 0 0; font-size: 12px; color: #374151;">Fokus pada Web Design, Jaringan Komputer, IoT, Organisasi Mahasiswa & Seni Budaya.</p>
                 </div>
             </aside>
 
             <!-- Kolom Kanan: Detail Biodata & Latar Belakang -->
             <section id="rightcolumn">
                 
+                <!-- BIODATA DETAIL -->
                 <div class="card-box" id="biodata-section">
                     <h3 class="headlines"><i class="fa-solid fa-id-card-clip"></i> Informasi Biodata Lengkap</h3>
-                    
-                    <!-- Modul 3: Tabel Data -->
                     <table class="table-biodata">
-                        <tr>
-                            <td class="label">Nama Lengkap:</td>
-                            <td>Nayla Azzahra R</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Program Studi:</td>
-                            <td>Teknik Komputer</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Kelas / Angkatan:</td>
-                            <td>Kelas C / 2025</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Mata Kuliah:</td>
-                            <td>Praktikum Pemrograman Web</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Fokus Minat:</td>
-                            <td><strong>Web Design, Jaringan Komputer & IoT</strong></td>
-                        </tr>
-                        <tr>
-                            <td class="label">Hobi Utama:</td>
-                            <td><strong>Seni Tari Tradisional Nusantara (Traditional Dance)</strong></td>
-                        </tr>
-                        <tr>
-                            <td class="label">Organisasi:</td>
-                            <td>LPM Penalaran UNM & JTIK (Nexus 2025)</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Platform Koding:</td>
-                            <td>HTML5, CSS3, Visual Studio Code, Git, GitHub Pages</td>
-                        </tr>
+                        <tr><td class="label">Nama Lengkap:</td><td>Nayla Azzahra R</td></tr>
+                        <tr><td class="label">Program Studi:</td><td>Teknik Komputer</td></tr>
+                        <tr><td class="label">Kelas / Angkatan:</td><td>Kelas C / 2025</td></tr>
+                        <tr><td class="label">Mata Kuliah:</td><td>Praktikum Pemrograman Web</td></tr>
+                        <tr><td class="label">Fokus Minat:</td><td><strong>Web Design, Jaringan Komputer & IoT</strong></td></tr>
+                        <tr><td class="label">Hobi Utama:</td><td><strong>Seni Tari Tradisional Nusantara (Traditional Dance)</strong></td></tr>
+                        <tr><td class="label">Organisasi:</td><td>LPM Penalaran UNM & JTIK (Nexus 2025)</td></tr>
+                        <tr><td class="label">Platform Koding:</td><td>HTML5, CSS3, Visual Studio Code, Git, GitHub Pages</td></tr>
                     </table>
                 </div>
 
-                <!-- SECTION: HOBI SENI TARI TRADISIONAL -->
+                <!-- HOBI SENI TARI (FOTO MURNI) -->
                 <div class="card-box" id="hobby-dance">
                     <h3 class="headlines"><i class="fa-solid fa-masks-theater"></i> Hobi: Seni Tari Tradisional</h3>
-
-                    <!-- Galeri Dokumentasi Foto Murni (Tanpa Teks Pengantar) -->
                     <div class="hobby-photo-gallery">
-                        <div class="hobby-photo-item">
-                            <img src="foto-tari-1.jpg" alt="Dokumentasi Tari Tradisional 1" class="hobby-photo-img">
-                        </div>
-                        <div class="hobby-photo-item">
-                            <img src="foto-tari-2.jpg" alt="Dokumentasi Tari Tradisional 2" class="hobby-photo-img">
-                        </div>
-                        <div class="hobby-photo-item">
-                            <img src="foto-tari-3.jpg" alt="Dokumentasi Tari Tradisional 3" class="hobby-photo-img">
-                        </div>
-                        <div class="hobby-photo-item">
-                            <img src="foto-tari-4.jpg" alt="Dokumentasi Tari Tradisional 4" class="hobby-photo-img">
-                        </div>
+                        <div class="hobby-photo-item"><img src="foto-tari-1.jpg" alt="Dokumentasi Tari 1" class="hobby-photo-img"></div>
+                        <div class="hobby-photo-item"><img src="foto-tari-2.jpg" alt="Dokumentasi Tari 2" class="hobby-photo-img"></div>
+                        <div class="hobby-photo-item"><img src="foto-tari-3.jpg" alt="Dokumentasi Tari 3" class="hobby-photo-img"></div>
+                        <div class="hobby-photo-item"><img src="foto-tari-4.jpg" alt="Dokumentasi Tari 4" class="hobby-photo-img"></div>
                     </div>
                 </div>
 
-                <!-- SECTION: PENGALAMAN ORGANISASI MAHASISWA -->
+                <!-- PENGALAMAN ORGANISASI -->
                 <div class="card-box" id="org-section">
                     <h3 class="headlines"><i class="fa-solid fa-users-gear"></i> Pengalaman Organisasi Mahasiswa</h3>
-                    <p class="infotext">
-                        Aktif mengembangkan kapasitas diri, kepemimpinan, daya nalar ilmiah, serta memperluas relasi melalui keikutsertaan aktif dalam beberapa organisasi kemahasiswaan:
-                    </p>
+                    <p class="infotext">Aktif mengembangkan kapasitas diri, kepemimpinan, daya nalar ilmiah, serta memperluas relasi melalui keikutsertaan aktif dalam organisasi kemahasiswaan:</p>
 
                     <div class="org-container">
-                        <!-- Organisasi 1: LPM Penalaran UNM -->
                         <div class="org-card">
                             <div class="org-card-row">
                                 <div class="org-img-box">
@@ -155,21 +111,18 @@
                                 <div class="org-content">
                                     <div>
                                         <h4>LPM Penalaran UNM</h4>
-                                        <span class="org-role"><i class="fa-solid fa-award"></i> Lembaga Penalaran dan Riset Ilmiah Mahasiswa Tingkat Universitas</span>
-                                        <p>
-                                            Lembaga penalaran dan riset ilmiah mahasiswa tingkat Universitas Negeri Makassar. Berperan aktif dalam pengembangan pola pikir kritis, riset akademis, karya tulis ilmiah, dan program penalaran universitas guna mengasah kapasitas intelektual dan kepemimpinan.
-                                        </p>
+                                        <span class="org-role"><i class="fa-solid fa-award"></i> Lembaga Penalaran & Riset Ilmiah Mahasiswa Tingkat Universitas</span>
+                                        <p>Lembaga penalaran dan riset ilmiah mahasiswa tingkat Universitas Negeri Makassar guna mengasah pola pikir kritis, riset akademis, karya tulis ilmiah, dan kepemimpinan.</p>
                                     </div>
                                     <div class="org-tags">
                                         <span class="org-tag"><i class="fa-solid fa-microscope"></i> Riset Ilmiah</span>
                                         <span class="org-tag"><i class="fa-solid fa-brain"></i> Penalaran Kritis</span>
-                                        <span class="org-tag"><i class="fa-solid fa-university"></i> Universitas Negeri Makassar</span>
+                                        <span class="org-tag"><i class="fa-solid fa-university"></i> UNM</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Organisasi 2: Anggota Formal JTIK (Nexus 2025) -->
                         <div class="org-card">
                             <div class="org-card-row">
                                 <div class="org-img-box">
@@ -180,20 +133,17 @@
                                     <div>
                                         <h4>Anggota Formal JTIK (NEXUS 2025)</h4>
                                         <span class="org-role"><i class="fa-solid fa-users"></i> Lembaga Kemahasiswaan Jurusan Teknik Informatika & Komputer FT-UNM</span>
-                                        <p>
-                                            Lembaga kemahasiswaan jurusan Teknik Informatika dan Komputer FT-UNM. Menjadi bagian dari keluarga besar mahasiswa JTIK FT-UNM, aktif memperkuat solidaritas angkatan NEXUS 2025, kolaborasi kegiatan teknologi, dan pembentukan relasi profesional.
-                                        </p>
+                                        <p>Bagian dari keluarga besar mahasiswa JTIK FT-UNM, aktif memperkuat solidaritas angkatan NEXUS 2025, kolaborasi kegiatan teknologi, dan relasi profesional.</p>
                                     </div>
                                     <div class="org-tags">
                                         <span class="org-tag"><i class="fa-solid fa-code-branch"></i> JTIK FT-UNM</span>
                                         <span class="org-tag"><i class="fa-solid fa-users-line"></i> Nexus 2025</span>
-                                        <span class="org-tag"><i class="fa-solid fa-handshake"></i> Relasi & Solidaritas</span>
+                                        <span class="org-tag"><i class="fa-solid fa-handshake"></i> Solidaritas</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Organisasi 3: Pengembangan Kapasitas & Kepemimpinan -->
                         <div class="org-card">
                             <div class="org-card-row">
                                 <div class="org-img-box">
@@ -204,14 +154,12 @@
                                     <div>
                                         <h4>Pengembangan Kapasitas Diri & Kepemimpinan</h4>
                                         <span class="org-role"><i class="fa-solid fa-person-hiking"></i> Pelatihan Karakter & Kepemimpinan Organisasi di Alam Terbuka</span>
-                                        <p>
-                                            Mengikuti program pembinaan kepemimpinan luar ruang (Hutan Pinus Moncong Sipolong Cappa Bissooro) guna membentuk ketangguhan mental, adaptabilitas, serta komunikasi efektif dalam tim kerja organisasi.
-                                        </p>
+                                        <p>Program pembinaan kepemimpinan luar ruang di Hutan Pinus Moncong Sipolong guna membentuk ketangguhan mental, adaptabilitas, serta komunikasi efektif dalam tim kerja.</p>
                                     </div>
                                     <div class="org-tags">
                                         <span class="org-tag"><i class="fa-solid fa-tree"></i> Outdoor Leadership</span>
                                         <span class="org-tag"><i class="fa-solid fa-people-group"></i> Teamwork</span>
-                                        <span class="org-tag"><i class="fa-solid fa-compass"></i> Kapasitas Diri & Relasi</span>
+                                        <span class="org-tag"><i class="fa-solid fa-compass"></i> Kapasitas Diri</span>
                                     </div>
                                 </div>
                             </div>
@@ -219,113 +167,44 @@
                     </div>
                 </div>
 
-                <div class="card-box" id="vision-section">
-                    <h3 class="headlines"><i class="fa-solid fa-bullseye"></i> Visi & Minat Akademik</h3>
-                    <p class="infotext">
-                        Dunia teknologi dan rekayasa komputer terus berkembang pesat. Saya memiliki antusiasme tinggi untuk terus mengasah keterampilan teknis, memahami arsitektur sistem komputasi, serta mengeksplorasi pembuatan website yang interaktif dan responsif.
-                    </p>
-                    <p class="infotext">
-                        Dengan memadukan logika pemrograman web dan estetika desain visual, saya berusaha menghasilkan antarmuka pengguna yang bersih, modern, dan nyaman diakses di berbagai ukuran layar perangkat.
-                    </p>
-                </div>
-
-                <!-- SECTION: TARGET 2-3 TAHUN KEDEPAN -->
+                <!-- TARGET 2-3 TAHUN KEDEPAN -->
                 <div class="card-box" id="roadmap-section">
                     <h3 class="headlines"><i class="fa-solid fa-chart-line"></i> Target & Peta Rencana 2-3 Tahun Kedepan</h3>
-                    <p class="infotext">
-                        Rencana strategis pengembangan diri, kompetensi teknis, serta pencapaian akademik dan karier di bidang Teknik Komputer:
-                    </p>
-
                     <div class="roadmap-container">
-                        <!-- Fase 1 -->
                         <div class="roadmap-card">
                             <div class="roadmap-header">
-                                <span class="roadmap-phase-title">
-                                    <i class="fa-solid fa-seedling" style="color:#dc2626;"></i> Fase 1 (Tahun 2026–2027)
-                                </span>
+                                <span class="roadmap-phase-title"><i class="fa-solid fa-seedling" style="color:#dc2626;"></i> Fase 1 (Tahun 2026–2027)</span>
                                 <span class="roadmap-badge"><i class="fa-solid fa-bolt"></i> Skill Building</span>
                             </div>
-                            <h4 class="sublines" style="margin-top: 0; font-size: 14px;">
-                                Eksplorasi Teknologi Web & Arsitektur Komputer
-                            </h4>
-                            <p class="roadmap-desc">
-                                Mendalami teknologi web modern secara mendalam (HTML, CSS, JavaScript, serta framework modern) dan memperkuat pemahaman logika algoritma pemrograman serta mikrokontroler.
-                            </p>
-                            <div class="roadmap-tags">
-                                <span class="roadmap-tag"><i class="fa-brands fa-html5"></i> HTML, CSS, JS</span>
-                                <span class="roadmap-tag"><i class="fa-solid fa-code"></i> Modern Framework</span>
-                                <span class="roadmap-tag"><i class="fa-solid fa-brain"></i> Logika & Algoritma</span>
-                                <span class="roadmap-tag"><i class="fa-solid fa-microchip"></i> Mikrokontroler</span>
-                            </div>
+                            <h4 class="sublines" style="margin-top: 0; font-size: 14px;">Eksplorasi Teknologi Web & Arsitektur Komputer</h4>
+                            <p class="roadmap-desc">Mendalami teknologi web modern secara mendalam (HTML, CSS, JavaScript, framework modern) dan logika pemrograman serta sistem mikrokontroler.</p>
                         </div>
-
-                        <!-- Fase 2 -->
                         <div class="roadmap-card">
                             <div class="roadmap-header">
-                                <span class="roadmap-phase-title">
-                                    <i class="fa-solid fa-laptop-code" style="color:#dc2626;"></i> Fase 2 (Tahun 2027–2028)
-                                </span>
+                                <span class="roadmap-phase-title"><i class="fa-solid fa-laptop-code" style="color:#dc2626;"></i> Fase 2 (Tahun 2027–2028)</span>
                                 <span class="roadmap-badge"><i class="fa-solid fa-trophy"></i> Praktik & Portofolio Nyata</span>
                             </div>
-                            <h4 class="sublines" style="margin-top: 0; font-size: 14px;">
-                                Implementasi Proyek & Kompetisi IT
-                            </h4>
-                            <p class="roadmap-desc">
-                                Membangun proyek sistem informasi berbasis jaringan dan aktif mengikuti berbagai kompetisi / kejuaraan di bidang IT untuk menguji kemampuan serta membangun rekam jejak portofolio nyata.
-                            </p>
-                            <div class="roadmap-tags">
-                                <span class="roadmap-tag"><i class="fa-solid fa-network-wired"></i> Sistem Informasi & Jaringan</span>
-                                <span class="roadmap-tag"><i class="fa-solid fa-award"></i> Kompetisi IT</span>
-                                <span class="roadmap-tag"><i class="fa-solid fa-folder-open"></i> Portofolio Nyata</span>
-                            </div>
+                            <h4 class="sublines" style="margin-top: 0; font-size: 14px;">Implementasi Proyek & Kompetisi IT</h4>
+                            <p class="roadmap-desc">Membangun proyek sistem informasi berbasis jaringan komputer dan aktif mengikuti kompetisi di bidang IT untuk memperluas portofolio praktis.</p>
                         </div>
-
-                        <!-- Fase 3 -->
                         <div class="roadmap-card">
                             <div class="roadmap-header">
-                                <span class="roadmap-phase-title">
-                                    <i class="fa-solid fa-briefcase" style="color:#dc2626;"></i> Fase 3 (Tahun 2028–2029)
-                                </span>
+                                <span class="roadmap-phase-title"><i class="fa-solid fa-briefcase" style="color:#dc2626;"></i> Fase 3 (Tahun 2028–2029)</span>
                                 <span class="roadmap-badge"><i class="fa-solid fa-flag-checkered"></i> Karier & Capaian Akhir</span>
                             </div>
-                            <h4 class="sublines" style="margin-top: 0; font-size: 14px;">
-                                Magang Industri & Penyelesaian Tugas Akhir
-                            </h4>
-                            <p class="roadmap-desc">
-                                Mengikuti program magang industri bersertifikat di perusahaan dan menyelesaikan tugas akhir Teknik Komputer yang inovatif serta memberikan dampak nyata dan bermanfaat bagi masyarakat luas.
-                            </p>
-                            <div class="roadmap-tags">
-                                <span class="roadmap-tag"><i class="fa-solid fa-building"></i> Magang Industri Bersertifikat</span>
-                                <span class="roadmap-tag"><i class="fa-solid fa-graduation-cap"></i> Tugas Akhir Teknik Komputer</span>
-                                <span class="roadmap-tag"><i class="fa-solid fa-hand-holding-heart"></i> Berdampak bagi Masyarakat</span>
-                            </div>
+                            <h4 class="sublines" style="margin-top: 0; font-size: 14px;">Magang Industri & Penyelesaian Tugas Akhir</h4>
+                            <p class="roadmap-desc">Mengikuti program magang industri bersertifikat di perusahaan dan menyelesaikan tugas akhir Teknik Komputer yang inovatif serta bermanfaat.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-box">
-                    <h3 class="headlines"><i class="fa-solid fa-book-open-reader"></i> Pembelajaran Praktikum Web</h3>
-                    <p class="infotext">
-                        Penerapan materi praktikum yang telah saya kuasai dan implementasikan ke dalam portofolio ini mencakup:
-                    </p>
-                    <ul style="margin-left: 20px; font-size: 13.5px; color: #4a3b42;">
-                        <li><strong>Modul 3</strong>: Struktur dasar CSS, Selector HTML (redefinisi tag), Selector Class, Selector ID, serta mekanisme CSS Inline, Internal, dan Eksternal.</li>
-                        <li><strong>Modul 4</strong>: Pengaturan gambar (border warna, dimensi width & height, background repeat & attachment, serta transparansi opacity dan hover).</li>
-                        <li><strong>Modul 5</strong>: Perancangan navigasi horisontal, navigasi vertikal, dan struktur tata letak 2 kolom serta 3 kolom sejajar.</li>
-                        <li><strong>Modul 6</strong>: Implementasi navigasi dropdown bertingkat dengan linear-gradient pink, border-radius melengkung, serta efek transisi yang halus.</li>
-                    </ul>
-                </div>
-
             </section>
-
         </main>
 
         <!-- Footer -->
         <footer id="footer">
             <p>&copy; 2025 Nayla Azzahra R | Mahasiswi Teknik Komputer (Kelas C)</p>
-            <p style="font-size: 12px; color: #fbcfe8;">
-                Praktikum Pemrograman Web - Menerapkan Seluruh Konsep CSS.
-            </p>
+            <p style="font-size: 12px; color: #9ca3af;">Praktikum Pemrograman Web - Menerapkan Konsep Modul 3, Modul 4, Modul 5, dan Modul 6.</p>
             <div style="margin-top: 8px;">
                 <a href="index.html">Home</a> &bull;
                 <a href="about.html">Biodata</a> &bull;
@@ -335,36 +214,5 @@
         </footer>
 
     </div>
-
-    <!-- Interactive Click Ripple & Section Highlight Animation -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const clickableItems = document.querySelectorAll('.btn-card-action, #menu a, .btn-action');
-            clickableItems.forEach(item => {
-                item.addEventListener('click', function(e) {
-                    const rect = this.getBoundingClientRect();
-                    const ripple = document.createElement('span');
-                    ripple.className = 'ripple-circle';
-                    const size = Math.max(rect.width, rect.height);
-                    ripple.style.width = ripple.style.height = `${size}px`;
-                    ripple.style.left = `${e.clientX - rect.left - size/2}px`;
-                    ripple.style.top = `${e.clientY - rect.top - size/2}px`;
-                    this.appendChild(ripple);
-                    setTimeout(() => ripple.remove(), 600);
-
-                    const href = this.getAttribute('href');
-                    if (href && href.startsWith('#') && href.length > 1) {
-                        const targetElem = document.querySelector(href);
-                        if (targetElem) {
-                            targetElem.style.animation = 'none';
-                            targetElem.offsetHeight;
-                            targetElem.style.animation = 'sectionOpenPulse 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards';
-                        }
-                    }
-                });
-            });
-        });
-    </script>
-
 </body>
 </html>
