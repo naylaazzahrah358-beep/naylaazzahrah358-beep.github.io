@@ -1133,7 +1133,154 @@ hr {
 }
 
 /* --------------------------------------------------------------------------
-   PENGALAMAN ORGANISASI MAHASISWA
+   SIDE-BY-SIDE DUAL CARD SECTION (03. Organisasi & 04. Hobi)
+   -------------------------------------------------------------------------- */
+.side-by-side-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-bottom: 25px;
+    align-items: stretch;
+}
+
+@media (max-width: 960px) {
+    .side-by-side-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-box-dual {
+    background: #ffffff;
+    border: 1.5px solid #ffd1dc;
+    border-radius: 16px;
+    padding: 26px 24px;
+    box-shadow: 0 4px 18px rgba(255, 45, 117, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.35s ease;
+}
+
+.card-box-dual:hover {
+    border-color: #ff2d75;
+    box-shadow: 0 10px 25px rgba(255, 45, 117, 0.12);
+}
+
+.headlines-numbered {
+    font-size: 19px;
+    font-weight: 800;
+    color: #1e3a8a;
+    margin-top: 0;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.3;
+}
+
+.custom-bullet-list {
+    margin: 10px 0 16px 18px;
+    padding: 0;
+    font-size: 13px;
+    color: #4a3b42;
+    line-height: 1.6;
+}
+
+.custom-bullet-list li {
+    margin-bottom: 8px;
+}
+
+.custom-bullet-list strong {
+    color: #2d1822;
+}
+
+/* 2x2 Photo Grid */
+.photo-grid-2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 16px 0 20px 0;
+}
+
+.photo-item-2x2 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #ffd1dc;
+    background: #2b1d24;
+    height: 135px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.photo-item-2x2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.photo-item-2x2:hover img {
+    transform: scale(1.06);
+    opacity: 0.95;
+}
+
+/* Pill Tags & Action Button */
+.pill-tags-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pill-tag-blue {
+    background-color: #0d6efd;
+    color: #ffffff !important;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 2px 6px rgba(13, 110, 253, 0.25);
+}
+
+.pill-tag-green {
+    background-color: #d1e7dd;
+    color: #0f5132 !important;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-card-action {
+    display: inline-block;
+    background-color: #0d6efd;
+    color: #ffffff !important;
+    padding: 8px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    width: fit-content;
+    box-shadow: 0 3px 10px rgba(13, 110, 253, 0.3);
+    transition: all 0.25s ease;
+}
+
+.btn-card-action:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(13, 110, 253, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   PENGALAMAN ORGANISASI MAHASISWA (Detailed Showcase)
    -------------------------------------------------------------------------- */
 .org-container {
     display: flex;

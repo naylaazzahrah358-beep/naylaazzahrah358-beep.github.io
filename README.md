@@ -40,9 +40,10 @@ Aktif mengembangkan kapasitas diri, kepemimpinan, daya nalar ilmiah, serta mempe
 
 | Dokumentasi | Organisasi & Peran | Deskripsi Kegiatan |
 | :---: | :--- | :--- |
+| <img src="foto-organisasi-4.jpg" width="260" alt="HPMM Massenrempulu"> | **HPMM Massenrempulu**<br>*(Himpunan Pelajar Mahasiswa Massenrempulu)* | Organisasi kedaerahan pelajar & mahasiswa Kabupaten Enrekang untuk mempererat silaturahmi, kekeluargaan, dan pengabdian daerah. |
 | <img src="foto-organisasi-2.jpg" width="260" alt="LPM Penalaran UNM"> | **LPM Penalaran UNM**<br>*(Lembaga Penalaran & Riset Ilmiah Tingkat Universitas)* | Wadah pengembangan pola pikir kritis, riset akademis, karya tulis ilmiah, dan penalaran mahasiswa di tingkat Universitas Negeri Makassar guna mengasah kapasitas intelektual dan kepemimpinan. |
 | <img src="foto-organisasi-3.jpg" width="260" alt="NEXUS 2025 JTIK FT-UNM"> | **Anggota Formal JTIK (NEXUS 2025)**<br>*(Lembaga Kemahasiswaan Jurusan Teknik Informatika & Komputer FT-UNM)* | Menjadi bagian dari keluarga besar mahasiswa JTIK FT-UNM, aktif mempererat solidaritas angkatan NEXUS 2025, kolaborasi dalam kegiatan teknologi, dan pembentukan relasi profesional. |
-| <img src="foto-organisasi-1.jpg" width="260" alt="Pengembangan Karakter & Kepemimpinan"> | **Pengembangan Kapasitas & Kepemimpinan**<br>*(Pelatihan Karakter & Kepemimpinan di Alam Terbuka)* | Mengikuti program pelatihan kepemimpinan luar ruang di Hutan Pinus Moncong Sipolong Cappa Bissooro guna membentuk ketangguhan mental, adaptabilitas, serta komunikasi efektif dalam tim organisasi. |
+| <img src="foto-organisasi-1.jpg" width="260" alt="Pengembangan Karakter & Kepemimpinan"> | **Pengembangan Karakter & Kepemimpinan**<br>*(Pelatihan Karakter & Kepemimpinan di Alam Terbuka)* | Mengikuti program pelatihan kepemimpinan luar ruang di Hutan Pinus Moncong Sipolong Cappa Bissooro guna membentuk ketangguhan mental, adaptabilitas, serta komunikasi efektif dalam tim organisasi. |
 
 ---
 
@@ -102,11 +103,12 @@ naylaazzahrah358-beep.github.io/
 ├── foto-organisasi-1.jpg # Dokumentasi Kegiatan Kepemimpinan Luar Ruang
 ├── foto-organisasi-2.jpg # Dokumentasi Pelantikan Riset LPM Penalaran UNM
 ├── foto-organisasi-3.jpg # Dokumentasi Temu NEXUS 2025 JTIK FT-UNM
+├── foto-organisasi-4.jpg # Dokumentasi Kegiatan HPMM Massenrempulu
 ├── foto-tari-1.jpg       # Dokumentasi Tari Tradisional Busana Emas
 ├── foto-tari-2.jpg       # Dokumentasi Tari Kebaya Putih & Batik
 ├── foto-tari-3.jpg       # Dokumentasi Pementasan Tari Kipas Kelompok
 ├── foto-tari-4.jpg       # Dokumentasi Tari Kipas Merah Emas
-└── Readme.md             # Dokumentasi visual resmi repositori
+└── README.md             # Dokumentasi visual resmi repositori
 ```
 
 ---
