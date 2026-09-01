@@ -23,7 +23,15 @@ Seni tari merupakan wadah ekspresi seni, pelestarian warisan budaya bangsa, sert
 
 ---
 
-## 🛠️ Implementasi Materi Modul Praktikum Web
+## 🎯 Target & Peta Rencana 2-3 Tahun Kedepan
+- **Fase 1: Tahun 2026–2027 (Skill Building)**
+  - *Eksplorasi Teknologi Web & Arsitektur Komputer*: Mendalami teknologi web modern secara mendalam (HTML, CSS, JavaScript, serta framework modern) dan memperkuat pemahaman logika algoritma pemrograman serta sistem mikrokontroler.
+- **Fase 2: Tahun 2027–2028 (Praktik & Portofolio Nyata)**
+  - *Implementasi Proyek & Kompetisi IT*: Membangun proyek sistem informasi berbasis jaringan komputer dan aktif mengikuti kompetisi di bidang IT untuk memperluas portofolio praktis dan jejaring kerja sama tim.
+- **Fase 3: Tahun 2028–2029 (Karier & Capaian Akhir)**
+  - *Magang Industri & Penyelesaian Tugas Akhir*: Mengikuti program magang industri bersertifikat di perusahaan dan menyelesaikan tugas akhir Teknik Komputer yang inovatif serta berdampak nyata bagi masyarakat luas.
+
+---
 Website ini mengimplementasikan konsep praktikum secara lengkap:
 - **Modul 3 (CSS Dasar)**: Selector HTML, Selector Class, Selector ID, Grouping Selector, serta CSS Inline, Internal, & Eksternal.
 - **Modul 4 (CSS Image & Background)**: Border gambar, manipulasi lebar & tinggi (Width & Height), background gradient, serta transparansi gambar (Opacity & Hover effect).

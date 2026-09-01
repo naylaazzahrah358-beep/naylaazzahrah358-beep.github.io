@@ -951,6 +951,87 @@ hr {
 }
 
 /* --------------------------------------------------------------------------
+   ROADMAP & TARGET 2-3 TAHUN KEDEPAN
+   -------------------------------------------------------------------------- */
+.roadmap-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.roadmap-card {
+    background: #ffffff;
+    border: 1.5px solid #ffd1dc;
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: 0 4px 14px rgba(255, 45, 117, 0.06);
+    position: relative;
+    transition: all 0.3s ease;
+    border-left: 5px solid #ff2d75;
+}
+
+.roadmap-card:hover {
+    transform: translateX(6px);
+    border-color: #ff2d75;
+    box-shadow: 0 8px 22px rgba(255, 45, 117, 0.15);
+}
+
+.roadmap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #fbcfe8;
+}
+
+.roadmap-phase-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #ad1457;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.roadmap-badge {
+    background: linear-gradient(135deg, #ff2d75, #c2185b);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 14px;
+    letter-spacing: 0.3px;
+}
+
+.roadmap-desc {
+    font-size: 13.5px;
+    color: #4a3b42;
+    margin-bottom: 8px;
+    line-height: 1.55;
+}
+
+.roadmap-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.roadmap-tag {
+    background: #fff0f5;
+    color: #880e4f;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: 1px solid #ffd1dc;
+}
+
+/* --------------------------------------------------------------------------
    FORMULIR KONTAK
    -------------------------------------------------------------------------- */
 .form-group {
