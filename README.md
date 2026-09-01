@@ -1,14 +1,14 @@
-# 🌸 Portofolio Digital - Nayla Azzahra R
+# 🔴 Portofolio Digital - Nayla Azzahra R
 
 <div align="center">
 
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-ff2d75?style=for-the-badge&logo=github)
-![Teknik Komputer](https://img.shields.io/badge/Prodi-Teknik%20Komputer%202025-ad1457?style=for-the-badge)
-![HTML5 & CSS3](https://img.shields.io/badge/Tech-HTML5%20%7C%20CSS3-e91e63?style=for-the-badge)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-dc2626?style=for-the-badge&logo=github)
+![Teknik Komputer](https://img.shields.io/badge/Prodi-Teknik%20Komputer%202025-111827?style=for-the-badge)
+![HTML5 & CSS3](https://img.shields.io/badge/Theme-Black%20White%20Red-dc2626?style=for-the-badge)
 
 <br>
 
-<img src="foto-profil.jpg" alt="Foto Profil Nayla Azzahra R" width="220" style="border-radius: 16px; border: 4px solid #ff4081; box-shadow: 0 8px 24px rgba(255,45,117,0.3);">
+<img src="foto-profil.jpg" alt="Foto Profil Nayla Azzahra R" width="220" style="border-radius: 16px; border: 3.5px solid #18181b; outline: 2px solid #dc2626; box-shadow: 0 8px 24px rgba(0,0,0,0.35);">
 
 ### **Nayla Azzahra R**
 **Mahasiswi Teknik Komputer (Kelas C - Angkatan 2025)**  
@@ -97,7 +97,7 @@ naylaazzahrah358-beep.github.io/
 ├── index.html            # Halaman utama (Beranda Cover, Profil, Target 2-3 Tahun, Fokus Minat, Hobi & Organisasi)
 ├── about.html            # Halaman biodata lengkap, latar belakang, hobi & pengalaman organisasi
 ├── contact.html          # Halaman formulir kontak & saluran komunikasi
-├── style.css             # Stylesheet utama (Pink Aesthetic & Kaidah CSS Modul 3-6)
+├── style.css             # Stylesheet utama (Black, White & Red Theme & Kaidah CSS Modul 3-6)
 ├── foto-profil.jpg       # Foto profil utama
 ├── foto-organisasi-1.jpg # Dokumentasi Kegiatan Kepemimpinan Luar Ruang
 ├── foto-organisasi-2.jpg # Dokumentasi Pelantikan Riset LPM Penalaran UNM
