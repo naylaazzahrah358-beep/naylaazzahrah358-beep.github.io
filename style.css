@@ -1531,7 +1531,7 @@ hr {
 }
 
 /* --------------------------------------------------------------------------
-   OPENING & SLIDE SCROLL LOCK (Terkunci Sebelum Pengguna Memilih Slide)
+   OPENING & SLIDE SCROLL LOCK (Terkunci Total Sebelum Pengguna Memilih Slide)
    -------------------------------------------------------------------------- */
 html.opening-active,
 body.opening-active,
@@ -1540,7 +1540,17 @@ body.scroll-locked {
     overflow: hidden !important;
     height: 100vh !important;
     max-height: 100vh !important;
+    position: fixed !important;
+    width: 100% !important;
     touch-action: none !important;
+    -webkit-overflow-scrolling: auto !important;
+}
+
+html.scroll-locked #wrapper,
+body.scroll-locked #wrapper {
+    max-height: 100vh !important;
+    overflow: hidden !important;
+    position: relative !important;
 }
 
 .scroll-lock-indicator {

@@ -631,11 +631,7 @@
         let isScrollLocked = true;
 
         function enterPortfolio() {
-            const opening = document.getElementById('welcome-opening-screen');
-            if (opening) {
-                opening.classList.add('hidden');
-            }
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            unlockScrollAndNavigate('#about-overview');
         }
 
         function unlockScrollAndNavigate(targetSelector) {
