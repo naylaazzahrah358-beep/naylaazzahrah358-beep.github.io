@@ -560,17 +560,35 @@ hr {
     padding: 35px 40px;
     display: flex;
     gap: 35px;
+    align-items: flex-start;
 }
 
-/* Kolom Kiri: Sidebar Biodata & Navigasi Vertikal */
+/* Kolom Kiri: Sidebar Biodata Sticky (Mengikuti Scroll Halaman) */
 #leftcolumn {
-    flex: 0 0 310px;
+    flex: 0 0 320px;
     background-color: #fff5f8;
-    border-radius: 14px;
+    border-radius: 16px;
     padding: 25px 20px;
-    border: 1px solid #ffd1dc;
-    height: fit-content;
-    box-shadow: 0 4px 12px rgba(255, 45, 117, 0.06);
+    border: 1.5px solid #ffd1dc;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 68px;
+    align-self: flex-start;
+    box-shadow: 0 6px 20px rgba(255, 45, 117, 0.08);
+    max-height: calc(100vh - 85px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ffb6c1 transparent;
+    transition: top 0.3s ease, box-shadow 0.3s ease;
+}
+
+#leftcolumn::-webkit-scrollbar {
+    width: 4px;
+}
+
+#leftcolumn::-webkit-scrollbar-thumb {
+    background: #ffb6c1;
+    border-radius: 4px;
 }
 
 /* Modul 5: Navigasi Vertikal pada Sidebar */
@@ -1480,6 +1498,8 @@ hr {
     }
     #leftcolumn {
         flex: 1 1 auto;
+        position: static;
+        max-height: none;
     }
     .three-column-container {
         grid-template-columns: 1fr;
