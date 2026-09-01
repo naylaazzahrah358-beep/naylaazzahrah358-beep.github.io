@@ -3,6 +3,7 @@
 <div align="center">
 
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-dc2626?style=for-the-badge&logo=github)
+![Instagram](https://img.shields.io/badge/Instagram-@nylazhrh9__-E4405F?style=for-the-badge&logo=instagram&logoColor=white)
 ![Teknik Komputer](https://img.shields.io/badge/Prodi-Teknik%20Komputer%202025-111827?style=for-the-badge)
 ![HTML5 & CSS3](https://img.shields.io/badge/Theme-Black%20White%20Red-dc2626?style=for-the-badge)
 
@@ -25,6 +26,7 @@
 | Informasi | Keterangan |
 | :--- | :--- |
 | **Nama Lengkap** | **Nayla Azzahra R** |
+| **Instagram** | **[@nylazhrh9_](https://instagram.com/nylazhrh9_)** |
 | **Program Studi** | **Teknik Komputer (Kelas C - Angkatan 2025)** |
 | **Mata Kuliah** | **Praktikum Pemrograman Web** |
 | **Fokus Minat** | **Web Design, Jaringan Komputer & Internet of Things (IoT)** |
