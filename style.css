@@ -1553,6 +1553,18 @@ body.scroll-locked #wrapper {
     position: relative !important;
 }
 
+/* Sembunyikan slide bagian bawah sampai pengguna memilih slide */
+html.scroll-locked .slide-transition-banner,
+html.scroll-locked .main-content-layout,
+html.scroll-locked .three-column-section,
+html.scroll-locked #footer,
+body.scroll-locked .slide-transition-banner,
+body.scroll-locked .main-content-layout,
+body.scroll-locked .three-column-section,
+body.scroll-locked #footer {
+    display: none !important;
+}
+
 .scroll-lock-indicator {
     display: inline-flex;
     align-items: center;

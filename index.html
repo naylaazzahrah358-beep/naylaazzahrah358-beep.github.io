@@ -635,11 +635,10 @@
             if (opening) {
                 opening.classList.add('hidden');
             }
-            isScrollLocked = false;
-            document.documentElement.classList.remove('scroll-locked', 'opening-active');
-            document.body.classList.remove('scroll-locked', 'opening-active');
-            document.documentElement.style.overflow = '';
-            document.body.style.overflow = '';
+            // Tetap kunci scroll di Beranda sampai pengguna mengklik salah satu slide atau pilihan menu!
+            isScrollLocked = true;
+            document.documentElement.classList.add('scroll-locked');
+            document.body.classList.add('scroll-locked');
             window.scrollTo({ top: 0, behavior: 'instant' });
         }
 
