@@ -799,7 +799,7 @@
     </div>
 
     <!-- ============================================================
-         JAVASCRIPT CONTROLLER: OPENING SCREEN
+         JAVASCRIPT CONTROLLER: OPENING SCREEN & INTERACTIVE ANIMATIONS
          ============================================================ -->
     <script>
         function enterPortfolio() {
@@ -818,6 +818,37 @@
                     enterPortfolio();
                 }
             }
+        });
+
+        // Interactive Click Ripple & Section Highlight Animation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ripple effect on buttons and slide cards
+            const clickableItems = document.querySelectorAll('.btn-enter-portfolio, .beranda-slide-card, .btn-card-action, #menu a');
+            
+            clickableItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    const rect = this.getBoundingClientRect();
+                    const ripple = document.createElement('span');
+                    ripple.className = 'ripple-circle';
+                    const size = Math.max(rect.width, rect.height);
+                    ripple.style.width = ripple.style.height = `${size}px`;
+                    ripple.style.left = `${e.clientX - rect.left - size/2}px`;
+                    ripple.style.top = `${e.clientY - rect.top - size/2}px`;
+                    this.appendChild(ripple);
+                    setTimeout(() => ripple.remove(), 600);
+
+                    // If it's an internal link (#...), trigger section highlight animation
+                    const href = this.getAttribute('href');
+                    if (href && href.startsWith('#') && href.length > 1) {
+                        const targetElem = document.querySelector(href);
+                        if (targetElem) {
+                            targetElem.style.animation = 'none';
+                            targetElem.offsetHeight; // trigger reflow
+                            targetElem.style.animation = 'sectionOpenPulse 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+                        }
+                    }
+                });
+            });
         });
     </script>
 

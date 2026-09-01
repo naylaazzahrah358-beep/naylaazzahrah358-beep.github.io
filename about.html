@@ -435,5 +435,35 @@
 
     </div>
 
+    <!-- Interactive Click Ripple & Section Highlight Animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const clickableItems = document.querySelectorAll('.btn-card-action, #menu a, .btn-action');
+            clickableItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    const rect = this.getBoundingClientRect();
+                    const ripple = document.createElement('span');
+                    ripple.className = 'ripple-circle';
+                    const size = Math.max(rect.width, rect.height);
+                    ripple.style.width = ripple.style.height = `${size}px`;
+                    ripple.style.left = `${e.clientX - rect.left - size/2}px`;
+                    ripple.style.top = `${e.clientY - rect.top - size/2}px`;
+                    this.appendChild(ripple);
+                    setTimeout(() => ripple.remove(), 600);
+
+                    const href = this.getAttribute('href');
+                    if (href && href.startsWith('#') && href.length > 1) {
+                        const targetElem = document.querySelector(href);
+                        if (targetElem) {
+                            targetElem.style.animation = 'none';
+                            targetElem.offsetHeight;
+                            targetElem.style.animation = 'sectionOpenPulse 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
