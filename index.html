@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Modul 3: CSS Internal -->
     <style type="text/css">
-        .highlight-badge { background-color: #fee2e2; color: #991b1b; font-weight: bold; padding: 4px 10px; border-radius: 4px; display: inline-block; margin-bottom: 8px; border: 1px solid #fecaca; }
+        .highlight-badge { background: #fee2e2; color: #991b1b; font-weight: bold; padding: 4px 10px; border-radius: 4px; display: inline-block; border: 1px solid #fecaca; }
+        .status-box { background: #fee2e2; border-left: 4px solid #dc2626; padding: 10px 14px; border-radius: 6px; font-size: 12.5px; margin-top: 14px; }
     </style>
 </head>
 <body class="scroll-locked opening-active">
 
-    <!-- 1. OPENING / WELCOME SPLASH SCREEN -->
+    <!-- 1. OPENING / WELCOME SCREEN -->
     <div id="welcome-opening-screen" class="opening-overlay">
         <div class="opening-card-container">
             <div class="opening-avatar-wrapper">
@@ -28,7 +29,7 @@
         </div>
     </div>
 
-    <!-- 2. MODUL 5: STRUKTUR UTAMA (#wrapper) -->
+    <!-- 2. WRAPPER UTAMA (Modul 5) -->
     <div id="wrapper">
 
         <!-- HEADER & BANNER (Modul 3 & 4) -->
@@ -37,7 +38,7 @@
             <p>Portofolio Digital | Mahasiswi Teknik Komputer - Kelas C 2025</p>
         </header>
 
-        <!-- MODUL 5 & 6: NAVIGASI & DROPDOWN -->
+        <!-- NAVIGASI & DROPDOWN (Modul 5 & 6) -->
         <nav id="nav-container">
             <ul id="menu">
                 <li class="active"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
@@ -93,20 +94,16 @@
                             <tr><td class="label">Hobi:</td><td><strong>Seni Tari Tradisional Nusantara</strong></td></tr>
                             <tr><td class="label">Organisasi:</td><td>LPM Penalaran UNM & JTIK (Nexus 2025)</td></tr>
                         </table>
-                        <div style="background-color: #fee2e2; border-left: 4px solid #dc2626; padding: 10px 14px; border-radius: 6px; font-size: 12.5px; margin-top: 14px;">
+                        <div class="status-box">
                             <i class="fa-solid fa-circle-check" style="color: #dc2626;"></i>
-                            <span class="infotext" style="font-weight: bold; color: #991b1b;"> Status Mahasiswi:</span>
+                            <strong style="color: #991b1b;"> Status Mahasiswi:</strong>
                             <span style="font-size: 12px; color: #374151;"> Mahasiswi Aktif Angkatan 2025 &bull; FT Universitas Negeri Makassar</span>
                         </div>
                     </div>
                     <div class="biodata-unified-right">
                         <h4 class="sublines" style="margin-top: 0; font-size: 15px;"><i class="fa-solid fa-graduation-cap"></i> Mengenai Diri Saya</h4>
-                        <p class="infotext">
-                            Selamat datang di portofolio resmi saya. Sebagai mahasiswi <strong>Teknik Komputer</strong> di Fakultas Teknik Universitas Negeri Makassar, saya berfokus mendalami integrasi teknologi komputasi, mulai dari perancangan antarmuka web yang estetis, penataan layout yang terstruktur, hingga konfigurasi sistem dan jaringan komputer.
-                        </p>
-                        <p class="infotext" style="margin-bottom: 0;">
-                            Dengan perpaduan pemikiran logis dalam rekayasa teknologi dan jiwa artistik yang terasah melalui seni tari tradisional, saya senantiasa bersemangat menciptakan karya digital yang rapi, bermakna, dan berkarakter.
-                        </p>
+                        <p class="infotext">Selamat datang di portofolio resmi saya. Sebagai mahasiswi <strong>Teknik Komputer</strong> di Fakultas Teknik Universitas Negeri Makassar, saya berfokus mendalami integrasi teknologi komputasi, mulai dari perancangan antarmuka web yang estetis, penataan layout yang terstruktur, hingga konfigurasi sistem dan jaringan komputer.</p>
+                        <p class="infotext" style="margin-bottom: 0;">Dengan perpaduan pemikiran logis dalam rekayasa teknologi dan jiwa artistik yang terasah melalui seni tari tradisional, saya senantiasa bersemangat menciptakan karya digital yang rapi, bermakna, dan berkarakter.</p>
                     </div>
                 </div>
             </div>
@@ -115,9 +112,7 @@
             <div class="card-box" id="roadmap-section">
                 <h3 class="headlines"><i class="fa-solid fa-chart-line"></i> Target & Peta Rencana 2-3 Tahun Kedepan</h3>
                 <p class="infotext">Target strategis pengembangan keilmuan, karya nyata, dan kesiapan karier profesional di bidang Teknik Komputer:</p>
-
                 <div class="roadmap-container">
-                    <!-- Fase 1 -->
                     <div class="roadmap-card">
                         <div class="roadmap-header">
                             <span class="roadmap-phase-title"><i class="fa-solid fa-seedling" style="color:#dc2626;"></i> Fase 1 (Tahun 2026–2027)</span>
@@ -132,8 +127,6 @@
                             <span class="roadmap-tag"><i class="fa-solid fa-microchip"></i> Mikrokontroler</span>
                         </div>
                     </div>
-
-                    <!-- Fase 2 -->
                     <div class="roadmap-card">
                         <div class="roadmap-header">
                             <span class="roadmap-phase-title"><i class="fa-solid fa-laptop-code" style="color:#dc2626;"></i> Fase 2 (Tahun 2027–2028)</span>
@@ -147,8 +140,6 @@
                             <span class="roadmap-tag"><i class="fa-solid fa-folder-open"></i> Portofolio Nyata</span>
                         </div>
                     </div>
-
-                    <!-- Fase 3 -->
                     <div class="roadmap-card">
                         <div class="roadmap-header">
                             <span class="roadmap-phase-title"><i class="fa-solid fa-briefcase" style="color:#dc2626;"></i> Fase 3 (Tahun 2028–2029)</span>
@@ -180,9 +171,7 @@
             <div class="card-box" id="org-section">
                 <h3 class="headlines"><i class="fa-solid fa-users-gear"></i> Pengalaman Organisasi Mahasiswa</h3>
                 <p class="infotext">Aktif mengembangkan kapasitas diri, kepemimpinan, daya nalar ilmiah, serta memperluas relasi melalui keikutsertaan aktif dalam organisasi kemahasiswaan:</p>
-
                 <div class="org-container">
-                    <!-- Organisasi 1 -->
                     <div class="org-card">
                         <div class="org-card-row">
                             <div class="org-img-box">
@@ -203,8 +192,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Organisasi 2 -->
                     <div class="org-card">
                         <div class="org-card-row">
                             <div class="org-img-box">
@@ -225,8 +212,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Organisasi 3 -->
                     <div class="org-card">
                         <div class="org-card-row">
                             <div class="org-img-box">
@@ -260,7 +245,6 @@
             <p class="infotext" style="text-align: center; max-width: 650px; margin: 0 auto 20px auto;">
                 Penerapan tata letak 3 kolom sejajar sesuai kaidah Modul 5 Layouting CSS untuk 3 fokus minat utama:
             </p>
-
             <div class="three-column-container">
                 <div id="sidebar-kiri">
                     <div class="col-icon"><i class="fa-solid fa-palette"></i></div>
@@ -297,29 +281,24 @@
     <!-- JAVASCRIPT CONTROLLER (RINGKAS & RAPI) -->
     <script>
         let isScrollLocked = true;
-
         function enterPortfolio() {
             document.getElementById('welcome-opening-screen')?.classList.add('hidden');
             window.scrollTo({ top: 0, behavior: 'instant' });
         }
-
         function unlockScrollAndNavigate(targetId) {
             isScrollLocked = false;
             document.documentElement.classList.remove('scroll-locked');
             document.body.classList.remove('scroll-locked');
             document.getElementById('welcome-opening-screen')?.classList.add('hidden');
-
             if (targetId && targetId !== '#beranda' && targetId !== '#') {
                 const elem = document.querySelector(targetId);
                 if (elem) setTimeout(() => elem.scrollIntoView({ behavior: 'smooth' }), 50);
             }
         }
-
         window.addEventListener('DOMContentLoaded', () => {
             const stopScroll = (e) => { if (isScrollLocked) e.preventDefault(); };
             window.addEventListener('wheel', stopScroll, { passive: false });
             window.addEventListener('touchmove', stopScroll, { passive: false });
-
             document.querySelectorAll('#menu a, .hero-actions a, .btn-pink, .btn-outline-pink').forEach(btn => {
                 btn.addEventListener('click', function(e) {
                     const href = this.getAttribute('href');
