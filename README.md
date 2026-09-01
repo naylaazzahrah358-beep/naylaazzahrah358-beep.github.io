@@ -94,7 +94,7 @@ graph TD
 
 ```text
 naylaazzahrah358-beep.github.io/
-├── index.html            # Halaman utama (Beranda Cover, Profil, Keahlian, Minat, Hobi, Organisasi & Galeri)
+├── index.html            # Halaman utama (Beranda Cover, Profil, Target 2-3 Tahun, Fokus Minat, Hobi & Organisasi)
 ├── about.html            # Halaman biodata lengkap, latar belakang, hobi & pengalaman organisasi
 ├── contact.html          # Halaman formulir kontak & saluran komunikasi
 ├── style.css             # Stylesheet utama (Pink Aesthetic & Kaidah CSS Modul 3-6)
