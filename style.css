@@ -1,6 +1,6 @@
 /* ==========================================================================
-   PORTOFOLIO NAYLA AZZAHRA R (Hitam, Putih & Merah)
-   Struktur Ringkas & Rapi Berdasarkan Modul 3, 4, 5, dan 6 Pemrograman Web
+   PORTOFOLIO NAYLA AZZAHRA R (Sederhana, Bersih & Elegan)
+   Menerapkan Kaidah Modul 3, 4, 5, dan 6 Praktikum Pemrograman Web
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -14,31 +14,27 @@
 }
 
 body {
-    font-family: 'Century Gothic', 'Segoe UI', Arial, sans-serif;
-    background-color: #0f1015;
-    background-image: 
-        radial-gradient(at 15% 15%, rgba(220, 38, 38, 0.12) 0px, transparent 45%),
-        radial-gradient(at 85% 85%, rgba(24, 24, 27, 0.8) 0px, transparent 50%);
-    background-attachment: fixed;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f3f4f6;
     color: #1f2937;
     line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Century Gothic', 'Segoe UI', Arial, sans-serif;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
     color: #111827;
 }
 
 p {
     margin-bottom: 12px;
     font-size: 14px;
-    color: #374151;
+    color: #4b5563;
 }
 
 a {
     color: #dc2626;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
 
 a:hover {
@@ -48,25 +44,25 @@ a:hover {
 hr {
     border: none;
     height: 1px;
-    background: linear-gradient(to right, transparent, #dc2626, transparent);
+    background-color: #e5e7eb;
     margin: 20px 0;
 }
 
 /* Modul 3: Grouping Selector (.headlines, .sublines, .infotext) */
 .headlines, .sublines, .infotext {
-    font-family: 'Century Gothic', 'Segoe UI', Arial, sans-serif;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
 }
 
 .headlines {
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 19px;
+    font-weight: 700;
     color: #111827;
     border-bottom: 2px solid #dc2626;
     padding-bottom: 8px;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .headlines i {
@@ -75,9 +71,9 @@ hr {
 
 .sublines {
     font-size: 14.5px;
-    font-weight: bold;
-    color: #b91c1c;
-    margin: 6px 0 4px 0;
+    font-weight: 700;
+    color: #991b1b;
+    margin: 8px 0 4px 0;
 }
 
 .infotext {
@@ -89,33 +85,33 @@ hr {
    2. MODUL 5: STRUKTUR LAYOUT UTAMA (#wrapper, #header, #footer)
    -------------------------------------------------------------------------- */
 #wrapper {
-    max-width: 1120px;
-    margin: 30px auto;
+    max-width: 1060px;
+    margin: 24px auto;
     background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.35);
-    border: 1px solid #27272a;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
     overflow: hidden;
 }
 
 #header {
-    background: linear-gradient(135deg, #09090b 0%, #18181b 60%, #27272a 100%);
+    background: #18181b;
     color: #ffffff;
-    padding: 30px 40px;
+    padding: 30px 35px;
     text-align: center;
     border-bottom: 3px solid #dc2626;
 }
 
 #header h1 {
-    font-size: 32px;
-    font-weight: 900;
+    font-size: 28px;
+    font-weight: 800;
     color: #ffffff;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: 4px;
 }
 
 #header p {
-    font-size: 14px;
+    font-size: 13.5px;
     color: #d1d5db;
     margin-bottom: 0;
 }
@@ -128,47 +124,43 @@ hr {
     position: sticky;
     top: 0;
     z-index: 999;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #dc2626;
 }
 
 #menu {
-    height: 48px;
+    height: 46px;
     list-style: none;
-    background: linear-gradient(to bottom, #18181b 0%, #09090b 100%);
     display: flex;
     justify-content: center;
-    border-top: 1px solid #27272a;
-    border-bottom: 2px solid #dc2626;
+    background: #18181b;
 }
 
 #menu li {
     position: relative;
     list-style: none;
-    float: left;
-    height: 48px;
+    height: 46px;
 }
 
 #menu li a {
     display: block;
-    padding: 0 22px;
-    line-height: 48px;
+    padding: 0 20px;
+    line-height: 46px;
     text-decoration: none;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 600;
     color: #f3f4f6;
     text-transform: uppercase;
+    transition: 0.2s ease;
+    border-right: 1px solid #27272a;
+}
+
+#menu li:first-child a {
     border-left: 1px solid #27272a;
-    border-right: 1px solid #18181b;
-    transition: 0.25s ease-in-out;
 }
 
 #menu li a i {
-    color: #ef4444;
-    margin-right: 4px;
+    margin-right: 5px;
 }
-
-#menu li:first-child a { border-left: none; }
-#menu li:last-child a { border-right: none; }
 
 #menu li a:hover,
 #menu li.active a {
@@ -176,45 +168,34 @@ hr {
     color: #ffffff;
 }
 
-#menu li a:hover i,
-#menu li.active a i {
-    color: #ffffff;
-}
-
-/* Modul 6: Submenu Dropdown */
+/* Dropdown Menu (Modul 6) */
 #menu ul {
     position: absolute;
-    top: 48px;
+    top: 46px;
     left: 0;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
+    display: none;
     background: #18181b;
-    min-width: 210px;
+    min-width: 190px;
     list-style: none;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-    border-radius: 0 0 10px 10px;
-    border: 1px solid #3f3f46;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #374151;
     border-top: 2px solid #dc2626;
-    transition: 0.3s ease;
+    border-radius: 0 0 6px 6px;
     z-index: 999;
 }
 
 #menu li:hover > ul {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+    display: block;
 }
 
 #menu ul li {
-    float: none;
-    display: block;
     height: auto;
 }
 
 #menu ul li a {
-    padding: 12px 20px;
-    font-size: 13px;
+    padding: 10px 16px;
+    line-height: 1.4;
+    font-size: 12.5px;
     text-transform: none;
     border: none;
     border-bottom: 1px solid #27272a;
@@ -224,49 +205,42 @@ hr {
 #menu ul li a:hover {
     background: #dc2626;
     color: #ffffff;
-    text-indent: 6px;
-}
-
-#menu ul li:last-child a {
-    border-bottom: none;
 }
 
 /* --------------------------------------------------------------------------
    4. MODUL 4: IMAGE PROPERTIES & HERO SECTION
    -------------------------------------------------------------------------- */
 .beranda-hero-section {
-    padding: 40px;
-    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+    padding: 35px 40px;
+    background: #ffffff;
     border-bottom: 1px solid #e5e7eb;
 }
 
 .beranda-hero-top {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 35px;
 }
 
 .hero-photo-box {
-    flex: 0 0 240px;
+    flex: 0 0 210px;
     text-align: center;
 }
 
-/* Modul 4: Border, Radius, Shadow & Hover Effect */
+/* Modul 4: Border, Radius, Shadow & Hover */
 .profile-photo {
-    width: 220px;
-    height: 290px;
+    width: 200px;
+    height: 265px;
     object-fit: cover;
-    border: 3.5px solid #18181b;
-    outline: 2px solid #dc2626;
-    outline-offset: 4px;
-    border-radius: 14px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    transition: 0.35s ease;
+    border: 3px solid #18181b;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
 }
 
 .profile-photo:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 35px rgba(220, 38, 38, 0.3);
+    box-shadow: 0 8px 20px rgba(220, 38, 38, 0.2);
+    transform: translateY(-2px);
 }
 
 .hero-text {
@@ -278,16 +252,16 @@ hr {
     background: #fee2e2;
     color: #991b1b;
     font-size: 12px;
-    font-weight: 800;
-    padding: 5px 14px;
-    border-radius: 20px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 15px;
     border: 1px solid #fecaca;
     margin-bottom: 10px;
 }
 
 .hero-title {
-    font-size: 32px;
-    font-weight: 900;
+    font-size: 28px;
+    font-weight: 800;
     color: #111827;
     margin-bottom: 10px;
 }
@@ -297,67 +271,83 @@ hr {
 }
 
 .hero-desc {
-    font-size: 14.5px;
+    font-size: 14px;
     color: #4b5563;
     margin-bottom: 20px;
+    line-height: 1.65;
 }
 
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
 }
 
 /* Tombol Aksi */
-.btn-pink {
+.btn-primary {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    background: #dc2626;
     color: #ffffff !important;
-    padding: 10px 22px;
-    border-radius: 25px;
-    font-weight: 800;
-    font-size: 13.5px;
-    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.35);
-    transition: 0.3s ease;
+    padding: 9px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
     border: none;
     cursor: pointer;
+    transition: 0.2s ease;
 }
 
-.btn-pink:hover {
-    background: linear-gradient(135deg, #b91c1c 0%, #7f1d1d 100%);
-    transform: translateY(-2px);
+.btn-primary:hover {
+    background: #b91c1c;
 }
 
-.btn-outline-pink {
+.btn-outline {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     background: #ffffff;
-    color: #111827 !important;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: 700;
-    font-size: 13.5px;
-    border: 2px solid #18181b;
-    transition: 0.3s ease;
+    color: #1f2937 !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    border: 1.5px solid #d1d5db;
+    transition: 0.2s ease;
 }
 
-.btn-outline-pink:hover {
+.btn-outline:hover {
+    background: #f9fafb;
+    border-color: #9ca3af;
+}
+
+.btn-dark {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background: #18181b;
     color: #ffffff !important;
-    transform: translateY(-2px);
+    padding: 9px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.btn-dark:hover {
+    background: #27272a;
 }
 
 /* --------------------------------------------------------------------------
    5. MODUL 5: TATA LETAK UTAMA, KARTU KONTEN & TABEL BIODATA
    -------------------------------------------------------------------------- */
 .main-content-layout {
-    padding: 35px 40px;
+    padding: 30px 35px;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 24px;
     background: #ffffff;
 }
 
@@ -370,72 +360,63 @@ hr {
 
 .biodata-unified-left,
 .biodata-unified-right {
-    background: #fafafa;
+    background: #f9fafb;
     border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 20px;
+    border-radius: 8px;
+    padding: 18px;
 }
 
-/* Sidebar Biodata Sticky (about.html) */
+/* Sidebar Biodata 2 Kolom (about.html & contact.html) */
 #leftcolumn {
-    flex: 0 0 300px;
-    background-color: #fafafa;
-    border-radius: 14px;
-    padding: 22px 18px;
+    flex: 0 0 280px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    padding: 20px;
     border: 1px solid #e5e7eb;
-    position: sticky;
-    top: 68px;
     align-self: flex-start;
 }
 
 .vertical-nav {
     list-style: none;
-    margin: 15px 0 20px 0;
+    margin: 12px 0 16px 0;
 }
 
 .vertical-nav li {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .vertical-nav a {
     display: block;
-    font-weight: 700;
+    font-weight: 600;
     color: #ffffff;
     background-color: #18181b;
-    border-left: 4px solid #dc2626;
-    padding: 10px 14px;
-    border-radius: 6px;
+    border-left: 3px solid #dc2626;
+    padding: 8px 12px;
+    border-radius: 4px;
     font-size: 12.5px;
-    text-transform: uppercase;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
 
 .vertical-nav a:hover {
     background-color: #dc2626;
-    padding-left: 18px;
+    padding-left: 15px;
 }
 
 #rightcolumn {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
 }
 
 /* Kartu Konten */
 .card-box {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
-    border-left: 5px solid #dc2626;
-    border-radius: 0 12px 12px 0;
-    padding: 22px 24px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-    transition: 0.3s ease;
-}
-
-.card-box:hover {
-    border-left-color: #991b1b;
-    box-shadow: 0 8px 24px rgba(220, 38, 38, 0.1);
+    border-left: 4px solid #dc2626;
+    border-radius: 8px;
+    padding: 20px 22px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
 }
 
 /* Modul 3: Tabel Biodata */
@@ -447,91 +428,37 @@ hr {
 }
 
 .table-biodata td {
-    padding: 8px;
-    border-bottom: 1px dashed #e5e7eb;
+    padding: 8px 6px;
+    border-bottom: 1px solid #f3f4f6;
     vertical-align: top;
-    color: #374151;
 }
 
 .table-biodata td.label {
-    font-weight: 800;
-    color: #991b1b;
-    width: 38%;
+    width: 140px;
+    font-weight: 600;
+    color: #4b5563;
 }
 
 /* --------------------------------------------------------------------------
-   6. MODUL 5: TATA LETAK 3 KOLOM SEJAJAR (#focus-area)
-   -------------------------------------------------------------------------- */
-.three-column-section {
-    padding: 35px 40px;
-    background: #f9fafb;
-    border-top: 1px solid #e5e7eb;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.three-column-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 16px;
-}
-
-#sidebar-kiri,
-#sidebar-tengah-atau-badan,
-#sidebar-kanan {
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-top: 3px solid #18181b;
-    border-radius: 12px;
-    padding: 22px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    transition: 0.35s ease;
-}
-
-#sidebar-kiri:hover,
-#sidebar-tengah-atau-badan:hover,
-#sidebar-kanan:hover {
-    transform: translateY(-5px);
-    border-top-color: #dc2626;
-    border-color: #dc2626;
-    box-shadow: 0 12px 25px rgba(220, 38, 38, 0.15);
-}
-
-.col-icon {
-    width: 44px;
-    height: 44px;
-    background: #fee2e2;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #dc2626;
-    font-size: 20px;
-    margin-bottom: 12px;
-}
-
-/* --------------------------------------------------------------------------
-   7. TARGET ROADMAP & GALERI HOBI TARI (FOTO MURNI)
+   6. ROADMAP TARGET BELAJAR
    -------------------------------------------------------------------------- */
 .roadmap-container {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
     margin-top: 14px;
 }
 
 .roadmap-card {
-    background: #ffffff;
+    background: #f9fafb;
     border: 1px solid #e5e7eb;
-    border-left: 5px solid #dc2626;
-    border-radius: 12px;
-    padding: 18px 20px;
-    transition: 0.3s ease;
+    border-radius: 8px;
+    padding: 16px;
+    transition: 0.2s ease;
 }
 
 .roadmap-card:hover {
-    transform: translateX(5px);
-    box-shadow: 0 8px 20px rgba(220, 38, 38, 0.12);
+    border-color: #fca5a5;
 }
 
 .roadmap-header {
@@ -539,165 +466,283 @@ hr {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 8px;
-    padding-bottom: 6px;
-    border-bottom: 1px dashed #e5e7eb;
+    gap: 6px;
 }
 
 .roadmap-phase-title {
-    font-size: 15px;
-    font-weight: 800;
-    color: #111827;
-}
-
-.roadmap-phase-title i {
+    font-size: 12.5px;
+    font-weight: 700;
     color: #dc2626;
 }
 
 .roadmap-badge {
-    background: linear-gradient(135deg, #dc2626, #991b1b);
-    color: #ffffff;
     font-size: 11px;
-    font-weight: 800;
-    padding: 3px 10px;
-    border-radius: 14px;
+    font-weight: 700;
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.roadmap-desc {
+    font-size: 13px;
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
 .roadmap-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-top: 8px;
 }
 
 .roadmap-tag {
-    background: #f3f4f6;
-    color: #1f2937;
-    font-size: 11px;
-    font-weight: 700;
+    font-size: 11.5px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    color: #374151;
     padding: 3px 8px;
+    border-radius: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   7. PROYEK MENCRAFT.ID
+   -------------------------------------------------------------------------- */
+.project-card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.project-hero {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-img-wrapper {
+    flex: 0 0 170px;
+    text-align: center;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 160px;
     border-radius: 8px;
     border: 1px solid #e5e7eb;
 }
 
-/* Galeri Hobi Foto Murni */
+.project-info {
+    flex: 1;
+}
+
+.project-badges {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.project-badge {
+    font-size: 11px;
+    font-weight: 700;
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.project-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 2px;
+}
+
+.project-title span {
+    color: #dc2626;
+}
+
+.project-tagline {
+    font-size: 12.5px;
+    font-style: italic;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.project-desc {
+    font-size: 13.5px;
+    color: #4b5563;
+    line-height: 1.55;
+    margin-bottom: 12px;
+}
+
+.project-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.project-tech-tag {
+    font-size: 11.5px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    color: #374151;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.features-title {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+}
+
+.feature-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.feature-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.feature-num {
+    background: #dc2626;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.feature-item h5 {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.feature-item p {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 0;
+    line-height: 1.45;
+}
+
+/* --------------------------------------------------------------------------
+   8. HOBI GALERI & ORGANISASI
+   -------------------------------------------------------------------------- */
 .hobby-photo-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 16px;
-    margin-top: 12px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 10px;
 }
 
 .hobby-photo-item {
-    border-radius: 12px;
+    border-radius: 6px;
     overflow: hidden;
-    height: 290px;
-    background: #18181b;
     border: 1px solid #e5e7eb;
-    transition: 0.35s ease;
-}
-
-.hobby-photo-item:hover {
-    transform: translateY(-5px);
-    border-color: #dc2626;
-    box-shadow: 0 12px 28px rgba(220, 38, 38, 0.25);
 }
 
 .hobby-photo-img {
     width: 100%;
-    height: 100%;
+    height: 150px;
     object-fit: cover;
-    object-position: top center;
-    transition: transform 0.5s ease;
-    opacity: 0.95;
     display: block;
+    transition: 0.2s ease;
 }
 
-.hobby-photo-item:hover .hobby-photo-img {
-    transform: scale(1.06);
-    opacity: 1;
+.hobby-photo-img:hover {
+    transform: scale(1.03);
 }
 
-/* --------------------------------------------------------------------------
-   8. PENGALAMAN ORGANISASI MAHASISWA & FORM KONTAK
-   -------------------------------------------------------------------------- */
 .org-container {
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    margin-top: 12px;
+    gap: 14px;
+    margin-top: 10px;
 }
 
 .org-card {
-    background: #ffffff;
+    background: #f9fafb;
     border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 0.35s ease;
-}
-
-.org-card:hover {
-    transform: translateY(-4px);
-    border-color: #dc2626;
-    box-shadow: 0 10px 25px rgba(220, 38, 38, 0.15);
+    border-radius: 8px;
+    padding: 14px;
 }
 
 .org-card-row {
     display: flex;
-    flex-direction: row;
-    gap: 18px;
+    gap: 16px;
+    align-items: center;
 }
 
 .org-img-box {
-    flex: 0 0 260px;
-    position: relative;
-    background: #18181b;
-    min-height: 180px;
+    flex: 0 0 130px;
+    text-align: center;
+}
+
+.org-badge-tag {
+    display: block;
+    font-size: 10.5px;
+    font-weight: 700;
+    background: #fee2e2;
+    color: #991b1b;
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin-bottom: 4px;
 }
 
 .org-img {
     width: 100%;
-    height: 100%;
+    height: 85px;
     object-fit: cover;
-    opacity: 0.95;
-    transition: 0.4s ease;
-}
-
-.org-card:hover .org-img {
-    transform: scale(1.04);
-}
-
-.org-badge-tag {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    background: linear-gradient(135deg, #dc2626, #991b1b);
-    color: #ffffff;
-    font-size: 10px;
-    font-weight: 800;
-    padding: 3px 8px;
-    border-radius: 16px;
-    text-transform: uppercase;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
 }
 
 .org-content {
-    padding: 16px;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .org-content h4 {
-    font-size: 15px;
-    font-weight: 800;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #111827;
     margin-bottom: 2px;
 }
 
-.org-content .org-role {
+.org-role {
     font-size: 12px;
-    font-weight: 700;
     color: #dc2626;
-    margin-bottom: 8px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.org-content p {
+    font-size: 12.5px;
+    color: #4b5563;
+    margin-bottom: 6px;
+    line-height: 1.45;
 }
 
 .org-tags {
@@ -707,16 +752,75 @@ hr {
 }
 
 .org-tag {
-    background: #f3f4f6;
-    color: #1f2937;
     font-size: 11px;
-    font-weight: 700;
-    padding: 3px 8px;
-    border-radius: 8px;
+    background: #ffffff;
     border: 1px solid #e5e7eb;
+    color: #4b5563;
+    padding: 2px 6px;
+    border-radius: 4px;
 }
 
-/* Formulir Kontak */
+/* --------------------------------------------------------------------------
+   9. KONTAK & FORM
+   -------------------------------------------------------------------------- */
+.github-banner-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px 20px;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.github-banner-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.github-icon-circle {
+    width: 44px;
+    height: 44px;
+    background: #18181b;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.contact-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.contact-card-item {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+}
+
+.contact-icon-wrapper {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 8px auto;
+    font-size: 16px;
+}
+
+/* Form Kontak */
 .form-group {
     margin-bottom: 14px;
 }
@@ -724,397 +828,117 @@ hr {
 .form-group label {
     display: block;
     font-size: 13px;
-    font-weight: bold;
-    color: #111827;
-    margin-bottom: 4px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 5px;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 10px 14px;
-    background: #fafafa;
-    border: 1.5px solid #d1d5db;
-    border-radius: 8px;
-    font-family: inherit;
+    padding: 9px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
     font-size: 13.5px;
-    color: #111827;
-    outline: none;
-    transition: 0.3s ease;
+    font-family: inherit;
+    color: #1f2937;
+    background: #ffffff;
+    transition: 0.2s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    background: #ffffff;
+    outline: none;
     border-color: #dc2626;
-    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+    box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.1);
 }
 
 /* --------------------------------------------------------------------------
-   9. MODUL 5: FOOTER (#footer & clear: both)
+   10. FOOTER (MODUL 5)
    -------------------------------------------------------------------------- */
 #footer {
-    background: linear-gradient(135deg, #09090b 0%, #18181b 100%);
-    color: #ffffff;
-    padding: 25px 40px;
+    background: #18181b;
+    color: #9ca3af;
     text-align: center;
-    border-top: 3px solid #dc2626;
-    clear: both;
+    padding: 22px 20px;
+    border-top: 1px solid #27272a;
+    font-size: 13px;
 }
 
 #footer p {
     color: #9ca3af;
-    font-size: 13px;
     margin-bottom: 4px;
 }
 
 #footer a {
-    color: #f87171;
-    font-weight: 700;
+    color: #d1d5db;
+    font-size: 12.5px;
 }
 
 #footer a:hover {
     color: #ffffff;
+    text-decoration: underline;
 }
 
 /* --------------------------------------------------------------------------
-   10. OPENING SCREEN & SCROLL LOCK
+   11. RESPONSIVE MEDIA QUERIES
    -------------------------------------------------------------------------- */
-html.scroll-locked,
-body.scroll-locked {
-    overflow: hidden !important;
-    height: 100vh !important;
-    position: fixed !important;
-    width: 100% !important;
-}
-
-html.scroll-locked .main-content-layout,
-html.scroll-locked .three-column-section,
-html.scroll-locked #footer {
-    display: none !important;
-}
-
-.opening-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: radial-gradient(circle at center, #18181b 0%, #09090b 100%);
-    z-index: 999999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.opening-overlay.hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-.opening-card-container {
-    background: rgba(24, 24, 27, 0.96);
-    border: 1px solid #3f3f46;
-    border-radius: 20px;
-    padding: 35px 28px;
-    max-width: 480px;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(220, 38, 38, 0.3);
-}
-
-.opening-avatar-wrapper {
-    position: relative;
-    width: 110px;
-    height: 110px;
-    margin: 0 auto 16px auto;
-}
-
-.opening-avatar-ring {
-    position: absolute;
-    inset: -5px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #dc2626, #ef4444, #991b1b, #dc2626);
-    background-size: 300% 300%;
-    animation: ringSpin 4s linear infinite;
-}
-
-.opening-avatar-img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #18181b;
-}
-
-.opening-title {
-    font-size: 24px;
-    font-weight: 900;
-    color: #ffffff;
-    margin-bottom: 22px;
-}
-
-.btn-enter-portfolio {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
-    color: #ffffff !important;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.btn-enter-portfolio:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(220, 38, 38, 0.5);
-}
-
-/* --------------------------------------------------------------------------
-   PROJECT SHOWCASE (mencraft.id)
-   -------------------------------------------------------------------------- */
-.project-card {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 14px;
-    overflow: hidden;
-    margin-top: 14px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-    transition: 0.3s ease;
-}
-
-.project-card:hover {
-    box-shadow: 0 10px 28px rgba(220, 38, 38, 0.12);
-    border-color: #fecaca;
-}
-
-.project-hero {
-    display: flex;
-    flex-direction: row;
-    gap: 28px;
-    align-items: center;
-    background: linear-gradient(135deg, #09090b 0%, #18181b 60%, #27272a 100%);
-    padding: 28px 30px;
-    border-bottom: 3px solid #dc2626;
-}
-
-.project-img-wrapper {
-    flex: 0 0 280px;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 2px solid #3f3f46;
-    background: #000000;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.35s ease;
-}
-
-.project-img-wrapper:hover {
-    border-color: #dc2626;
-    box-shadow: 0 10px 30px rgba(220, 38, 38, 0.4);
-    transform: translateY(-3px);
-}
-
-.project-img {
-    width: 100%;
-    height: auto;
-    max-height: 180px;
-    display: block;
-    object-fit: contain;
-    transition: transform 0.4s ease;
-}
-
-.project-img-wrapper:hover .project-img {
-    transform: scale(1.05);
-}
-
-.project-info {
-    flex: 1;
-}
-
-.project-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 10px;
-}
-
-.project-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: rgba(220, 38, 38, 0.18);
-    color: #fca5a5;
-    font-size: 11.5px;
-    font-weight: 800;
-    padding: 4px 12px;
-    border-radius: 20px;
-    border: 1px solid rgba(220, 38, 38, 0.4);
-}
-
-.project-title {
-    font-size: 26px;
-    font-weight: 900;
-    color: #ffffff;
-    margin-bottom: 4px;
-    letter-spacing: 0.5px;
-}
-
-.project-title span {
-    color: #ef4444;
-}
-
-.project-tagline {
-    font-size: 13px;
-    font-style: italic;
-    color: #f87171;
-    margin-bottom: 12px;
-}
-
-.project-desc {
-    color: #e5e7eb;
-    font-size: 14px;
-    line-height: 1.65;
-    margin-bottom: 16px;
-}
-
-.project-tech-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.project-tech-tag {
-    background: rgba(255, 255, 255, 0.08);
-    color: #f3f4f6;
-    font-size: 11.5px;
-    font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.project-tech-tag i {
-    color: #ef4444;
-}
-
-.project-body {
-    padding: 28px 30px;
-    background: #ffffff;
-}
-
-.features-title {
-    font-size: 16.5px;
-    font-weight: 800;
-    color: #111827;
-    margin-bottom: 18px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.features-title i {
-    color: #dc2626;
-}
-
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-}
-
-.feature-item {
-    background: #fafafa;
-    border: 1px solid #e5e7eb;
-    border-left: 4px solid #dc2626;
-    border-radius: 10px;
-    padding: 18px;
-    transition: all 0.3s ease;
-}
-
-.feature-item:hover {
-    background: #ffffff;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 22px rgba(220, 38, 38, 0.12);
-    border-left-color: #991b1b;
-    border-color: #fecaca;
-}
-
-.feature-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 10px;
-}
-
-.feature-num {
-    width: 32px;
-    height: 32px;
-    background: #fee2e2;
-    color: #dc2626;
-    font-weight: 900;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    flex-shrink: 0;
-    border: 1.5px solid #fca5a5;
-}
-
-.feature-item h5 {
-    font-size: 15px;
-    font-weight: 800;
-    color: #111827;
-    margin: 0;
-}
-
-.feature-item p {
-    font-size: 13.5px;
-    color: #4b5563;
-    margin-bottom: 0;
-    line-height: 1.6;
-}
-
-@keyframes ringSpin {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* --------------------------------------------------------------------------
-   11. RESPONSIVE DESIGN
-   -------------------------------------------------------------------------- */
-@media (max-width: 900px) {
-    .main-content-layout { padding: 25px 20px; }
-    .three-column-container,
-    .biodata-unified-grid,
-    .org-card-row,
-    .project-hero,
-    .features-grid { grid-template-columns: 1fr; flex-direction: column; }
-    .project-img-wrapper { flex: 0 0 auto; width: 100%; }
-    .beranda-hero-top { flex-direction: column; text-align: center; }
-    .hero-actions { justify-content: center; }
-}
-
-@media (max-width: 600px) {
-    #header h1 { font-size: 24px; }
-    #menu { height: auto; flex-direction: column; }
-    #menu li { float: none; height: auto; }
-    #menu li a { border: none; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-    #menu ul { position: static; display: none; }
-    #menu li:hover > ul { display: block; }
+@media (max-width: 768px) {
+    #wrapper {
+        margin: 0;
+        border-radius: 0;
+        border: none;
+    }
+    .beranda-hero-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-actions {
+        justify-content: center;
+    }
+    .biodata-unified-grid {
+        grid-template-columns: 1fr;
+    }
+    .main-content-layout[style*="flex-direction: row"] {
+        flex-direction: column !important;
+    }
+    #leftcolumn {
+        width: 100%;
+    }
+    .project-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .project-badges, .project-tech-tags {
+        justify-content: center;
+    }
+    .hobby-photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .org-card-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .org-tags {
+        justify-content: center;
+    }
+    .github-banner-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .github-banner-left {
+        flex-direction: column;
+    }
+    #menu {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    #menu li {
+        height: auto;
+    }
+    #menu li a {
+        line-height: 40px;
+        padding: 0 12px;
+        font-size: 12px;
+    }
 }

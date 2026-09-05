@@ -44,7 +44,7 @@
 
 > **mencraft.id** adalah aplikasi sederhana untuk mempermudah pemesanan bucket. Saya membuatnya menggunakan **Python** sebagai salah satu proyek untuk belajar membuat aplikasi.
 
-### ✨ Fitur Utama mencraft.id:
+### Fitur Utama mencraft.id:
 1. **Pilih Bucket**: Memilih jenis bucket yang tersedia beserta harga melalui menu pilihan.
 2. **Tambah Pesanan**: Menambahkan bucket ke daftar pesanan dan menentukan jumlah yang ingin dipesan.
 3. **Kelola Pesanan**: Mengubah atau menghapus pesanan yang sudah dimasukkan ke dalam daftar.

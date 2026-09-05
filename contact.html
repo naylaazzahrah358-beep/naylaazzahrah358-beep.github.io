@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak - Nayla Azzahra R</title>
     <!-- Modul 3: CSS Eksternal & Icon FontAwesome -->
-    <link rel="stylesheet" href="style.css?v=20260901_final" type="text/css">
+    <link rel="stylesheet" href="style.css?v=20260905_clean" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
         <!-- Header -->
         <header id="header">
             <h1>HUBUNGI SAYA</h1>
-            <p>Saluran Komunikasi, Kolaborasi & Informasi Kontak</p>
+            <p>Saluran Komunikasi, Diskusi Akademik & Informasi Kontak</p>
         </header>
 
         <!-- Modul 5 & 6: Navigasi & Dropdown -->
@@ -41,52 +41,80 @@
                 <h3 class="headlines" style="justify-content: center; font-size: 18px;">Informasi Kontak</h3>
                 <table class="table-biodata">
                     <tr>
-                        <td class="label"><i class="fa-solid fa-envelope" style="color:#dc2626;"></i> Email:</td>
+                        <td class="label">Email:</td>
                         <td><a href="mailto:naylaazzahrah358@gmail.com" style="word-break: break-all;">naylaazzahrah358@gmail.com</a></td>
                     </tr>
                     <tr>
-                        <td class="label"><i class="fa-brands fa-whatsapp" style="color:#25d366;"></i> WhatsApp:</td>
+                        <td class="label">WhatsApp:</td>
                         <td><a href="https://wa.me/6285705952172" target="_blank">085705952172</a></td>
                     </tr>
                     <tr>
-                        <td class="label"><i class="fa-brands fa-instagram" style="color:#e1306c;"></i> Instagram:</td>
+                        <td class="label">Instagram:</td>
                         <td><a href="https://instagram.com/nylazhrh9_" target="_blank">@nylazhrh9_</a></td>
                     </tr>
                     <tr>
-                        <td class="label"><i class="fa-brands fa-github" style="color:#111827;"></i> GitHub:</td>
+                        <td class="label">GitHub:</td>
                         <td><a href="https://github.com/naylaazzahrah358-beep" target="_blank">naylaazzahrah358-beep</a></td>
                     </tr>
                 </table>
                 <hr>
-                <h4 class="sublines"><i class="fa-solid fa-clock"></i> Respon Cepat</h4>
-                <p class="infotext">Silakan hubungi saya melalui email, WhatsApp, atau Instagram untuk diskusi akademik dan kolaborasi.</p>
+                <h4 class="sublines">Respon</h4>
+                <p class="infotext">Silakan hubungi saya melalui media sosial atau email untuk keperluan praktikum dan diskusi perkuliahan.</p>
+                <a href="https://github.com/naylaazzahrah358-beep" target="_blank" class="btn-dark" style="margin-top: 10px; width: 100%; justify-content: center;">
+                    <i class="fa-brands fa-github"></i> Buka GitHub
+                </a>
             </aside>
 
-            <!-- Kolom Kanan: Formulir Pesan Interaktif -->
+            <!-- Kolom Kanan: Showcase GitHub & Formulir Pesan -->
             <section id="rightcolumn">
+                
+                <!-- Banner GitHub -->
+                <div class="github-banner-card" style="margin-bottom: 0;">
+                    <div class="github-banner-left">
+                        <div class="github-icon-circle">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div>
+                            <span class="badge-tag" style="background: rgba(220, 38, 38, 0.15); color: #dc2626; border-color: rgba(220, 38, 38, 0.3); margin-bottom: 6px;">
+                                Profil GitHub
+                            </span>
+                            <h4 style="font-size: 18px; font-weight: 800; margin: 3px 0; color: #111827;">naylaazzahrah358-beep</h4>
+                            <p style="color: #4b5563; font-size: 13px; margin-bottom: 0;">
+                                Klik untuk langsung masuk ke profil GitHub dan melihat repositori kode pemrograman saya.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="github-banner-right">
+                        <a href="https://github.com/naylaazzahrah358-beep" target="_blank" class="btn-dark">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Masuk GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
                 <div class="card-box">
-                    <h3 class="headlines"><i class="fa-solid fa-paper-plane"></i> Kirimkan Pesan</h3>
-                    <p class="infotext" style="margin-bottom: 16px;">Silakan lengkapi formulir di bawah ini untuk mengirimkan pesan kepada saya:</p>
+                    <h3 class="headlines"><i class="fa-solid fa-paper-plane"></i> Kirim Pesan</h3>
+                    <p class="infotext" style="margin-bottom: 16px;">Silakan lengkapi formulir di bawah ini untuk mengirimkan pesan:</p>
 
                     <form action="#" method="POST" onsubmit="alert('Terima kasih! Pesan Anda telah berhasil dikirimkan.'); return false;">
                         <div class="form-group">
-                            <label for="nama"><i class="fa-solid fa-user" style="color:#dc2626;"></i> Nama Lengkap:</label>
-                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda..." required>
+                            <label for="nama">Nama Lengkap:</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
                         </div>
                         <div class="form-group">
-                            <label for="email"><i class="fa-solid fa-envelope" style="color:#dc2626;"></i> Alamat Email:</label>
+                            <label for="email">Alamat Email:</label>
                             <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="subjek"><i class="fa-solid fa-tag" style="color:#dc2626;"></i> Topik / Subjek:</label>
-                            <input type="text" id="subjek" name="subjek" placeholder="Masukkan topik pesan..." required>
+                            <label for="subjek">Subjek Pesan:</label>
+                            <input type="text" id="subjek" name="subjek" placeholder="Topik pesan..." required>
                         </div>
                         <div class="form-group">
-                            <label for="pesan"><i class="fa-solid fa-comment-dots" style="color:#dc2626;"></i> Isi Pesan:</label>
+                            <label for="pesan">Isi Pesan:</label>
                             <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
                         </div>
-                        <button type="submit" class="btn-pink" style="cursor: pointer;">
-                            <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Sekarang
+                        <button type="submit" class="btn-primary" style="cursor: pointer;">
+                            <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
                         </button>
                     </form>
                 </div>
@@ -95,14 +123,14 @@
 
         <!-- Footer -->
         <footer id="footer">
-            <p>&copy; 2025 Nayla Azzahra R | Mahasiswi Teknik Komputer (Kelas C)</p>
-            <p style="font-size: 12px; color: #9ca3af;">Praktikum Pemrograman Web - Implementasi Seluruh Modul CSS.</p>
+            <p>&copy; 2025 Nayla Azzahra R &bull; Mahasiswi Teknik Komputer (Kelas C)</p>
+            <p style="font-size: 12px; color: #6b7280;">Praktikum Pemrograman Web - Fakultas Teknik Universitas Negeri Makassar</p>
             <div style="margin-top: 8px;">
                 <a href="index.html">Home</a> &bull;
                 <a href="about.html">Biodata</a> &bull;
                 <a href="contact.html">Kontak</a> &bull;
-                <a href="https://instagram.com/nylazhrh9_" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a> &bull;
-                <a href="https://github.com/naylaazzahrah358-beep" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://instagram.com/nylazhrh9_" target="_blank">Instagram</a> &bull;
+                <a href="https://github.com/naylaazzahrah358-beep" target="_blank">GitHub</a>
             </div>
         </footer>
 
