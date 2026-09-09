@@ -62,14 +62,31 @@
     box-shadow: 0 4px 12px rgba(14, 165, 233, 0.14);
 }
 
-/* 4. ANIMASI FOTO PROFIL & GALERI */
+/* 4. ANIMASI FOTO PROFIL (EFEK BERCAHAYA / GLOWING PULSE) & GALERI */
+@keyframes photoGlowPulse {
+    0% {
+        box-shadow: 0 0 10px rgba(14, 165, 233, 0.45), 0 0 20px rgba(56, 189, 248, 0.25);
+        border-color: #0284c7;
+    }
+    50% {
+        box-shadow: 0 0 22px rgba(14, 165, 233, 0.85), 0 0 35px rgba(56, 189, 248, 0.55), 0 0 50px rgba(2, 132, 199, 0.35);
+        border-color: #38bdf8;
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(14, 165, 233, 0.45), 0 0 20px rgba(56, 189, 248, 0.25);
+        border-color: #0284c7;
+    }
+}
+
 .profile-photo {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    animation: photoGlowPulse 2.8s ease-in-out infinite;
 }
 
 .profile-photo:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    transform: scale(1.03);
+    box-shadow: 0 0 26px rgba(14, 165, 233, 0.95), 0 0 45px rgba(56, 189, 248, 0.75);
+    border-color: #38bdf8;
 }
 
 .hobby-photo-img {

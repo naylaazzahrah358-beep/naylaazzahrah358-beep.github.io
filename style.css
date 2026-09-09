@@ -187,8 +187,8 @@ hr {
     width: 180px;
     height: 240px;
     object-fit: cover;
-    border: 3px solid #18181b;
-    border-radius: 6px;
+    border: 3px solid #0284c7;
+    border-radius: 8px;
 }
 
 .hero-text {
