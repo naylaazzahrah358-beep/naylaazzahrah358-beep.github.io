@@ -117,6 +117,7 @@ naylaazzahrah358-beep.github.io/
 ├── contact.html          # Halaman formulir kontak & saluran komunikasi
 ├── style.css             # Stylesheet utama (Desain sederhana, bersih & modular Modul 3-6)
 ├── animasi.css           # Stylesheet animasi transisi slide & hover
+├── script.js             # JavaScript terpadu untuk kontrol slide, form & navigasi
 ├── mencraft.py           # Source code program aplikasi Python mencraft.id
 ├── foto-profil.jpg       # Foto profil utama
 ├── foto-organisasi-1.jpg # Dokumentasi Kegiatan Kepemimpinan Luar Ruang
@@ -138,4 +139,4 @@ naylaazzahrah358-beep.github.io/
 - **WhatsApp**: 085705952172
 - **Email**: [naylaazzahrah358@gmail.com](mailto:naylaazzahrah358@gmail.com)
 - **GitHub**: [@naylaazzahrah358-beep](https://github.com/naylaazzahrah358-beep)
-- **Website Live**: [https://naylaazzahrah358-beep.github.io](https://naylaazzahrah358-beep.github.io)
+- **Website Live**: [https://naylaazzahrah358-beep.github.io](https://naylaazzahrah358-beep.github.io)

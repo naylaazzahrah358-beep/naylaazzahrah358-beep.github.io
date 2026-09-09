@@ -89,7 +89,8 @@
                     <h3 class="headlines">Kirim Pesan</h3>
                     <p class="infotext" style="margin-bottom: 16px;">Silakan lengkapi formulir di bawah ini untuk mengirimkan pesan:</p>
 
-                    <form action="#" method="POST" onsubmit="alert('Terima kasih! Pesan Anda telah berhasil dikirimkan.'); return false;">
+                    <div id="form-status" style="display: none; margin-bottom: 14px;"></div>
+                    <form id="form-kontak" action="#" method="POST">
                         <div class="form-group">
                             <label for="nama">Nama Lengkap:</label>
                             <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
@@ -128,5 +129,7 @@
         </footer>
 
     </div>
+    <!-- JavaScript Terpadu -->
+    <script src="script.js"></script>
 </body>
 </html>
