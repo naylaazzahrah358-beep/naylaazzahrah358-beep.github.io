@@ -1,10 +1,10 @@
 /* ==========================================================================
-   PORTOFOLIO NAYLA AZZAHRA R - STYLESHEET SEDERHANA
-   Satu file CSS sederhana dan rapi yang mewakili seluruh halaman
+   PORTOFOLIO NAYLA AZZAHRA R - STYLESHEET SEDERHANA & BERSIH
+   Satu file CSS sederhana tanpa simbol / logo eksternal
    Mencakup materi Praktikum Pemrograman Web (Modul 3, 4, 5, dan 6)
    ========================================================================== */
 
-/* 1. RESET & DASAR (MODUL 3) */
+/* 1. RESET, DASAR & TYPOGRAPHY (MODUL 3) */
 * {
     margin: 0;
     padding: 0;
@@ -18,11 +18,32 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5 { color: #111827; }
-p { margin-bottom: 10px; font-size: 14px; color: #4b5563; }
-a { color: #dc2626; text-decoration: none; transition: 0.2s; }
-a:hover { color: #991b1b; }
-hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
+h1, h2, h3, h4, h5 {
+    color: #111827;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+a {
+    color: #dc2626;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #991b1b;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e5e7eb;
+    margin: 16px 0;
+}
 
 /* Grouping Selector (Modul 3) */
 .headlines {
@@ -32,13 +53,19 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     border-bottom: 2px solid #dc2626;
     padding-bottom: 6px;
     margin-bottom: 14px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
-.headlines i { color: #dc2626; }
-.sublines { font-size: 14px; font-weight: 700; color: #991b1b; margin: 6px 0 4px; }
-.infotext { font-size: 13.5px; color: #4b5563; }
+
+.sublines {
+    font-size: 14px;
+    font-weight: 700;
+    color: #991b1b;
+    margin: 6px 0 4px;
+}
+
+.infotext {
+    font-size: 13.5px;
+    color: #4b5563;
+}
 
 /* 2. STRUKTUR LAYOUT UTAMA (MODUL 5) */
 #wrapper {
@@ -58,10 +85,21 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     text-align: center;
     border-bottom: 3px solid #dc2626;
 }
-#header h1 { font-size: 24px; letter-spacing: 1px; color: #ffffff; margin-bottom: 4px; }
-#header p { font-size: 13px; color: #d1d5db; margin-bottom: 0; }
 
-/* 3. NAVIGASI HORIZONTAL & DROPDOWN (MODUL 5 & 6) */
+#header h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+#header p {
+    font-size: 13px;
+    color: #d1d5db;
+    margin-bottom: 0;
+}
+
+/* 3. NAVIGASI HORIZONTAL & DROPDOWN (MODUL 5 & MODUL 6) */
 #nav-container {
     background-color: #111827;
     border-bottom: 2px solid #dc2626;
@@ -75,10 +113,14 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     display: flex;
     justify-content: center;
 }
-#menu li { position: relative; }
+
+#menu li {
+    position: relative;
+}
+
 #menu li a {
     display: block;
-    padding: 12px 18px;
+    padding: 12px 20px;
     color: #f3f4f6;
     font-size: 13px;
     font-weight: 600;
@@ -86,9 +128,16 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     border-right: 1px solid #27272a;
     transition: 0.2s;
 }
-#menu li:first-child a { border-left: 1px solid #27272a; }
-#menu li a i { margin-right: 5px; }
-#menu li a:hover, #menu li.active a { background-color: #dc2626; color: #ffffff; }
+
+#menu li:first-child a {
+    border-left: 1px solid #27272a;
+}
+
+#menu li a:hover,
+#menu li.active a {
+    background-color: #dc2626;
+    color: #ffffff;
+}
 
 /* Submenu Dropdown (Modul 6) */
 #menu ul {
@@ -99,11 +148,15 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     background: #18181b;
     min-width: 180px;
     list-style: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border: 1px solid #374151;
     border-top: 2px solid #dc2626;
 }
-#menu li:hover > ul { display: block; }
+
+#menu li:hover > ul {
+    display: block;
+}
+
 #menu ul li a {
     padding: 9px 14px;
     border: none;
@@ -112,18 +165,24 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     font-size: 12.5px;
 }
 
-/* 4. BERANDA HERO SECTION (MODUL 4 & 5) */
+/* 4. BERANDA HERO SECTION & GAMBAR (MODUL 4 & MODUL 5) */
 .beranda-hero-section {
     padding: 28px;
     background-color: #ffffff;
     border-bottom: 1px solid #e5e7eb;
 }
+
 .beranda-hero-top {
     display: flex;
     align-items: center;
     gap: 28px;
 }
-.hero-photo-box { flex: 0 0 190px; text-align: center; }
+
+.hero-photo-box {
+    flex: 0 0 190px;
+    text-align: center;
+}
+
 .profile-photo {
     width: 180px;
     height: 240px;
@@ -131,7 +190,11 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     border: 3px solid #18181b;
     border-radius: 6px;
 }
-.hero-text { flex: 1; }
+
+.hero-text {
+    flex: 1;
+}
+
 .badge-tag {
     display: inline-block;
     background-color: #fee2e2;
@@ -142,16 +205,33 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     border-radius: 12px;
     margin-bottom: 8px;
 }
-.hero-title { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
-.hero-title span { color: #dc2626; }
-.hero-desc { font-size: 13.5px; line-height: 1.6; margin-bottom: 14px; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.hero-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.hero-title span {
+    color: #dc2626;
+}
+
+.hero-desc {
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
 
 /* Tombol Aksi */
 .btn-primary, .btn-outline, .btn-dark {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
     padding: 8px 14px;
     border-radius: 4px;
     font-size: 13px;
@@ -160,25 +240,49 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     border: none;
     transition: 0.2s;
 }
-.btn-primary { background-color: #dc2626; color: #ffffff !important; }
-.btn-primary:hover { background-color: #b91c1c; }
-.btn-outline { background-color: #ffffff; color: #1f2937 !important; border: 1px solid #d1d5db; }
-.btn-outline:hover { background-color: #f3f4f6; }
-.btn-dark { background-color: #18181b; color: #ffffff !important; }
-.btn-dark:hover { background-color: #27272a; }
 
-/* 5. TATA LETAK UTAMA & 2 KOLOM (MODUL 5) */
+.btn-primary {
+    background-color: #dc2626;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background-color: #b91c1c;
+}
+
+.btn-outline {
+    background-color: #ffffff;
+    color: #1f2937 !important;
+    border: 1px solid #d1d5db;
+}
+
+.btn-outline:hover {
+    background-color: #f3f4f6;
+}
+
+.btn-dark {
+    background-color: #18181b;
+    color: #ffffff !important;
+}
+
+.btn-dark:hover {
+    background-color: #27272a;
+}
+
+/* 5. TATA LETAK KONTEN & KARTU (MODUL 5) */
 .main-content-layout {
     padding: 24px 28px;
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
+
 .two-column-layout {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
+
 #leftcolumn {
     flex: 0 0 260px;
     background-color: #f9fafb;
@@ -187,12 +291,14 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     padding: 16px;
     align-self: flex-start;
 }
+
 #rightcolumn {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
+
 .card-box {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
@@ -202,8 +308,15 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
 }
 
 /* Navigasi Vertikal Sidebar (Modul 5) */
-.vertical-nav { list-style: none; margin: 10px 0; }
-.vertical-nav li { margin-bottom: 6px; }
+.vertical-nav {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.vertical-nav li {
+    margin-bottom: 6px;
+}
+
 .vertical-nav a {
     display: block;
     background-color: #18181b;
@@ -214,19 +327,45 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     font-size: 12px;
     font-weight: 600;
 }
-.vertical-nav a:hover { background-color: #dc2626; }
+
+.vertical-nav a:hover {
+    background-color: #dc2626;
+}
 
 /* 6. TABEL BIODATA & KARTU PROFIL (MODUL 3) */
-.table-biodata { width: 100%; border-collapse: collapse; margin: 6px 0; font-size: 13.5px; }
-.table-biodata td { padding: 6px 4px; border-bottom: 1px solid #f3f4f6; vertical-align: top; }
-.table-biodata td.label { width: 130px; font-weight: 600; color: #4b5563; }
-.biodata-unified-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 8px; }
+.table-biodata {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6px 0;
+    font-size: 13.5px;
+}
+
+.table-biodata td {
+    padding: 6px 4px;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: top;
+}
+
+.table-biodata td.label {
+    width: 130px;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.biodata-unified-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 8px;
+}
+
 .biodata-unified-left, .biodata-unified-right {
     background-color: #f9fafb;
     border: 1px solid #e5e7eb;
     border-radius: 6px;
     padding: 14px;
 }
+
 .status-box {
     background-color: #fef2f2;
     border-left: 4px solid #dc2626;
@@ -244,14 +383,27 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     gap: 12px;
     margin-top: 10px;
 }
+
 .roadmap-card {
     background-color: #f9fafb;
     border: 1px solid #e5e7eb;
     border-radius: 6px;
     padding: 12px;
 }
-.roadmap-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
-.roadmap-phase-title { font-size: 12px; font-weight: 700; color: #dc2626; }
+
+.roadmap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.roadmap-phase-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #dc2626;
+}
+
 .roadmap-badge {
     font-size: 10.5px;
     font-weight: 700;
@@ -260,8 +412,19 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     padding: 2px 6px;
     border-radius: 8px;
 }
-.roadmap-desc { font-size: 12.5px; color: #4b5563; margin-bottom: 8px; }
-.roadmap-tags, .project-tech-tags, .org-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+
+.roadmap-desc {
+    font-size: 12.5px;
+    color: #4b5563;
+    margin-bottom: 8px;
+}
+
+.roadmap-tags, .project-tech-tags, .org-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
 .roadmap-tag, .project-tech-tag, .org-tag {
     font-size: 11px;
     background-color: #ffffff;
@@ -278,11 +441,36 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     border-radius: 6px;
     padding: 14px;
 }
-.project-hero { display: flex; gap: 16px; align-items: center; margin-bottom: 14px; }
-.project-img-wrapper { flex: 0 0 130px; text-align: center; }
-.project-img { width: 100%; max-width: 120px; border-radius: 6px; border: 1px solid #e5e7eb; }
-.project-info { flex: 1; }
-.project-badges { display: flex; gap: 6px; margin-bottom: 4px; }
+
+.project-hero {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.project-img-wrapper {
+    flex: 0 0 130px;
+    text-align: center;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-badges {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
 .project-badge {
     font-size: 10.5px;
     font-weight: 700;
@@ -291,14 +479,54 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     padding: 2px 6px;
     border-radius: 6px;
 }
-.project-title { font-size: 18px; font-weight: 800; }
-.project-title span { color: #dc2626; }
-.project-tagline { font-size: 12px; font-style: italic; color: #6b7280; margin-bottom: 6px; }
-.project-desc { font-size: 13px; margin-bottom: 8px; }
-.features-title { font-size: 13.5px; font-weight: 700; margin-bottom: 8px; }
-.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; }
-.feature-item { background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 4px; padding: 8px 10px; }
-.feature-header { display: flex; align-items: center; gap: 6px; margin-bottom: 2px; }
+
+.project-title {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.project-title span {
+    color: #dc2626;
+}
+
+.project-tagline {
+    font-size: 12px;
+    font-style: italic;
+    color: #6b7280;
+    margin-bottom: 6px;
+}
+
+.project-desc {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.features-title {
+    font-size: 13.5px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 8px;
+}
+
+.feature-item {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 8px 10px;
+}
+
+.feature-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 2px;
+}
+
 .feature-num {
     background-color: #dc2626;
     color: #ffffff;
@@ -311,18 +539,66 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     font-size: 10px;
     font-weight: 700;
 }
-.feature-item h5 { font-size: 12.5px; }
-.feature-item p { font-size: 11.5px; margin-bottom: 0; }
+
+.feature-item h5 {
+    font-size: 12.5px;
+}
+
+.feature-item p {
+    font-size: 11.5px;
+    margin-bottom: 0;
+}
 
 /* 9. HOBI GALERI & PENGALAMAN ORGANISASI (MODUL 4) */
-.hobby-photo-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 8px; }
-.hobby-photo-item { border-radius: 4px; overflow: hidden; border: 1px solid #e5e7eb; }
-.hobby-photo-img { width: 100%; height: 130px; object-fit: cover; display: block; transition: 0.2s; }
-.hobby-photo-img:hover { transform: scale(1.03); }
-.org-container { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
-.org-card { background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 6px; padding: 10px 12px; }
-.org-card-row { display: flex; gap: 12px; align-items: center; }
-.org-img-box { flex: 0 0 110px; }
+.hobby-photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.hobby-photo-item {
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+.hobby-photo-img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+    transition: 0.2s;
+}
+
+.hobby-photo-img:hover {
+    transform: scale(1.03);
+}
+
+.org-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.org-card {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+.org-card-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.org-img-box {
+    flex: 0 0 110px;
+}
+
 .org-badge-tag {
     display: inline-block;
     font-size: 10px;
@@ -333,11 +609,36 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     border-radius: 4px;
     margin-bottom: 4px;
 }
-.org-img { width: 100%; height: 75px; object-fit: cover; border-radius: 4px; border: 1px solid #e5e7eb; }
-.org-content { flex: 1; }
-.org-content h4 { font-size: 13.5px; margin-bottom: 2px; }
-.org-role { font-size: 11.5px; color: #dc2626; font-weight: 600; display: block; margin-bottom: 2px; }
-.org-content p { font-size: 12px; margin-bottom: 4px; }
+
+.org-img {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #e5e7eb;
+}
+
+.org-content {
+    flex: 1;
+}
+
+.org-content h4 {
+    font-size: 13.5px;
+    margin-bottom: 2px;
+}
+
+.org-role {
+    font-size: 11.5px;
+    color: #dc2626;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.org-content p {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
 
 /* 10. KONTAK & FORMULIR */
 .github-banner-card {
@@ -347,48 +648,42 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     background-color: #f9fafb;
     border: 1px solid #e5e7eb;
     border-radius: 6px;
-    padding: 12px 16px;
+    padding: 14px 18px;
     gap: 12px;
     margin-bottom: 12px;
 }
-.github-banner-left { display: flex; align-items: center; gap: 12px; }
-.github-icon-circle {
-    width: 38px;
-    height: 38px;
-    background-color: #18181b;
-    color: #ffffff;
-    border-radius: 50%;
+
+.github-banner-left {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    flex-shrink: 0;
 }
+
 .contact-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 10px;
     margin-top: 10px;
 }
+
 .contact-card-item {
     background-color: #f9fafb;
     border: 1px solid #e5e7eb;
     border-radius: 6px;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
 }
-.contact-icon-wrapper {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 6px;
-    font-size: 15px;
+
+.form-group {
+    margin-bottom: 12px;
 }
-.form-group { margin-bottom: 12px; }
-.form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 8px 10px;
@@ -397,7 +692,11 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     font-size: 13px;
     font-family: inherit;
 }
-.form-group input:focus, .form-group textarea:focus { outline: none; border-color: #dc2626; }
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #dc2626;
+}
 
 /* 11. FOOTER (MODUL 5) */
 #footer {
@@ -408,24 +707,54 @@ hr { border: none; height: 1px; background-color: #e5e7eb; margin: 16px 0; }
     border-top: 1px solid #27272a;
     font-size: 12.5px;
 }
-#footer p { color: #9ca3af; margin-bottom: 3px; }
-#footer a { color: #d1d5db; }
-#footer a:hover { color: #ffffff; text-decoration: underline; }
+
+#footer p {
+    color: #9ca3af;
+    margin-bottom: 3px;
+}
+
+#footer a {
+    color: #d1d5db;
+}
+
+#footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
 
 /* 12. RESPONSIVE MOBILE (MEDIA QUERY) */
 @media (max-width: 768px) {
-    #wrapper { margin: 0; border-radius: 0; border: none; }
+    #wrapper {
+        margin: 0;
+        border-radius: 0;
+        border: none;
+    }
     .beranda-hero-top, .org-card-row, .project-hero, .github-banner-card, .two-column-layout {
         flex-direction: column !important;
         text-align: center;
     }
-    #leftcolumn { width: 100%; }
+    #leftcolumn {
+        width: 100%;
+    }
     .hero-actions, .biodata-unified-grid, .project-badges, .roadmap-tags, .org-tags {
         justify-content: center;
     }
-    .biodata-unified-grid { grid-template-columns: 1fr; }
-    .hobby-photo-gallery { grid-template-columns: repeat(2, 1fr); }
-    #menu { flex-wrap: wrap; height: auto; }
-    #menu li { height: auto; }
-    #menu li a { line-height: 36px; padding: 0 10px; font-size: 12px; }
+    .biodata-unified-grid {
+        grid-template-columns: 1fr;
+    }
+    .hobby-photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #menu {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    #menu li {
+        height: auto;
+    }
+    #menu li a {
+        line-height: 36px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
 }
