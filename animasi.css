@@ -1,0 +1,88 @@
+/* ==========================================================================
+   ANIMASI PORTOFOLIO - NAYLA AZZAHRA R
+   File stylesheet khusus animasi sederhana dan halus (Modul CSS Animation)
+   ========================================================================== */
+
+/* 1. ANIMASI PERPINDAHAN SLIDE (FADE & SLIDE HALUS) */
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Terapkan animasi saat slide aktif */
+.slide-item.active {
+    display: block;
+    animation: slideFadeIn 0.35s ease-out forwards;
+}
+
+/* 2. ANIMASI INTERAKSI TOMBOL (HOVER & TRANSISI) */
+.btn-primary, 
+.btn-outline, 
+.btn-dark, 
+.btn-slide {
+    transition: background-color 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
+}
+
+.btn-primary:hover, 
+.btn-outline:hover, 
+.btn-dark:hover,
+.btn-slide:hover:not(:disabled) {
+    transform: translateY(-2px);
+}
+
+.btn-primary:active, 
+.btn-outline:active, 
+.btn-dark:active,
+.btn-slide:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* 3. ANIMASI KARTU KONTEN SAAT KURSOR MENGARAH */
+.card-box, 
+.roadmap-card, 
+.project-card, 
+.org-card, 
+.contact-card-item {
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-box:hover, 
+.roadmap-card:hover, 
+.org-card:hover, 
+.contact-card-item:hover {
+    border-color: #dc2626;
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.08);
+}
+
+/* 4. ANIMASI FOTO PROFIL & GALERI */
+.profile-photo {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.hobby-photo-img {
+    transition: transform 0.25s ease;
+}
+
+.hobby-photo-img:hover {
+    transform: scale(1.03);
+}
+
+/* 5. ANIMASI MENU NAVIGASI */
+#menu li a {
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.slide-dot {
+    transition: background-color 0.2s ease, width 0.2s ease;
+}

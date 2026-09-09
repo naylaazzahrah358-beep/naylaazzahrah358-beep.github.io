@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio - Nayla Azzahra R | Teknik Komputer FT-UNM</title>
+    <!-- Stylesheet Utama & Animasi Terpisah -->
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="animasi.css" type="text/css">
 </head>
 <body>
 
@@ -17,268 +19,275 @@
             <p>Portofolio Pemrograman Web - Mahasiswi Teknik Komputer (Kelas C 2025)</p>
         </header>
 
-        <!-- NAVIGASI & DROPDOWN (Modul 5 & 6) -->
+        <!-- NAVIGASI PER-SLIDE (Modul 5 & 6) -->
         <nav id="nav-container">
             <ul id="menu">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">Biodata</a></li>
-                <li><a href="#project-section">Project</a></li>
-                <li><a href="#hobby-org-section">Hobi & Organisasi</a></li>
-                <li><a href="#contact-section">Kontak</a></li>
+                <li class="active"><a href="#" onclick="showSlide(0); return false;">Home</a></li>
+                <li><a href="#" onclick="showSlide(1); return false;">Target Belajar</a></li>
+                <li><a href="#" onclick="showSlide(2); return false;">Project</a></li>
+                <li><a href="#" onclick="showSlide(3); return false;">Hobi & Organisasi</a></li>
+                <li><a href="#" onclick="showSlide(4); return false;">Kontak</a></li>
             </ul>
         </nav>
 
-        <!-- BERANDA UTAMA (Hero Section) -->
-        <section class="beranda-hero-section" id="beranda">
-            <div class="beranda-hero-top">
-                <div class="hero-photo-box">
-                    <img src="foto-profil.jpg" alt="Foto Profil Nayla Azzahra R" class="profile-photo">
-                </div>
-                <div class="hero-text">
-                    <span class="badge-tag">Mahasiswi Teknik Komputer FT-UNM</span>
-                    <h2 class="hero-title">Halo, Saya <span>Nayla Azzahra R</span></h2>
-                    <p class="hero-desc">
-                        Selamat datang di portofolio saya. Website ini dibuat untuk memenuhi tugas Praktikum Pemrograman Web dan mendokumentasikan biodata diri, target belajar teknologi komputasi, proyek aplikasi sederhana, keaktifan organisasi mahasiswa, serta hobi seni tari tradisional nusantara.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="about.html" class="btn-primary">Biodata Lengkap</a>
-                        <a href="#project-section" class="btn-outline">Proyek mencraft.id</a>
-                        <a href="#contact-section" class="btn-outline">Kontak</a>
-                        <a href="https://github.com/naylaazzahrah358-beep" target="_blank" class="btn-dark">GitHub Saya</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- KONTEN UTAMA -->
+        <!-- AREA KONTEN PER-SLIDE -->
         <main class="main-content-layout">
-            
-            <!-- SEKSI 1: BIODATA & PROFIL DIRI -->
-            <div class="card-box" id="about-overview">
-                <h3 class="headlines">Biodata & Profil Diri</h3>
-                <div class="biodata-unified-grid">
-                    <div class="biodata-unified-left">
-                        <table class="table-biodata">
-                            <tr><td class="label">Nama:</td><td><strong>Nayla Azzahra R</strong></td></tr>
-                            <tr><td class="label">Instagram:</td><td><a href="https://instagram.com/nylazhrh9_" target="_blank" style="font-weight: bold; color: #dc2626;">@nylazhrh9_</a></td></tr>
-                            <tr><td class="label">Program Studi:</td><td>Teknik Komputer</td></tr>
-                            <tr><td class="label">Kelas:</td><td>Tekom C 2025 (FT-UNM)</td></tr>
-                            <tr><td class="label">Fokus Minat:</td><td>Web Design, Jaringan Komputer & IoT</td></tr>
-                            <tr><td class="label">Hobi:</td><td>Seni Tari Tradisional Nusantara</td></tr>
-                            <tr><td class="label">Organisasi:</td><td>LPM Penalaran UNM & JTIK (Nexus 2025)</td></tr>
-                        </table>
-                        <div class="status-box">
-                            <strong>Status Mahasiswi:</strong> Mahasiswi Aktif Angkatan 2025 - Fakultas Teknik Universitas Negeri Makassar
-                        </div>
-                    </div>
-                    <div class="biodata-unified-right">
-                        <h4 class="sublines">Mengenai Diri Saya</h4>
-                        <p class="infotext">Sebagai mahasiswi Teknik Komputer di Universitas Negeri Makassar, saya tertarik mempelajari dasar-dasar pemrograman web, perancangan antarmuka yang rapi dan fungsional, serta pemahaman sistem perangkat keras dan jaringan komputer.</p>
-                        <p class="infotext" style="margin-bottom: 0;">Selain menekuni bidang teknologi, saya juga aktif dalam kegiatan organisasi kemahasiswaan dan menyalurkan bakat seni melalui tari tradisional nusantara untuk melatih kedisiplinan serta kerja sama tim.</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- SEKSI 2: TARGET & RENCANA BELAJAR -->
-            <div class="card-box" id="roadmap-section">
-                <h3 class="headlines">Target & Rencana Belajar (2-3 Tahun Kedepan)</h3>
-                <p class="infotext">Rencana tahapan belajar dan pengembangan diri selama menempuh perkuliahan Teknik Komputer:</p>
-                <div class="roadmap-container">
-                    <div class="roadmap-card">
-                        <div class="roadmap-header">
-                            <span class="roadmap-phase-title">Fase 1 (Tahun 2026–2027)</span>
-                            <span class="roadmap-badge">Fondasi Dasar</span>
+            <!-- SLIDE 1: BERANDA & BIODATA -->
+            <div class="slide-item active" id="slide-1">
+                <section class="beranda-hero-section" style="border-bottom: none; padding: 0 0 20px 0;">
+                    <div class="beranda-hero-top">
+                        <div class="hero-photo-box">
+                            <img src="foto-profil.jpg" alt="Foto Profil Nayla Azzahra R" class="profile-photo">
                         </div>
-                        <h4 class="sublines">Penguasaan Web Dasar & Logika Pemrograman</h4>
-                        <p class="roadmap-desc">Mendalami pemrograman web dasar (HTML, CSS, JavaScript), memperkuat pemahaman logika algoritma, dan mempelajari arsitektur komputer serta mikrokontroler.</p>
-                        <div class="roadmap-tags">
-                            <span class="roadmap-tag">HTML & CSS</span>
-                            <span class="roadmap-tag">Dasar JavaScript</span>
-                            <span class="roadmap-tag">Logika Algoritma</span>
-                            <span class="roadmap-tag">Mikrokontroler</span>
-                        </div>
-                    </div>
-                    <div class="roadmap-card">
-                        <div class="roadmap-header">
-                            <span class="roadmap-phase-title">Fase 2 (Tahun 2027–2028)</span>
-                            <span class="roadmap-badge">Eksplorasi & Praktik</span>
-                        </div>
-                        <h4 class="sublines">Pengembangan Proyek & Kegiatan IT</h4>
-                        <p class="roadmap-desc">Membangun proyek sistem informasi sederhana berbasis jaringan, memperdalam materi praktikum lanjutan, dan berpartisipasi dalam kegiatan akademik kemahasiswaan.</p>
-                        <div class="roadmap-tags">
-                            <span class="roadmap-tag">Sistem Informasi</span>
-                            <span class="roadmap-tag">Jaringan Komputer</span>
-                            <span class="roadmap-tag">Proyek Mandiri</span>
-                            <span class="roadmap-tag">Kerja Sama Tim</span>
-                        </div>
-                    </div>
-                    <div class="roadmap-card">
-                        <div class="roadmap-header">
-                            <span class="roadmap-phase-title">Fase 3 (Tahun 2028–2029)</span>
-                            <span class="roadmap-badge">Tugas Akhir & Karier</span>
-                        </div>
-                        <h4 class="sublines">Magang Industri & Penyusunan Tugas Akhir</h4>
-                        <p class="roadmap-desc">Mengikuti program magang industri bersertifikat untuk mendapatkan pengalaman kerja nyata dan menyelesaikan tugas akhir Teknik Komputer yang aplikatif dan bermanfaat.</p>
-                        <div class="roadmap-tags">
-                            <span class="roadmap-tag">Magang Industri</span>
-                            <span class="roadmap-tag">Tugas Akhir</span>
-                            <span class="roadmap-tag">Portofolio Kelulusan</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SEKSI 3: PROYEK APLIKASI (mencraft.id) -->
-            <div class="card-box" id="project-section">
-                <h3 class="headlines">Proyek Aplikasi: mencraft.id</h3>
-                <div class="project-card">
-                    <div class="project-hero">
-                        <div class="project-img-wrapper">
-                            <img src="mencraft-logo.jpg" alt="Logo Mencraft.id" class="project-img">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-badges">
-                                <span class="project-badge">Aplikasi Python</span>
-                                <span class="project-badge">Proyek Belajar</span>
-                            </div>
-                            <h4 class="project-title">mencraft<span>.id</span></h4>
-                            <p class="project-tagline">"The Perfect Gift at any Time"</p>
-                            <p class="project-desc">
-                                <strong>mencraft.id</strong> adalah program aplikasi sederhana berbasis console untuk mempermudah alur pemesanan bucket. Dibuat menggunakan bahasa <strong>Python</strong> dengan penyimpanan data riwayat menggunakan file <strong>JSON</strong>.
+                        <div class="hero-text">
+                            <span class="badge-tag">Mahasiswi Teknik Komputer FT-UNM</span>
+                            <h2 class="hero-title">Halo, Saya <span>Nayla Azzahra R</span></h2>
+                            <p class="hero-desc">
+                                Selamat datang di portofolio digital saya. Website ini dibuat untuk memenuhi tugas Praktikum Pemrograman Web dan menampilkan profil diri, rencana belajar teknologi komputasi, proyek aplikasi sederhana, kegiatan organisasi mahasiswa, dan hobi seni tari tradisional nusantara.
                             </p>
-                            <div class="project-tech-tags">
-                                <span class="project-tech-tag">Python 3</span>
-                                <span class="project-tech-tag">Format File JSON</span>
-                                <span class="project-tech-tag">Kelola Pesanan</span>
-                                <span class="project-tech-tag">Sistem Checkout</span>
+                            <div class="hero-actions">
+                                <a href="#" onclick="showSlide(1); return false;" class="btn-primary">Target Belajar</a>
+                                <a href="#" onclick="showSlide(2); return false;" class="btn-outline">Proyek mencraft.id</a>
+                                <a href="#" onclick="showSlide(4); return false;" class="btn-outline">Kontak Saya</a>
+                                <a href="https://github.com/naylaazzahrah358-beep" target="_blank" class="btn-dark">GitHub Saya</a>
                             </div>
                         </div>
                     </div>
-                    <div class="project-body">
-                        <h4 class="features-title">Fitur Utama Aplikasi mencraft.id</h4>
-                        <div class="features-grid">
-                            <div class="feature-item">
-                                <div class="feature-header">
-                                    <span class="feature-num">1</span>
-                                    <h5>Pilih Bucket</h5>
-                                </div>
-                                <p>Menampilkan katalog jenis bucket yang tersedia beserta harga dalam menu terstruktur.</p>
+                </section>
+
+                <div class="card-box">
+                    <h3 class="headlines">Biodata & Profil Diri</h3>
+                    <div class="biodata-unified-grid">
+                        <div class="biodata-unified-left">
+                            <table class="table-biodata">
+                                <tr><td class="label">Nama:</td><td><strong>Nayla Azzahra R</strong></td></tr>
+                                <tr><td class="label">Instagram:</td><td><a href="https://instagram.com/nylazhrh9_" target="_blank" style="font-weight: bold; color: #dc2626;">@nylazhrh9_</a></td></tr>
+                                <tr><td class="label">Program Studi:</td><td>Teknik Komputer</td></tr>
+                                <tr><td class="label">Kelas:</td><td>Tekom C 2025 (FT-UNM)</td></tr>
+                                <tr><td class="label">Fokus Minat:</td><td>Web Design, Jaringan Komputer & IoT</td></tr>
+                                <tr><td class="label">Hobi:</td><td>Seni Tari Tradisional Nusantara</td></tr>
+                                <tr><td class="label">Organisasi:</td><td>LPM Penalaran UNM & JTIK (Nexus 2025)</td></tr>
+                            </table>
+                            <div class="status-box">
+                                <strong>Status Mahasiswi:</strong> Mahasiswi Aktif Angkatan 2025 - Fakultas Teknik Universitas Negeri Makassar
                             </div>
-                            <div class="feature-item">
-                                <div class="feature-header">
-                                    <span class="feature-num">2</span>
-                                    <h5>Tambah Pesanan</h5>
-                                </div>
-                                <p>Memilih produk dan menentukan jumlah yang ingin dibeli ke dalam daftar pesanan aktif.</p>
+                        </div>
+                        <div class="biodata-unified-right">
+                            <h4 class="sublines">Mengenai Diri Saya</h4>
+                            <p class="infotext">Sebagai mahasiswi Teknik Komputer di Universitas Negeri Makassar, saya tertarik mempelajari dasar-dasar pemrograman web, perancangan antarmuka yang rapi dan fungsional, serta pemahaman sistem perangkat keras dan jaringan komputer.</p>
+                            <p class="infotext" style="margin-bottom: 0;">Selain menekuni bidang teknologi, saya juga aktif dalam kegiatan organisasi kemahasiswaan dan menyalurkan bakat seni melalui tari tradisional nusantara untuk melatih kedisiplinan serta kerja sama tim.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2: TARGET & RENCANA BELAJAR -->
+            <div class="slide-item" id="slide-2">
+                <div class="card-box">
+                    <h3 class="headlines">Target & Rencana Belajar (2-3 Tahun Kedepan)</h3>
+                    <p class="infotext">Rencana tahapan belajar dan pengembangan diri selama menempuh perkuliahan Teknik Komputer:</p>
+                    <div class="roadmap-container">
+                        <div class="roadmap-card">
+                            <div class="roadmap-header">
+                                <span class="roadmap-phase-title">Fase 1 (Tahun 2026–2027)</span>
+                                <span class="roadmap-badge">Fondasi Dasar</span>
                             </div>
-                            <div class="feature-item">
-                                <div class="feature-header">
-                                    <span class="feature-num">3</span>
-                                    <h5>Kelola Pesanan</h5>
-                                </div>
-                                <p>Dapat mengubah jumlah pesanan maupun menghapus item pilihan dari daftar keranjang.</p>
+                            <h4 class="sublines">Penguasaan Web Dasar & Logika Pemrograman</h4>
+                            <p class="roadmap-desc">Mendalami pemrograman web dasar (HTML, CSS, JavaScript), memperkuat pemahaman logika algoritma, dan mempelajari arsitektur komputer serta mikrokontroler.</p>
+                            <div class="roadmap-tags">
+                                <span class="roadmap-tag">HTML & CSS</span>
+                                <span class="roadmap-tag">Dasar JavaScript</span>
+                                <span class="roadmap-tag">Logika Algoritma</span>
+                                <span class="roadmap-tag">Mikrokontroler</span>
                             </div>
-                            <div class="feature-item">
-                                <div class="feature-header">
-                                    <span class="feature-num">4</span>
-                                    <h5>Checkout Pesanan</h5>
-                                </div>
-                                <p>Menghitung total pembayaran dan menyimpan riwayat transaksi ke dalam file database JSON.</p>
+                        </div>
+                        <div class="roadmap-card">
+                            <div class="roadmap-header">
+                                <span class="roadmap-phase-title">Fase 2 (Tahun 2027–2028)</span>
+                                <span class="roadmap-badge">Eksplorasi & Praktik</span>
+                            </div>
+                            <h4 class="sublines">Pengembangan Proyek & Kegiatan IT</h4>
+                            <p class="roadmap-desc">Membangun proyek sistem informasi sederhana berbasis jaringan, memperdalam materi praktikum lanjutan, dan berpartisipasi dalam kegiatan akademik kemahasiswaan.</p>
+                            <div class="roadmap-tags">
+                                <span class="roadmap-tag">Sistem Informasi</span>
+                                <span class="roadmap-tag">Jaringan Komputer</span>
+                                <span class="roadmap-tag">Proyek Mandiri</span>
+                                <span class="roadmap-tag">Kerja Sama Tim</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-card">
+                            <div class="roadmap-header">
+                                <span class="roadmap-phase-title">Fase 3 (Tahun 2028–2029)</span>
+                                <span class="roadmap-badge">Tugas Akhir & Karier</span>
+                            </div>
+                            <h4 class="sublines">Magang Industri & Penyusunan Tugas Akhir</h4>
+                            <p class="roadmap-desc">Mengikuti program magang industri bersertifikat untuk mendapatkan pengalaman kerja nyata dan menyelesaikan tugas akhir Teknik Komputer yang aplikatif dan bermanfaat.</p>
+                            <div class="roadmap-tags">
+                                <span class="roadmap-tag">Magang Industri</span>
+                                <span class="roadmap-tag">Tugas Akhir</span>
+                                <span class="roadmap-tag">Portofolio Kelulusan</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- SEKSI 4: HOBI SENI TARI & PENGALAMAN ORGANISASI -->
-            <div class="card-box" id="hobby-org-section">
-                <h3 class="headlines">Hobi Seni Tari & Pengalaman Organisasi</h3>
-                
-                <!-- Sub-bagian A: Hobi Seni Tari -->
-                <div style="margin-bottom: 24px;">
-                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-                        <h4 class="sublines" style="font-size: 15px; margin: 0;">Seni Tari Tradisional Nusantara</h4>
-                        <span class="badge-tag" style="margin-bottom: 0;">Minat & Seni Budaya</span>
-                    </div>
-                    <p class="infotext">
-                        Mengekspresikan kecintaan pada seni budaya nusantara, melatih kedisiplinan ritme gerak, serta keanggunan melalui seni tari tradisional:
-                    </p>
-                    <div class="hobby-photo-gallery">
-                        <div class="hobby-photo-item"><img src="foto-tari-1.jpg" alt="Dokumentasi Tari 1" class="hobby-photo-img"></div>
-                        <div class="hobby-photo-item"><img src="foto-tari-2.jpg" alt="Dokumentasi Tari 2" class="hobby-photo-img"></div>
-                        <div class="hobby-photo-item"><img src="foto-tari-3.jpg" alt="Dokumentasi Tari 3" class="hobby-photo-img"></div>
-                        <div class="hobby-photo-item"><img src="foto-tari-4.jpg" alt="Dokumentasi Tari 4" class="hobby-photo-img"></div>
+            <!-- SLIDE 3: PROYEK APLIKASI (mencraft.id) -->
+            <div class="slide-item" id="slide-3">
+                <div class="card-box">
+                    <h3 class="headlines">Proyek Aplikasi: mencraft.id</h3>
+                    <div class="project-card">
+                        <div class="project-hero">
+                            <div class="project-img-wrapper">
+                                <img src="mencraft-logo.jpg" alt="Logo Mencraft.id" class="project-img">
+                            </div>
+                            <div class="project-info">
+                                <div class="project-badges">
+                                    <span class="project-badge">Aplikasi Python</span>
+                                    <span class="project-badge">Proyek Belajar</span>
+                                </div>
+                                <h4 class="project-title">mencraft<span>.id</span></h4>
+                                <p class="project-tagline">"The Perfect Gift at any Time"</p>
+                                <p class="project-desc">
+                                    <strong>mencraft.id</strong> adalah program aplikasi sederhana berbasis console untuk mempermudah alur pemesanan bucket. Dibuat menggunakan bahasa <strong>Python</strong> dengan penyimpanan data riwayat menggunakan file <strong>JSON</strong>.
+                                </p>
+                                <div class="project-tech-tags">
+                                    <span class="project-tech-tag">Python 3</span>
+                                    <span class="project-tech-tag">Format File JSON</span>
+                                    <span class="project-tech-tag">Kelola Pesanan</span>
+                                    <span class="project-tech-tag">Sistem Checkout</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h4 class="features-title">Fitur Utama Aplikasi mencraft.id</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <div class="feature-header">
+                                        <span class="feature-num">1</span>
+                                        <h5>Pilih Bucket</h5>
+                                    </div>
+                                    <p>Menampilkan katalog jenis bucket yang tersedia beserta harga dalam menu terstruktur.</p>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-header">
+                                        <span class="feature-num">2</span>
+                                        <h5>Tambah Pesanan</h5>
+                                    </div>
+                                    <p>Memilih produk dan menentukan jumlah yang ingin dibeli ke dalam daftar pesanan aktif.</p>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-header">
+                                        <span class="feature-num">3</span>
+                                        <h5>Kelola Pesanan</h5>
+                                    </div>
+                                    <p>Dapat mengubah jumlah pesanan maupun menghapus item pilihan dari daftar keranjang.</p>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-header">
+                                        <span class="feature-num">4</span>
+                                        <h5>Checkout Pesanan</h5>
+                                    </div>
+                                    <p>Menghitung total pembayaran dan menyimpan riwayat transaksi ke dalam file database JSON.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <hr style="margin: 24px 0;">
-
-                <!-- Sub-bagian B: Pengalaman Organisasi -->
-                <div>
-                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-                        <h4 class="sublines" style="font-size: 15px; margin: 0;">Pengalaman Organisasi Kemahasiswaan</h4>
-                        <span class="badge-tag" style="margin-bottom: 0;">Organisasi & Kepemimpinan</span>
+            <!-- SLIDE 4: HOBI SENI TARI & PENGALAMAN ORGANISASI -->
+            <div class="slide-item" id="slide-4">
+                <div class="card-box">
+                    <h3 class="headlines">Hobi Seni Tari & Pengalaman Organisasi</h3>
+                    
+                    <!-- Sub-bagian A: Hobi Seni Tari -->
+                    <div style="margin-bottom: 24px;">
+                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+                            <h4 class="sublines" style="font-size: 15px; margin: 0;">Seni Tari Tradisional Nusantara</h4>
+                            <span class="badge-tag" style="margin-bottom: 0;">Minat & Seni Budaya</span>
+                        </div>
+                        <p class="infotext">
+                            Mengekspresikan kecintaan pada seni budaya nusantara, melatih kedisiplinan ritme gerak, serta keanggunan melalui seni tari tradisional:
+                        </p>
+                        <div class="hobby-photo-gallery">
+                            <div class="hobby-photo-item"><img src="foto-tari-1.jpg" alt="Dokumentasi Tari 1" class="hobby-photo-img"></div>
+                            <div class="hobby-photo-item"><img src="foto-tari-2.jpg" alt="Dokumentasi Tari 2" class="hobby-photo-img"></div>
+                            <div class="hobby-photo-item"><img src="foto-tari-3.jpg" alt="Dokumentasi Tari 3" class="hobby-photo-img"></div>
+                            <div class="hobby-photo-item"><img src="foto-tari-4.jpg" alt="Dokumentasi Tari 4" class="hobby-photo-img"></div>
+                        </div>
                     </div>
-                    <p class="infotext">
-                        Pengalaman aktif dalam lembaga kemahasiswaan untuk mengasah kepemimpinan, penalaran ilmiah, serta memperluas relasi:
-                    </p>
-                    <div class="org-container">
-                        <div class="org-card">
-                            <div class="org-card-row">
-                                <div class="org-img-box">
-                                    <span class="org-badge-tag">Riset & Penalaran</span>
-                                    <img src="foto-organisasi-2.jpg?v=1" alt="LPM Penalaran UNM" class="org-img">
-                                </div>
-                                <div class="org-content">
-                                    <div>
-                                        <h4>LPM Penalaran UNM</h4>
-                                        <span class="org-role">Lembaga Penalaran & Riset Ilmiah Mahasiswa Tingkat Universitas</span>
-                                        <p>Wadah pengembangan pola pikir kritis, riset akademis, karya tulis ilmiah, dan kepemimpinan mahasiswa di tingkat Universitas Negeri Makassar.</p>
+
+                    <hr style="margin: 24px 0;">
+
+                    <!-- Sub-bagian B: Pengalaman Organisasi -->
+                    <div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+                            <h4 class="sublines" style="font-size: 15px; margin: 0;">Pengalaman Organisasi Kemahasiswaan</h4>
+                            <span class="badge-tag" style="margin-bottom: 0;">Organisasi & Kepemimpinan</span>
+                        </div>
+                        <p class="infotext">
+                            Pengalaman aktif dalam lembaga kemahasiswaan untuk mengasah kepemimpinan, penalaran ilmiah, serta memperluas relasi:
+                        </p>
+                        <div class="org-container">
+                            <div class="org-card">
+                                <div class="org-card-row">
+                                    <div class="org-img-box">
+                                        <span class="org-badge-tag">Riset & Penalaran</span>
+                                        <img src="foto-organisasi-2.jpg?v=1" alt="LPM Penalaran UNM" class="org-img">
                                     </div>
-                                    <div class="org-tags">
-                                        <span class="org-tag">Riset Ilmiah</span>
-                                        <span class="org-tag">Pola Pikir Kritis</span>
-                                        <span class="org-tag">UNM</span>
+                                    <div class="org-content">
+                                        <div>
+                                            <h4>LPM Penalaran UNM</h4>
+                                            <span class="org-role">Lembaga Penalaran & Riset Ilmiah Mahasiswa Tingkat Universitas</span>
+                                            <p>Wadah pengembangan pola pikir kritis, riset akademis, karya tulis ilmiah, dan kepemimpinan mahasiswa di tingkat Universitas Negeri Makassar.</p>
+                                        </div>
+                                        <div class="org-tags">
+                                            <span class="org-tag">Riset Ilmiah</span>
+                                            <span class="org-tag">Pola Pikir Kritis</span>
+                                            <span class="org-tag">UNM</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="org-card">
-                            <div class="org-card-row">
-                                <div class="org-img-box">
-                                    <span class="org-badge-tag">Lembaga Jurusan</span>
-                                    <img src="foto-organisasi-3.jpg?v=1" alt="Anggota Formal JTIK Nexus 2025" class="org-img">
-                                </div>
-                                <div class="org-content">
-                                    <div>
-                                        <h4>Anggota Formal JTIK (NEXUS 2025)</h4>
-                                        <span class="org-role">Lembaga Kemahasiswaan Jurusan Teknik Informatika & Komputer FT-UNM</span>
-                                        <p>Menjadi bagian dari keluarga besar mahasiswa JTIK FT-UNM, mempererat solidaritas angkatan NEXUS 2025, kolaborasi kegiatan, dan relasi akademik.</p>
+                            <div class="org-card">
+                                <div class="org-card-row">
+                                    <div class="org-img-box">
+                                        <span class="org-badge-tag">Lembaga Jurusan</span>
+                                        <img src="foto-organisasi-3.jpg?v=1" alt="Anggota Formal JTIK Nexus 2025" class="org-img">
                                     </div>
-                                    <div class="org-tags">
-                                        <span class="org-tag">JTIK FT-UNM</span>
-                                        <span class="org-tag">Nexus 2025</span>
-                                        <span class="org-tag">Solidaritas</span>
+                                    <div class="org-content">
+                                        <div>
+                                            <h4>Anggota Formal JTIK (NEXUS 2025)</h4>
+                                            <span class="org-role">Lembaga Kemahasiswaan Jurusan Teknik Informatika & Komputer FT-UNM</span>
+                                            <p>Menjadi bagian dari keluarga besar mahasiswa JTIK FT-UNM, mempererat solidaritas angkatan NEXUS 2025, kolaborasi kegiatan, dan relasi akademik.</p>
+                                        </div>
+                                        <div class="org-tags">
+                                            <span class="org-tag">JTIK FT-UNM</span>
+                                            <span class="org-tag">Nexus 2025</span>
+                                            <span class="org-tag">Solidaritas</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="org-card">
-                            <div class="org-card-row">
-                                <div class="org-img-box">
-                                    <span class="org-badge-tag">Kepemimpinan</span>
-                                    <img src="foto-organisasi-1.jpg?v=1" alt="Pengembangan Kapasitas Diri & Kepemimpinan" class="org-img">
-                                </div>
-                                <div class="org-content">
-                                    <div>
-                                        <h4>Pelatihan Kepemimpinan Luar Ruang</h4>
-                                        <span class="org-role">Pengembangan Karakter & Kepemimpinan di Alam Terbuka</span>
-                                        <p>Program pembinaan kepemimpinan luar ruang guna membentuk ketangguhan mental, adaptabilitas, serta komunikasi efektif dalam tim kerja.</p>
+                            <div class="org-card">
+                                <div class="org-card-row">
+                                    <div class="org-img-box">
+                                        <span class="org-badge-tag">Kepemimpinan</span>
+                                        <img src="foto-organisasi-1.jpg?v=1" alt="Pengembangan Kapasitas Diri & Kepemimpinan" class="org-img">
                                     </div>
-                                    <div class="org-tags">
-                                        <span class="org-tag">Leadership</span>
-                                        <span class="org-tag">Kerja Sama Tim</span>
-                                        <span class="org-tag">Karakter</span>
+                                    <div class="org-content">
+                                        <div>
+                                            <h4>Pelatihan Kepemimpinan Luar Ruang</h4>
+                                            <span class="org-role">Pengembangan Karakter & Kepemimpinan di Alam Terbuka</span>
+                                            <p>Program pembinaan kepemimpinan luar ruang guna membentuk ketangguhan mental, adaptabilitas, serta komunikasi efektif dalam tim kerja.</p>
+                                        </div>
+                                        <div class="org-tags">
+                                            <span class="org-tag">Leadership</span>
+                                            <span class="org-tag">Kerja Sama Tim</span>
+                                            <span class="org-tag">Karakter</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -287,76 +296,86 @@
                 </div>
             </div>
 
-            <!-- SEKSI 5: KONTAK & PROFIL GITHUB -->
-            <div class="card-box" id="contact-section">
-                <h3 class="headlines">Kontak & Profil GitHub</h3>
-                
-                <!-- Banner GitHub -->
-                <div class="github-banner-card">
-                    <div class="github-banner-left">
-                        <div>
-                            <span class="badge-tag">Profil & Repositori GitHub</span>
-                            <h4 style="font-size: 18px; font-weight: 800; margin: 4px 0; color: #111827;">naylaazzahrah358-beep</h4>
-                            <p style="color: #4b5563; font-size: 13.5px; margin-bottom: 0;">
-                                Kunjungi profil GitHub saya untuk melihat kode tugas praktikum web, source code aplikasi Python, dan latihan pemrograman lainnya.
-                            </p>
+            <!-- SLIDE 5: KONTAK & PROFIL GITHUB -->
+            <div class="slide-item" id="slide-5">
+                <div class="card-box">
+                    <h3 class="headlines">Kontak & Profil GitHub</h3>
+                    
+                    <!-- Banner GitHub -->
+                    <div class="github-banner-card">
+                        <div class="github-banner-left">
+                            <div>
+                                <span class="badge-tag">Profil & Repositori GitHub</span>
+                                <h4 style="font-size: 18px; font-weight: 800; margin: 4px 0; color: #111827;">naylaazzahrah358-beep</h4>
+                                <p style="color: #4b5563; font-size: 13.5px; margin-bottom: 0;">
+                                    Kunjungi profil GitHub saya untuk melihat kode tugas praktikum web, source code aplikasi Python, dan latihan pemrograman lainnya.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="github-banner-right">
+                            <a href="https://github.com/naylaazzahrah358-beep" target="_blank" class="btn-dark">Buka GitHub</a>
                         </div>
                     </div>
-                    <div class="github-banner-right">
-                        <a href="https://github.com/naylaazzahrah358-beep" target="_blank" class="btn-dark">Buka GitHub</a>
-                    </div>
-                </div>
 
-                <h4 class="sublines" style="font-size: 15px; margin-top: 20px; margin-bottom: 8px;">
-                    Saluran Komunikasi
-                </h4>
-                <p class="infotext">Silakan hubungi saya melalui tautan kontak di bawah ini:</p>
+                    <h4 class="sublines" style="font-size: 15px; margin-top: 20px; margin-bottom: 8px;">
+                        Saluran Komunikasi
+                    </h4>
+                    <p class="infotext">Silakan hubungi saya melalui tautan kontak di bawah ini:</p>
 
-                <!-- Grid Kartu Kontak Tanpa Logo -->
-                <div class="contact-grid-container">
-                    <div class="contact-card-item">
-                        <h5 style="font-size: 14px; font-weight: 700; margin-bottom: 4px; color: #111827;">GitHub</h5>
-                        <p style="font-size: 12px; color: #6b7280; margin-bottom: 12px;">naylaazzahrah358-beep</p>
-                        <a href="https://github.com/naylaazzahrah358-beep" target="_blank" class="btn-outline" style="padding: 6px 12px; font-size: 12px; width: 100%; justify-content: center;">
-                            Lihat Profil
-                        </a>
-                    </div>
+                    <!-- Grid Kartu Kontak -->
+                    <div class="contact-grid-container">
+                        <div class="contact-card-item">
+                            <h5 style="font-size: 14px; font-weight: 700; margin-bottom: 4px; color: #111827;">GitHub</h5>
+                            <p style="font-size: 12px; color: #6b7280; margin-bottom: 12px;">naylaazzahrah358-beep</p>
+                            <a href="https://github.com/naylaazzahrah358-beep" target="_blank" class="btn-outline" style="padding: 6px 12px; font-size: 12px; width: 100%; justify-content: center;">
+                                Lihat Profil
+                            </a>
+                        </div>
 
-                    <div class="contact-card-item">
-                        <h5 style="font-size: 14px; font-weight: 700; margin-bottom: 4px; color: #111827;">Instagram</h5>
-                        <p style="font-size: 12px; color: #6b7280; margin-bottom: 12px;">@nylazhrh9_</p>
-                        <a href="https://instagram.com/nylazhrh9_" target="_blank" class="btn-outline" style="padding: 6px 12px; font-size: 12px; width: 100%; justify-content: center;">
-                            Buka Instagram
-                        </a>
-                    </div>
+                        <div class="contact-card-item">
+                            <h5 style="font-size: 14px; font-weight: 700; margin-bottom: 4px; color: #111827;">Instagram</h5>
+                            <p style="font-size: 12px; color: #6b7280; margin-bottom: 12px;">@nylazhrh9_</p>
+                            <a href="https://instagram.com/nylazhrh9_" target="_blank" class="btn-outline" style="padding: 6px 12px; font-size: 12px; width: 100%; justify-content: center;">
+                                Buka Instagram
+                            </a>
+                        </div>
 
-                    <div class="contact-card-item">
-                        <h5 style="font-size: 14px; font-weight: 700; margin-bottom: 4px; color: #111827;">WhatsApp</h5>
-                        <p style="font-size: 12px; color: #6b7280; margin-bottom: 12px;">085705952172</p>
-                        <a href="https://wa.me/6285705952172" target="_blank" class="btn-outline" style="padding: 6px 12px; font-size: 12px; width: 100%; justify-content: center;">
-                            Kirim WhatsApp
-                        </a>
-                    </div>
+                        <div class="contact-card-item">
+                            <h5 style="font-size: 14px; font-weight: 700; margin-bottom: 4px; color: #111827;">WhatsApp</h5>
+                            <p style="font-size: 12px; color: #6b7280; margin-bottom: 12px;">085705952172</p>
+                            <a href="https://wa.me/6285705952172" target="_blank" class="btn-outline" style="padding: 6px 12px; font-size: 12px; width: 100%; justify-content: center;">
+                                Kirim WhatsApp
+                            </a>
+                        </div>
 
-                    <div class="contact-card-item">
-                        <h5 style="font-size: 14px; font-weight: 700; margin-bottom: 4px; color: #111827;">Form Kontak</h5>
-                        <p style="font-size: 12px; color: #6b7280; margin-bottom: 12px;">Kirim Pesan</p>
-                        <a href="contact.html" class="btn-outline" style="padding: 6px 12px; font-size: 12px; width: 100%; justify-content: center;">
-                            Buka Form
-                        </a>
+                        <div class="contact-card-item">
+                            <h5 style="font-size: 14px; font-weight: 700; margin-bottom: 4px; color: #111827;">Form Kontak</h5>
+                            <p style="font-size: 12px; color: #6b7280; margin-bottom: 12px;">Kirim Pesan</p>
+                            <a href="contact.html" class="btn-outline" style="padding: 6px 12px; font-size: 12px; width: 100%; justify-content: center;">
+                                Buka Form
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </main>
 
+        <!-- KONTROL NAVIGASI SLIDE BAWAH -->
+        <div class="slide-controls">
+            <button type="button" class="btn-slide" id="btn-prev" onclick="changeSlide(-1)">Sebelumnya</button>
+            <div class="slide-dots" id="slide-dots-container"></div>
+            <span class="slide-indicator" id="slide-indicator-text">Slide 1 dari 5</span>
+            <button type="button" class="btn-slide" id="btn-next" onclick="changeSlide(1)">Selanjutnya</button>
+        </div>
+
         <!-- FOOTER (Modul 5 Layout) -->
         <footer id="footer">
             <p>&copy; 2025 Nayla Azzahra R - Mahasiswi Teknik Komputer (Kelas C)</p>
             <p style="font-size: 12px; color: #6b7280;">Praktikum Pemrograman Web - Fakultas Teknik Universitas Negeri Makassar</p>
             <div style="margin-top: 10px;">
-                <a href="#header">Kembali ke Atas</a> |
-                <a href="about.html">Biodata</a> |
+                <a href="#" onclick="showSlide(0); return false;">Home</a> |
+                <a href="about.html">Biodata Lengkap</a> |
                 <a href="contact.html">Kontak</a> |
                 <a href="https://instagram.com/nylazhrh9_" target="_blank">Instagram</a> |
                 <a href="https://github.com/naylaazzahrah358-beep" target="_blank">GitHub</a>
@@ -365,5 +384,81 @@
 
     </div>
 
+    <!-- SKRIP KONTROL SLIDE SEDERHANA -->
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 5;
+
+        function showSlide(index) {
+            if (index < 0) index = 0;
+            if (index >= totalSlides) index = totalSlides - 1;
+            currentSlide = index;
+
+            // 1. Tampilkan Slide yang dipilih
+            const slides = document.querySelectorAll('.slide-item');
+            slides.forEach((slide, idx) => {
+                if (idx === currentSlide) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+
+            // 2. Tandai Menu Navigasi Aktif
+            const menuItems = document.querySelectorAll('#menu li');
+            menuItems.forEach((item, idx) => {
+                if (idx === currentSlide) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // 3. Perbarui Dots Indikator
+            const dots = document.querySelectorAll('.slide-dot');
+            dots.forEach((dot, idx) => {
+                if (idx === currentSlide) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+
+            // 4. Perbarui Teks Indikator
+            const indicator = document.getElementById('slide-indicator-text');
+            if (indicator) {
+                indicator.textContent = 'Slide ' + (currentSlide + 1) + ' dari ' + totalSlides;
+            }
+
+            // 5. Update Status Tombol Prev & Next
+            const btnPrev = document.getElementById('btn-prev');
+            const btnNext = document.getElementById('btn-next');
+            if (btnPrev) btnPrev.disabled = (currentSlide === 0);
+            if (btnNext) btnNext.disabled = (currentSlide === totalSlides - 1);
+
+            // 6. Scroll halus ke atas wrapper jika di mobile
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function changeSlide(step) {
+            showSlide(currentSlide + step);
+        }
+
+        // Buat Dots Otomatis saat halaman dimuat
+        window.addEventListener('DOMContentLoaded', () => {
+            const dotsContainer = document.getElementById('slide-dots-container');
+            if (dotsContainer) {
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < totalSlides; i++) {
+                    const dot = document.createElement('button');
+                    dot.className = 'slide-dot' + (i === 0 ? ' active' : '');
+                    dot.title = 'Buka Slide ' + (i + 1);
+                    dot.onclick = () => showSlide(i);
+                    dotsContainer.appendChild(dot);
+                }
+            }
+            showSlide(0);
+        });
+    </script>
 </body>
 </html>

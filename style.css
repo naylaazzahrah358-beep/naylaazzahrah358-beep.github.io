@@ -758,3 +758,74 @@ hr {
         font-size: 12px;
     }
 }
+/* 13. SISTEM SLIDE KONTEN */
+.slide-item {
+    display: none;
+}
+
+.slide-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+}
+
+.slide-indicator {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4b5563;
+    background-color: #ffffff;
+    padding: 5px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+}
+
+.slide-dots {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.slide-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+.slide-dot.active {
+    background-color: #dc2626;
+    width: 20px;
+    border-radius: 8px;
+}
+
+.btn-slide {
+    background-color: #18181b;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-slide:disabled {
+    background-color: #e5e7eb;
+    color: #9ca3af;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+@media (max-width: 768px) {
+    .slide-controls {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
