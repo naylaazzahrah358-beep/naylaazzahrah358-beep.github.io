@@ -112,10 +112,12 @@ graph TD
 
 ```text
 naylaazzahrah358-beep.github.io/
-├── index.html            # Halaman utama (Beranda Cover, Profil, Target 2-3 Tahun, Fokus Minat, Hobi & Organisasi)
+├── index.html            # Halaman utama (Tampilan per-slide: Beranda, Target Belajar, Proyek, Hobi & Organisasi, Kontak)
 ├── about.html            # Halaman biodata lengkap, latar belakang, hobi & pengalaman organisasi
 ├── contact.html          # Halaman formulir kontak & saluran komunikasi
-├── style.css             # Stylesheet utama (Black, White & Red Theme & Kaidah CSS Modul 3-6)
+├── style.css             # Stylesheet utama (Desain sederhana, bersih & modular Modul 3-6)
+├── animasi.css           # Stylesheet animasi transisi slide & hover
+├── mencraft.py           # Source code program aplikasi Python mencraft.id
 ├── foto-profil.jpg       # Foto profil utama
 ├── foto-organisasi-1.jpg # Dokumentasi Kegiatan Kepemimpinan Luar Ruang
 ├── foto-organisasi-2.jpg # Dokumentasi Pelantikan Riset LPM Penalaran UNM
