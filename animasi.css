@@ -48,14 +48,16 @@
 .roadmap-card, 
 .project-card, 
 .org-card, 
-.contact-card-item {
+.contact-card-item,
+.skill-item {
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card-box:hover, 
 .roadmap-card:hover, 
 .org-card:hover, 
-.contact-card-item:hover {
+.contact-card-item:hover,
+.skill-item:hover {
     border-color: #dc2626;
     box-shadow: 0 4px 12px rgba(220, 38, 38, 0.08);
 }

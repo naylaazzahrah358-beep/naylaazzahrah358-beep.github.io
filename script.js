@@ -1,8 +1,8 @@
 /* ==========================================================================
    PORTOFOLIO NAYLA AZZAHRA R - JAVASCRIPT TERPADU (script.js)
    Satu file script terhubung untuk semua halaman web:
-   - index.html   : Sistem navigasi per-slide & kontrol keyboard
-   - about.html   : Smooth scroll menu pintas & interaksi
+   - index.html   : Sistem navigasi per-slide, animasi skills & keyboard control
+   - about.html   : Smooth scroll menu pintas & animasi observer skills
    - contact.html : Validasi formulir & notifikasi pengiriman pesan
    ========================================================================== */
 
@@ -63,7 +63,13 @@ function showSlide(index) {
     if (btnPrev) btnPrev.disabled = (currentSlide === 0);
     if (btnNext) btnNext.disabled = (currentSlide === slides.length - 1);
 
-    // 6. Gulir halus ke bagian atas wrapper
+    // 6. Jalankan animasi skills jika slide aktif memiliki bagian skills
+    const activeSlide = slides[currentSlide];
+    if (activeSlide && activeSlide.querySelector('.skill-item')) {
+        animateSkills(activeSlide);
+    }
+
+    // 7. Gulir halus ke bagian atas wrapper
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -116,7 +122,81 @@ function initSlideSystem() {
 }
 
 // --------------------------------------------------------------------------
-// 2. VALIDASI & INTERAKSI FORMULIR KONTAK (KHUSUS CONTACT.HTML)
+// 2. ANIMASI PROGRESS BAR & PERSENTASE SKILLS BERJALAN (0% -> TARGET%)
+// --------------------------------------------------------------------------
+function animateSkills(container = document) {
+    const skillItems = container.querySelectorAll('.skill-item');
+    if (!skillItems || skillItems.length === 0) return;
+
+    skillItems.forEach(item => {
+        const fillBar = item.querySelector('.skill-fill');
+        const percentText = item.querySelector('.skill-percent-text');
+        if (!fillBar || !percentText) return;
+
+        const target = parseInt(fillBar.getAttribute('data-target') || percentText.getAttribute('data-target') || '0', 10);
+        if (isNaN(target)) return;
+
+        // Reset nilai awal ke 0
+        fillBar.style.width = '0%';
+        percentText.textContent = '0%';
+
+        // Jalankan transisi progress bar
+        setTimeout(() => {
+            fillBar.style.width = target + '%';
+        }, 60);
+
+        // Jalankan penghitungan angka dinamis dari 0% ke target%
+        const duration = 1200; // durasi 1.2 detik
+        const startTime = performance.now();
+
+        function stepCounter(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+
+            // Fungsi pelunakan (ease-out cubic) untuk efek pergerakan mulus
+            const easeOutProgress = 1 - Math.pow(1 - progress, 3);
+            const currentVal = Math.round(easeOutProgress * target);
+
+            percentText.textContent = currentVal + '%';
+
+            if (progress < 1) {
+                requestAnimationFrame(stepCounter);
+            } else {
+                percentText.textContent = target + '%';
+            }
+        }
+
+        requestAnimationFrame(stepCounter);
+    });
+}
+
+function initSkillsObserver() {
+    const skillsSection = document.getElementById('skills-section');
+    if (!skillsSection) return;
+
+    // Jika di index.html (ada .slide-item), animasi sudah ditangani otomatis oleh showSlide()
+    if (document.querySelector('.slide-item')) return;
+
+    // Untuk about.html, aktifkan animasi saat elemen masuk tampilan layar (IntersectionObserver)
+    if ('IntersectionObserver' in window) {
+        let hasAnimated = false;
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !hasAnimated) {
+                    hasAnimated = true;
+                    animateSkills(skillsSection);
+                }
+            });
+        }, { threshold: 0.25 });
+        observer.observe(skillsSection);
+    } else {
+        // Fallback langsung aktifkan
+        animateSkills(skillsSection);
+    }
+}
+
+// --------------------------------------------------------------------------
+// 3. VALIDASI & INTERAKSI FORMULIR KONTAK (KHUSUS CONTACT.HTML)
 // --------------------------------------------------------------------------
 function initContactForm() {
     const form = document.getElementById('form-kontak');
@@ -166,7 +246,7 @@ function initContactForm() {
 }
 
 // --------------------------------------------------------------------------
-// 3. SMOOTH SCROLL MENU PINTAS (ABOUT.HTML & HALAMAN LAINNYA)
+// 4. SMOOTH SCROLL MENU PINTAS (ABOUT.HTML & HALAMAN LAINNYA)
 // --------------------------------------------------------------------------
 function initSmoothNavigation() {
     const internalLinks = document.querySelectorAll('a[href^="#"]');
@@ -185,7 +265,7 @@ function initSmoothNavigation() {
 }
 
 // --------------------------------------------------------------------------
-// 4. FITUR GLOBAL (MENU AKTIF & TAHUN FOOTER)
+// 5. FITUR GLOBAL (MENU AKTIF & TAHUN FOOTER)
 // --------------------------------------------------------------------------
 function initGlobalFeatures() {
     const footerYearElements = document.querySelectorAll('.footer-year');
@@ -210,10 +290,11 @@ function initGlobalFeatures() {
 }
 
 // --------------------------------------------------------------------------
-// 5. INISIALISASI SAAT DOKUMEN SIAP
+// 6. INISIALISASI SAAT DOKUMEN SIAP
 // --------------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', () => {
     initSlideSystem();
+    initSkillsObserver();
     initContactForm();
     initSmoothNavigation();
     initGlobalFeatures();

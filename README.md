@@ -36,6 +36,19 @@
 
 ---
 
+## 🛠️ My Skills (Kemampuan yang Saya Kembangkan)
+
+Berikut adalah ringkasan kemampuan teknis yang sedang aktif saya kembangkan dengan persentase pemahaman materi:
+
+| Bidang Kemampuan | Persentase | Fokus / Deskripsi |
+| :--- | :---: | :--- |
+| **HTML** | **80%** | Markup dokumen web semantik & struktur halaman |
+| **CSS** | **75%** | Desain, pewarnaan, flexbox, grid, & animasi visual |
+| **JavaScript** | **70%** | Manipulasi DOM dinamis, event handling & validasi interaktif |
+| **Java** | **65%** | Pemrograman Berorientasi Objek (OOP) & struktur logika |
+| **MySQL** | **75%** | Desain skema basis data & query relasional |
+| **Jaringan Komputer** | **85%** | Arsitektur jaringan komputer, routing, switching & protokol |
+
 ## 💻 Proyek Aplikasi: mencraft.id
 
 <div align="center">

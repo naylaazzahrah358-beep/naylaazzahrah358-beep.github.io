@@ -829,3 +829,71 @@ hr {
         text-align: center;
     }
 }
+
+/* 14. BAGIAN MY SKILLS (MODUL 3 & 4) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 14px;
+}
+
+.skill-item {
+    background-color: #fafafa;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 14px 16px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-item:hover {
+    border-color: #dc2626;
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.08);
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.skill-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.skill-tag {
+    font-size: 11.5px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.skill-percent-text {
+    font-size: 14px;
+    font-weight: 700;
+    color: #dc2626;
+}
+
+.skill-track {
+    width: 100%;
+    height: 10px;
+    background-color: #e5e7eb;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #dc2626;
+    border-radius: 6px;
+    transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (max-width: 640px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
