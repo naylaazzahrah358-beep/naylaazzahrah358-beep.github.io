@@ -9,7 +9,7 @@
 
 <br>
 
-<img src="foto-profil.jpg" alt="Foto Profil Nayla Azzahra R" width="220" style="border-radius: 16px; border: 3.5px solid #18181b; outline: 2px solid #dc2626; box-shadow: 0 8px 24px rgba(0,0,0,0.35);">
+<img src="foto-profil.jpg" alt="Foto Profil Nayla Azzahra R" width="220" style="border-radius: 16px; border: 3.5px solid #18181b; outline: 2px solid #38bdf8; box-shadow: 0 8px 24px rgba(0,0,0,0.35);">
 
 ### **Nayla Azzahra R**
 **Mahasiswi Teknik Komputer (Kelas C - Angkatan 2025)**  

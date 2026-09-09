@@ -13,7 +13,7 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f3f4f6;
+    background-color: #f0f7fc;
     color: #1f2937;
     line-height: 1.6;
 }
@@ -29,13 +29,13 @@ p {
 }
 
 a {
-    color: #dc2626;
+    color: #0284c7;
     text-decoration: none;
     transition: 0.2s;
 }
 
 a:hover {
-    color: #991b1b;
+    color: #0369a1;
 }
 
 hr {
@@ -50,7 +50,7 @@ hr {
     font-size: 18px;
     font-weight: 700;
     color: #111827;
-    border-bottom: 2px solid #dc2626;
+    border-bottom: 2px solid #0284c7;
     padding-bottom: 6px;
     margin-bottom: 14px;
 }
@@ -58,7 +58,7 @@ hr {
 .sublines {
     font-size: 14px;
     font-weight: 700;
-    color: #991b1b;
+    color: #0369a1;
     margin: 6px 0 4px;
 }
 
@@ -83,7 +83,7 @@ hr {
     color: #ffffff;
     padding: 24px;
     text-align: center;
-    border-bottom: 3px solid #dc2626;
+    border-bottom: 3px solid #38bdf8;
 }
 
 #header h1 {
@@ -102,7 +102,7 @@ hr {
 /* 3. NAVIGASI HORIZONTAL & DROPDOWN (MODUL 5 & MODUL 6) */
 #nav-container {
     background-color: #111827;
-    border-bottom: 2px solid #dc2626;
+    border-bottom: 2px solid #0284c7;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -135,7 +135,7 @@ hr {
 
 #menu li a:hover,
 #menu li.active a {
-    background-color: #dc2626;
+    background-color: #0284c7;
     color: #ffffff;
 }
 
@@ -150,7 +150,7 @@ hr {
     list-style: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border: 1px solid #374151;
-    border-top: 2px solid #dc2626;
+    border-top: 2px solid #0284c7;
 }
 
 #menu li:hover > ul {
@@ -197,8 +197,8 @@ hr {
 
 .badge-tag {
     display: inline-block;
-    background-color: #fee2e2;
-    color: #991b1b;
+    background-color: #e0f2fe;
+    color: #0369a1;
     font-size: 12px;
     font-weight: 700;
     padding: 3px 10px;
@@ -213,7 +213,7 @@ hr {
 }
 
 .hero-title span {
-    color: #dc2626;
+    color: #0284c7;
 }
 
 .hero-desc {
@@ -242,12 +242,12 @@ hr {
 }
 
 .btn-primary {
-    background-color: #dc2626;
+    background-color: #0284c7;
     color: #ffffff !important;
 }
 
 .btn-primary:hover {
-    background-color: #b91c1c;
+    background-color: #0369a1;
 }
 
 .btn-outline {
@@ -302,7 +302,7 @@ hr {
 .card-box {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
-    border-left: 4px solid #dc2626;
+    border-left: 4px solid #0284c7;
     border-radius: 6px;
     padding: 16px 18px;
 }
@@ -322,14 +322,14 @@ hr {
     background-color: #18181b;
     color: #ffffff;
     padding: 8px 12px;
-    border-left: 3px solid #dc2626;
+    border-left: 3px solid #0284c7;
     border-radius: 4px;
     font-size: 12px;
     font-weight: 600;
 }
 
 .vertical-nav a:hover {
-    background-color: #dc2626;
+    background-color: #0284c7;
 }
 
 /* 6. TABEL BIODATA & KARTU PROFIL (MODUL 3) */
@@ -367,8 +367,8 @@ hr {
 }
 
 .status-box {
-    background-color: #fef2f2;
-    border-left: 4px solid #dc2626;
+    background-color: #f0f9ff;
+    border-left: 4px solid #0284c7;
     padding: 8px 10px;
     border-radius: 4px;
     font-size: 12.5px;
@@ -401,14 +401,14 @@ hr {
 .roadmap-phase-title {
     font-size: 12px;
     font-weight: 700;
-    color: #dc2626;
+    color: #0284c7;
 }
 
 .roadmap-badge {
     font-size: 10.5px;
     font-weight: 700;
-    background-color: #fee2e2;
-    color: #991b1b;
+    background-color: #e0f2fe;
+    color: #0369a1;
     padding: 2px 6px;
     border-radius: 8px;
 }
@@ -474,8 +474,8 @@ hr {
 .project-badge {
     font-size: 10.5px;
     font-weight: 700;
-    background-color: #fee2e2;
-    color: #991b1b;
+    background-color: #e0f2fe;
+    color: #0369a1;
     padding: 2px 6px;
     border-radius: 6px;
 }
@@ -486,7 +486,7 @@ hr {
 }
 
 .project-title span {
-    color: #dc2626;
+    color: #0284c7;
 }
 
 .project-tagline {
@@ -528,7 +528,7 @@ hr {
 }
 
 .feature-num {
-    background-color: #dc2626;
+    background-color: #0284c7;
     color: #ffffff;
     width: 18px;
     height: 18px;
@@ -603,8 +603,8 @@ hr {
     display: inline-block;
     font-size: 10px;
     font-weight: 700;
-    background-color: #fee2e2;
-    color: #991b1b;
+    background-color: #e0f2fe;
+    color: #0369a1;
     padding: 1px 4px;
     border-radius: 4px;
     margin-bottom: 4px;
@@ -629,7 +629,7 @@ hr {
 
 .org-role {
     font-size: 11.5px;
-    color: #dc2626;
+    color: #0284c7;
     font-weight: 600;
     display: block;
     margin-bottom: 2px;
@@ -695,7 +695,7 @@ hr {
 
 .form-group input:focus, .form-group textarea:focus {
     outline: none;
-    border-color: #dc2626;
+    border-color: #0284c7;
 }
 
 /* 11. FOOTER (MODUL 5) */
@@ -799,7 +799,7 @@ hr {
 }
 
 .slide-dot.active {
-    background-color: #dc2626;
+    background-color: #0284c7;
     width: 20px;
     border-radius: 8px;
 }
@@ -847,8 +847,8 @@ hr {
 }
 
 .skill-item:hover {
-    border-color: #dc2626;
-    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.08);
+    border-color: #0284c7;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.12);
 }
 
 .skill-header {
@@ -873,7 +873,7 @@ hr {
 .skill-percent-text {
     font-size: 14px;
     font-weight: 700;
-    color: #dc2626;
+    color: #0284c7;
 }
 
 .skill-track {
@@ -887,7 +887,7 @@ hr {
 .skill-fill {
     width: 0%;
     height: 100%;
-    background-color: #dc2626;
+    background: linear-gradient(90deg, #38bdf8, #0284c7);
     border-radius: 6px;
     transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
 }

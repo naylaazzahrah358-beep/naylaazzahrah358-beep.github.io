@@ -58,8 +58,8 @@
 .org-card:hover, 
 .contact-card-item:hover,
 .skill-item:hover {
-    border-color: #dc2626;
-    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.08);
+    border-color: #0ea5e9;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.14);
 }
 
 /* 4. ANIMASI FOTO PROFIL & GALERI */
